@@ -40,10 +40,18 @@ sectp --help
 sectp inspect "hello from evaluator"
 ```
 
+## Send evaluator feedback
+
+Use the dedicated public intake template:
+
+https://github.com/GlassCastle-Workspace/GlassCastle-Workspace/issues/new?template=sectp-evaluation.md
+
+Useful reports include install failures, interoperability issues, security-model concerns, reproducible crashes, operator-workflow friction, and documentation inaccuracies. Include a minimal reproduction when safe, and remove credentials, tokens, private keys, addresses, or other sensitive data.
+
+For a potentially serious security vulnerability, keep the public issue minimal and do not post working exploit details.
+
 ## Evaluation boundary
 
 RC1 passed 162 automated tests and Ruff lint before packaging, plus a fresh isolated wheel-install smoke test.
 
 It is **not an audited production VPN**. Pairing grants zero capabilities by itself. HHT never supplies keys, nonces, authentication, or execution authority. Arbitrary remote shell access is intentionally outside the design.
-
-Useful evaluator feedback includes install failures, interoperability issues, security-model concerns, reproducible crashes, confusing operator workflows, and places where the documentation overstates or understates actual behavior.
