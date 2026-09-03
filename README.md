@@ -6,8 +6,9 @@ GlassCastle(s) builds evidence-first security, connectivity, and analytical syst
 
 We build systems that make observations, relationships, provenance, uncertainty, and operational state inspectable rather than burying them behind opaque conclusions.
 
-### Current offerings
+### Current offerings and evaluation releases
 
+- **Sec-TP v0.6.0rc1 — Public technical evaluation** — a research/reference secure capability tunnel with TCP/QUIC carriers, pinned identity, default-deny authorization, bounded sessions, tamper-evident audit chaining, and HHT-informed defensive telemetry. RC1 passed 162 automated tests before packaging. It is not an audited production VPN. [Evaluate Sec-TP RC1](SECTP-RC1.md) · [Download release](https://glasscastle-sectp.vercel.app/)
 - **Outside-In Launch Readiness Quick Scan — Free** — a five-minute public DNS/TLS/HTTP/security-header and public-link evidence pass. [Use the free Quick Scan](FREE-QUICK-SCAN.md)
 - **Outside-In Launch Readiness Mini Kit — $3** — a self-service DNS/TLS/HTTP/security-header and public-link readiness toolkit with a machine-readable evidence template. [Buy directly with Stripe](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
 - **Web3 Launch Readiness Evidence Snapshot — $50** — bounded outside-in evidence over one public Web3 launch surface, with deterministic evidence packaging and no credentialed or destructive testing. Your public target URL is collected directly during Stripe checkout. [Buy directly with Stripe](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://web3-launch-readiness.vercel.app/)
