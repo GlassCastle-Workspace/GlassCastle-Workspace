@@ -13,6 +13,7 @@ We build systems that make observations, relationships, provenance, uncertainty,
 - **Outside-In Launch Readiness Mini Kit — $3** — a self-service DNS/TLS/HTTP/security-header and public-link readiness toolkit with a machine-readable evidence template. [Buy directly with Stripe](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
 - **Web3 Launch Readiness Evidence Snapshot — $50** — bounded outside-in evidence over one public Web3 launch surface, with deterministic evidence packaging and no credentialed or destructive testing. Your public target URL is collected directly during Stripe checkout. [Buy directly with Stripe](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://web3-launch-readiness.vercel.app/)
 - **GlassCastle Surface Survey — $250** — bounded outside-in survey of up to five public web-facing targets under one organization or project, including cross-target relationship observations and a compact evidence map. [View scope](SURFACE-SURVEY.md) · [Book with Stripe](https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06)
+- **GlassCastle Evidence Expedition — $750** — one bounded public investigation objective using multiple evidence sources, relationship hypotheses, explicit uncertainty, and prioritized follow-up paths. [View scope](EVIDENCE-EXPEDITION.md) · [Book with Stripe](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
 
 Publication is exposure, not demand. GlassCastle(s) reports revenue only when a payment provider verifies a completed payment.
 
