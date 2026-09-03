@@ -8,8 +8,8 @@ We build systems that make observations, relationships, provenance, uncertainty,
 
 ### Current offerings
 
-- **Web3 Launch Readiness Evidence Snapshot — $50** — bounded outside-in evidence over a public Web3 launch surface, with deterministic evidence packaging and no credentialed or destructive testing. [View the offer](https://web3-launch-readiness.vercel.app/)
-- **Outside-In Launch Readiness Mini Kit — pay what you want from $3** — a self-service DNS/TLS/HTTP/security-header and public-link readiness toolkit with a machine-readable evidence template. [Get the Mini Kit](https://ko-fi.com/s/ed21feb147)
+- **Web3 Launch Readiness Evidence Snapshot — $50** — bounded outside-in evidence over a public Web3 launch surface, with deterministic evidence packaging and no credentialed or destructive testing. [Buy directly with Stripe](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://web3-launch-readiness.vercel.app/)
+- **Outside-In Launch Readiness Mini Kit — $3** — a self-service DNS/TLS/HTTP/security-header and public-link readiness toolkit with a machine-readable evidence template. [Buy directly with Stripe](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
 
 Publication is exposure, not demand. GlassCastle(s) reports revenue only when a payment provider verifies a completed payment.
 
