@@ -8,6 +8,7 @@ We build systems that make observations, relationships, provenance, uncertainty,
 
 ### Current offerings
 
+- **Outside-In Launch Readiness Quick Scan — Free** — a five-minute public DNS/TLS/HTTP/security-header and public-link evidence pass. [Use the free Quick Scan](FREE-QUICK-SCAN.md)
 - **Web3 Launch Readiness Evidence Snapshot — $50** — bounded outside-in evidence over a public Web3 launch surface, with deterministic evidence packaging and no credentialed or destructive testing. Your public target URL is collected directly during Stripe checkout, so there is no separate intake form to chase afterward. [Buy directly with Stripe](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://web3-launch-readiness.vercel.app/)
 - **Outside-In Launch Readiness Mini Kit — $3** — a self-service DNS/TLS/HTTP/security-header and public-link readiness toolkit with a machine-readable evidence template. [Buy directly with Stripe](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
 
