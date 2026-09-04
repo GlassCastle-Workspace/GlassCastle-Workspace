@@ -1,46 +1,51 @@
 # GlassCastle Surface Survey
 
-**Tier III — Survey**  
-**Price:** $250 one-time  
-**Target turnaround:** 72 hours  
-**Scope:** up to 5 public web-facing targets under one organization or project
+**Survey · $250 · Up to 5 public targets · Target turnaround: 72 hours**
 
-The Surface Survey is a bounded outside-in evidence review for customers who need a broader picture than a single-target snapshot.
+**Map the visible surface, then see how the pieces relate.**
 
-## Included
+The Surface Survey is a bounded outside-in evidence review for one organization or project with several related public-facing targets. It is designed for buyers who need a broader picture than a single-target snapshot.
+
+> **Security Through Visibility.** Relationships matter when the evidence supports them.
+
+## What we observe
 
 For up to five supplied public targets, GlassCastle(s) collects and packages evidence across:
 
 - DNS and target resolution
-- TLS/certificate observations
+- TLS and certificate observations
 - HTTP behavior
 - common security-header presence
 - public links and directly attributable public relationships
 - cross-target relationship observations
+- notable inconsistencies or environment drift
+
+## What you receive
+
 - a compact evidence map
 - per-target evidence notes
+- relationship observations with supporting evidence
+- explicit uncertainty and evidence gaps
 - prioritized follow-up questions
 
-## Deliverable
+The deliverable distinguishes **what was observed**, **what the evidence supports**, and **what remains unknown**.
 
-You receive a structured evidence package describing what was observed, how targets relate where evidence supports that relationship, notable gaps or inconsistencies, uncertainty, and suggested next questions.
+## Boundary
 
-## Boundaries
-
-This is not a penetration test, compliance certification, vulnerability guarantee, source-code audit, smart-contract audit, exploit attempt, credentialed assessment, or destructive test.
+**Public, non-destructive observation only.** This is not a penetration test, compliance certification, vulnerability guarantee, source-code audit, smart-contract audit, exploit attempt, credentialed assessment, or destructive test.
 
 Submit only public targets you own or are authorized to have reviewed. Do not provide credentials, secrets, private admin URLs, or non-public systems.
 
-## When to choose this
+## Choose this depth when
 
-Choose the **$50 Evidence Snapshot** when you have one bounded public target and want a focused outside-in review.
+Choose the **$50 Evidence Snapshot** when you have one public target and want a focused outside-in evidence package.
 
-Choose the **$250 Surface Survey** when several public targets belong to the same project and you want the relationships and shared surface examined together.
+Choose the **$250 Surface Survey** when several public targets belong to the same project and you want them examined together, including supported relationships and shared gaps.
+
+Choose the **$750 Evidence Expedition** when the question is investigative rather than inventory-oriented and requires one bounded objective across multiple evidence sources.
 
 ## Book
 
 [Book the $250 Surface Survey with Stripe](https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06)
 
----
-
-GlassCastle(s): **Security Through Visibility.**
+**Inspect the evidence. Map the surface.**
