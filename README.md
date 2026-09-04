@@ -6,11 +6,19 @@
 
 We build evidence-first security, connectivity, and analytical systems for people who need to know what their environments are actually doing. Our work emphasizes observable relationships, provenance, uncertainty, explicit boundaries, and operational state instead of opaque conclusions.
 
-We prefer measured evidence to security theater, useful artifacts to empty announcements, and honest limits to inflated claims.
-
 > **Evidence before assertion. Visibility before assumption.**
 
-[Read the public persona](PUBLIC-PERSONA.md) · [Choose an evidence depth](OFFER-LADDER.md)
+## Buy something useful
+
+The shortest path from curiosity to a real GlassCastle artifact:
+
+- **$3 Outside-In Launch Readiness Mini Kit** — a repeatable self-service workflow plus machine-readable evidence template. [Buy with Stripe](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
+- **$25 Real-Device APK Smoke Test** — one bounded test pass on GlassCastle-owned physical Android hardware. You provide the APK URL and what you want tested; fulfillment begins when a compatible reviewed Android node is online. [Book the smoke test](https://buy.stripe.com/5kQaEX7zzgmN8bjbIE0VO08)
+- **$50 Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle(s). [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://web3-launch-readiness.vercel.app/)
+
+For larger work: **$250 Surface Survey** · [Book](https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06) | **$750 Evidence Expedition** · [Book](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
+
+[Compare the evidence ladder](OFFER-LADDER.md)
 
 ### What we build
 
@@ -31,8 +39,6 @@ Each step increases evidence depth without silently expanding authority.
 - **Assay · $50 — Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle(s). [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://web3-launch-readiness.vercel.app/)
 - **Survey · $250 — GlassCastle Surface Survey** — up to five related public targets examined together with a compact evidence map. [Review scope](SURFACE-SURVEY.md) · [Book with Stripe](https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06)
 - **Expedition · $750 — GlassCastle Evidence Expedition** — one bounded investigation objective across multiple public evidence sources. [Review scope](EVIDENCE-EXPEDITION.md) · [Book with Stripe](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
-
-[Compare all five tiers](OFFER-LADDER.md)
 
 ### Technical evaluation
 
