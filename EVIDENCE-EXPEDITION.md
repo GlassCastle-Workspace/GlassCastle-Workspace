@@ -1,50 +1,62 @@
 # GlassCastle Evidence Expedition
 
-**Tier IV · $750 · one bounded public investigation objective**
+**Expedition · $750 · One bounded public investigation objective · Target turnaround: 5 business days**
 
-A GlassCastle Evidence Expedition is for questions that require more than a surface inventory. We investigate one clearly bounded objective across public targets using multiple evidence sources and relationship analysis.
+**Follow one important question farther than a surface inventory can reach.**
 
-## Included
+A GlassCastle Evidence Expedition is for a clearly bounded public investigation objective that needs multiple evidence sources, relationship analysis, and explicit uncertainty rather than a simple checklist.
 
-- One bounded investigation objective
-- Public targets supplied at checkout
-- DNS, TLS, HTTP, security-header, repository/public-link, protocol, and architecture observations where relevant
-- Relationship hypotheses and evidence supporting or weakening them
-- Explicit uncertainty and evidence gaps
-- Findings tied back to observations
-- Prioritized follow-up paths
-- Evidence package suitable for later review
-- Target turnaround: **5 business days**
+> **Security Through Visibility.** Investigation begins where inventory stops.
 
-## Not included
+## What we investigate
 
-- Credentialed access
-- Private systems or admin surfaces
-- Destructive testing
-- Exploit attempts
-- Persistence, privilege escalation, or bypass activity
-- Pentest, audit, certification, or compliance claims
-- Unlimited/open-ended consulting scope
+Depending on the objective and public evidence available, the Expedition may examine:
 
-## Intake
+- DNS, TLS, HTTP, and security-header behavior
+- public repositories and directly attributable public links
+- protocol and architecture observations
+- relationships between public services, domains, repositories, and documented architecture
+- evidence that supports, weakens, or leaves a hypothesis unresolved
 
-Checkout collects:
+## What you receive
 
-1. **Public targets**
-2. **Investigation objective**
-3. Optional project context
+- one bounded investigation objective
+- a structured evidence package
+- relationship hypotheses tied to supporting or weakening evidence
+- explicit uncertainty and evidence gaps
+- findings traced back to observations
+- prioritized follow-up paths
 
-Do not submit credentials, secrets, private URLs, or systems you are not authorized to have reviewed.
+The deliverable is designed to make both the conclusion **and the path to it** inspectable.
+
+## Boundary
+
+**Public, non-destructive investigation only.** Not included:
+
+- credentialed access
+- private systems or admin surfaces
+- destructive testing or exploit attempts
+- persistence, privilege escalation, or bypass activity
+- penetration-test, audit, certification, or compliance claims
+- unlimited or open-ended consulting scope
+
+Submit only systems you own or are authorized to have reviewed. Do not submit credentials, secrets, or private URLs.
 
 ## Good Expedition questions
 
 - Which public services, repositories, and domains appear to belong to the same launch surface, and what evidence supports those relationships?
 - Where does the observable architecture disagree with the documented architecture?
 - What public evidence best explains an unexpected exposure or protocol behavior?
-- Which unanswered questions should be investigated next before expanding scope?
+- Which unanswered questions should be investigated before expanding scope?
 
-## Portfolio position
+## Choose this depth when
 
-**Free Quick Scan → $3 Mini Kit → $50 Evidence Snapshot → $250 Surface Survey → $750 Evidence Expedition**
+Choose the **$250 Surface Survey** when you primarily need a map of several related public targets.
+
+Choose the **$750 Evidence Expedition** when you already have a specific question and need evidence from several public sources assembled around that objective.
+
+## Book
 
 [Book the $750 Evidence Expedition](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
+
+**Start with the evidence. Follow the relationships. Preserve the uncertainty.**
