@@ -1,8 +1,35 @@
 # GlassCastle(s) Outside-In Launch Readiness Quick Scan
 
-**Tier 0 · Prospect · Free**
+**Prospect · Free · One public target · About 5 minutes**
 
-A five-minute, evidence-first check of a public website or launch surface. This is not a penetration test, compliance assessment, vulnerability scan, or security guarantee. It is a compact way to capture what is publicly observable before launch.
+**See what your public launch surface exposes before you ship.**
+
+The Quick Scan is a compact, evidence-first check of one public website or launch surface. It helps you capture what is observable now, compare it with what you expected, and leave with useful follow-up questions.
+
+> **Security Through Visibility.** Start with the evidence.
+
+## What you inspect
+
+- public DNS resolution
+- presented TLS certificate
+- HTTP response and redirects
+- common security-header presence
+- public links and assets
+- obvious environment mismatches or stale references
+
+## What you keep
+
+A small evidence note for each observation:
+
+```text
+Observation:
+Evidence source:
+Expected:
+Observed:
+Difference:
+Confidence:
+Follow-up:
+```
 
 ## 1. Identify the public target
 
@@ -16,15 +43,11 @@ Do not submit credentials, secrets, private admin URLs, or non-public systems.
 
 ## 2. DNS
 
-Record the public resolution you can actually observe.
-
 ```bash
 dig +short example.com A
 dig +short example.com AAAA
 dig +short example.com CNAME
 ```
-
-Evidence notes:
 
 - [ ] Target resolves
 - [ ] Result matches the hostname/environment you expected
@@ -32,14 +55,10 @@ Evidence notes:
 
 ## 3. TLS
 
-Inspect the certificate presented by the public HTTPS service.
-
 ```bash
 openssl s_client -connect example.com:443 -servername example.com </dev/null 2>/dev/null \
   | openssl x509 -noout -subject -issuer -dates
 ```
-
-Evidence notes:
 
 - [ ] Certificate is currently valid
 - [ ] Subject/SAN covers the intended hostname
@@ -48,13 +67,9 @@ Evidence notes:
 
 ## 4. HTTP behavior
 
-Capture the public response path and headers.
-
 ```bash
 curl -sS -I -L https://example.com/
 ```
-
-Evidence notes:
 
 - [ ] HTTPS responds successfully
 - [ ] Redirect chain is expected
@@ -63,7 +78,7 @@ Evidence notes:
 
 ## 5. Security headers
 
-From the final HTTP response, look for the presence and suitability of:
+Look for the presence and suitability of:
 
 - [ ] `Strict-Transport-Security`
 - [ ] `Content-Security-Policy`
@@ -72,11 +87,9 @@ From the final HTTP response, look for the presence and suitability of:
 - [ ] `Permissions-Policy`
 - [ ] framing protection via CSP `frame-ancestors` or `X-Frame-Options`
 
-Absence is evidence, not automatically a vulnerability. Whether a header is appropriate depends on the application.
+Absence is evidence, not automatically a vulnerability. Suitability depends on the application.
 
 ## 6. Public links and assets
-
-Open the site normally and inspect only public resources.
 
 - [ ] Primary navigation links resolve
 - [ ] Images/scripts/styles load over HTTPS
@@ -85,36 +98,16 @@ Open the site normally and inspect only public resources.
 - [ ] No accidental staging/dev hostname is visibly linked
 - [ ] Broken or unexpected public resources are recorded
 
-## 7. Make an evidence note
+## Boundary
 
-For every observation, record:
+**Public, non-destructive observation only.** This is not a penetration test, vulnerability scan, compliance assessment, source-code audit, smart-contract audit, exploit attempt, credentialed review, or security guarantee.
 
-```text
-Observation:
-Evidence source:
-Expected:
-Observed:
-Difference:
-Confidence:
-Follow-up:
-```
+## Choose the next depth
 
-GlassCastle(s) doctrine:
+- **Need a reusable self-service artifact?** Outside-In Launch Readiness Mini Kit · **$3**
+- **Want GlassCastle(s) to inspect one public target and package the evidence?** Evidence Snapshot · **$50**
+- **Need several related public targets examined together?** Surface Survey · **$250**
 
-> **Evidence before assertion. Unknown is not False.**
+[Get the $3 Mini Kit](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Book the $50 Evidence Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05)
 
-## What next?
-
-If this quick scan is enough, keep the notes and ship with better visibility.
-
-If you want a reusable self-service checklist plus a machine-readable evidence template, use the **Outside-In Launch Readiness Mini Kit ($3)**:
-
-https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04
-
-If you want GlassCastle(s) to perform a bounded outside-in review and package the evidence for one public target, use the **Web3 Launch Readiness Evidence Snapshot ($50)**. The public target URL is collected during checkout:
-
-https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05
-
----
-
-**Scope boundary:** public, non-destructive observation only. No credentialed testing, exploitation, private-system access, source-code audit, smart-contract audit, compliance certification, or security guarantee.
+**Evidence before assertion. Unknown != False.**
