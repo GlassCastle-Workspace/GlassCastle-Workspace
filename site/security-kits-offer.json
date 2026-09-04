@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "offer_id": "gc-security-kits-pilot-2026-09-04",
+  "portfolio_id": "security-kits",
+  "stage": "validation",
+  "offer_type": "pilot_access_request",
+  "published_surface": "glasscastles_public_site",
+  "payment_accepted": false,
+  "pricing_status": "commercial_decision_required",
+  "contact": "glasscastles@proton.me",
+  "interest_endpoint": "/api/interest",
+  "pii_collected_by_interest_endpoint": false,
+  "products": [
+    "wallet-investigation-starter-kit",
+    "web3-security-incident-triage-pack"
+  ],
+  "boundary": "Package integrity and listing metadata are verified. Pricing and buyer conversion remain under validation."
+}
