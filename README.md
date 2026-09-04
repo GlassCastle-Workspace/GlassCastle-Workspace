@@ -10,7 +10,7 @@ We prefer measured evidence to security theater, useful artifacts to empty annou
 
 > **Evidence before assertion. Visibility before assumption.**
 
-[Read the public persona and publishing doctrine](PUBLIC-PERSONA.md)
+[Read the public persona](PUBLIC-PERSONA.md) · [Choose an evidence depth](OFFER-LADDER.md)
 
 ### What we build
 
@@ -20,14 +20,23 @@ We prefer measured evidence to security theater, useful artifacts to empty annou
 - **Analytical systems** — search, discovery, representation, provenance, and relationship-centric security analytics
 - **Technical services** — clearly scoped assessments and evidence-driven reviews with limitations stated up front
 
-### Current offerings and evaluation releases
+### Evidence ladder
 
-- **Sec-TP v0.6.0rc1 — Public technical evaluation** — a research/reference secure capability tunnel with TCP/QUIC carriers, pinned identity, default-deny authorization, bounded sessions, tamper-evident audit chaining, and HHT-informed defensive telemetry. RC1 passed 162 automated tests before packaging. It is not an audited production VPN. [Evaluate Sec-TP RC1](SECTP-RC1.md) · [Download release](https://glasscastle-sectp.vercel.app/)
-- **Outside-In Launch Readiness Quick Scan — Free** — a five-minute public DNS/TLS/HTTP/security-header and public-link evidence pass. [Use the free Quick Scan](FREE-QUICK-SCAN.md)
-- **Outside-In Launch Readiness Mini Kit — $3** — a self-service DNS/TLS/HTTP/security-header and public-link readiness toolkit with a machine-readable evidence template. [Buy directly with Stripe](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
-- **Web3 Launch Readiness Evidence Snapshot — $50** — bounded outside-in evidence over one public Web3 launch surface, with deterministic evidence packaging and no credentialed or destructive testing. Your public target URL is collected directly during Stripe checkout. [Buy directly with Stripe](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://web3-launch-readiness.vercel.app/)
-- **GlassCastle Surface Survey — $250** — bounded outside-in survey of up to five public web-facing targets under one organization or project, including cross-target relationship observations and a compact evidence map. [View scope](SURFACE-SURVEY.md) · [Book with Stripe](https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06)
-- **GlassCastle Evidence Expedition — $750** — one bounded public investigation objective using multiple evidence sources, relationship hypotheses, explicit uncertainty, and prioritized follow-up paths. [View scope](EVIDENCE-EXPEDITION.md) · [Book with Stripe](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
+**Prospect → Ore → Assay → Survey → Expedition**
+
+Each step increases evidence depth without silently expanding authority.
+
+- **Prospect · Free — Outside-In Launch Readiness Quick Scan** — inspect one public surface yourself in about five minutes. [Run the Quick Scan](FREE-QUICK-SCAN.md)
+- **Ore · $3 — Outside-In Launch Readiness Mini Kit** — repeatable self-service workflow with a machine-readable evidence template. [Get the Mini Kit](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
+- **Assay · $50 — Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle(s). [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://web3-launch-readiness.vercel.app/)
+- **Survey · $250 — GlassCastle Surface Survey** — up to five related public targets examined together with a compact evidence map. [Review scope](SURFACE-SURVEY.md) · [Book with Stripe](https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06)
+- **Expedition · $750 — GlassCastle Evidence Expedition** — one bounded investigation objective across multiple public evidence sources. [Review scope](EVIDENCE-EXPEDITION.md) · [Book with Stripe](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
+
+[Compare all five tiers](OFFER-LADDER.md)
+
+### Technical evaluation
+
+- **Sec-TP v0.6.0rc1** — research/reference secure capability tunnel with TCP/QUIC carriers, pinned identity, default-deny authorization, bounded sessions, tamper-evident audit chaining, and HHT-informed defensive telemetry. RC1 passed 162 automated tests before packaging. It is not an audited production VPN. [Evaluate Sec-TP RC1](SECTP-RC1.md) · [Download release](https://glasscastle-sectp.vercel.app/)
 
 Publication is exposure, not demand. GlassCastle(s) reports revenue only when a payment provider verifies a completed payment.
 
