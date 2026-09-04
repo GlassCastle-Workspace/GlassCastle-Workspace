@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://glasscastles.vercel.app/sitemap.xml
