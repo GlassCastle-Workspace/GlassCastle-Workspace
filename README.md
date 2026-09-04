@@ -8,6 +8,19 @@ We build evidence-first security, connectivity, and analytical systems for peopl
 
 > **Evidence before assertion. Visibility before assumption.**
 
+## Public front doors
+
+- **GlassCastle(s)** — https://glasscastles.vercel.app/
+- **GlassCastle(s) Mining Co.** — https://glasscastles-mining.vercel.app/
+- **Kork · Discover** — https://kork-saas.vercel.app/
+- **ShatteredCastle(s) · Assess** — https://glasscastle-launchguard.vercel.app/
+- **BlastRadial · Impact** — https://blastradial-saas.vercel.app/
+- **Investigation Console · Remediate** — https://glasscastle-investigation-console.vercel.app/
+- **Sec-TP RC1 · Secure capability transport** — https://glasscastle-sectp.vercel.app/
+- **Web3 Launch Readiness · Bounded evidence service** — https://web3-launch-readiness.vercel.app/
+
+The public visual system uses **Roboto Mono**, void-black surfaces, emerald signal (`#35ff95`), violet boundary (`#9a6cff`), and evidence-first hierarchy across the live product family.
+
 ## Buy something useful
 
 The shortest path from curiosity to a real GlassCastle artifact:
