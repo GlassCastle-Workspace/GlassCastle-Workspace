@@ -2,6 +2,8 @@
 
 ## Security Through Visibility
 
+**[glasscastles.vercel.app](https://glasscastles.vercel.app/) · [Security policy](SECURITY.md) · [Sec-TP RC1](https://glasscastle-sectp.vercel.app/)**
+
 **GlassCastle(s) makes complex systems visible enough to inspect, understand, and improve.**
 
 We build evidence-first security, connectivity, and analytical systems for people who need to know what their environments are actually doing. Our work emphasizes observable relationships, provenance, uncertainty, explicit boundaries, and operational state instead of opaque conclusions.
