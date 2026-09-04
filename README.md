@@ -2,9 +2,23 @@
 
 ## Security Through Visibility
 
-GlassCastle(s) builds evidence-first security, connectivity, and analytical systems.
+**GlassCastle(s) makes complex systems visible enough to inspect, understand, and improve.**
 
-We build systems that make observations, relationships, provenance, uncertainty, and operational state inspectable rather than burying them behind opaque conclusions.
+We build evidence-first security, connectivity, and analytical systems for people who need to know what their environments are actually doing. Our work emphasizes observable relationships, provenance, uncertainty, explicit boundaries, and operational state instead of opaque conclusions.
+
+We prefer measured evidence to security theater, useful artifacts to empty announcements, and honest limits to inflated claims.
+
+> **Evidence before assertion. Visibility before assumption.**
+
+[Read the public persona and publishing doctrine](PUBLIC-PERSONA.md)
+
+### What we build
+
+- **Security visibility** — bounded observations, evidence packaging, relationship maps, and investigation workflows
+- **Secure connectivity** — capability-scoped tunnels, routing, translation, and protocol boundaries
+- **Edge + device systems** — endpoint runtimes, orchestration, field nodes, and human/device interfaces
+- **Analytical systems** — search, discovery, representation, provenance, and relationship-centric security analytics
+- **Technical services** — clearly scoped assessments and evidence-driven reviews with limitations stated up front
 
 ### Current offerings and evaluation releases
 
@@ -16,6 +30,14 @@ We build systems that make observations, relationships, provenance, uncertainty,
 - **GlassCastle Evidence Expedition — $750** — one bounded public investigation objective using multiple evidence sources, relationship hypotheses, explicit uncertainty, and prioritized follow-up paths. [View scope](EVIDENCE-EXPEDITION.md) · [Book with Stripe](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
 
 Publication is exposure, not demand. GlassCastle(s) reports revenue only when a payment provider verifies a completed payment.
+
+### How we work
+
+A GlassCastle result should make five things visible:
+
+**Observation → Evidence → Meaning → Boundary → Next useful action**
+
+We say when something is experimental. We distinguish hypotheses from measurements. We do not present estimates as realized value, and we do not hide uncertainty because it makes a slide look cleaner.
 
 ### Current architecture
 
