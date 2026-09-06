@@ -1,0 +1,37 @@
+name: Fabric Conformance
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/api/v1/fabric.js'
+      - 'tools/gc-fabric'
+      - 'tools/fabric-conformance.mjs'
+      - '.github/workflows/fabric-conformance.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  source-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify repository fabric contract
+        run: node tools/fabric-conformance.mjs source
+
+  public-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify live registry and stage capabilities
+        run: node tools/fabric-conformance.mjs public
