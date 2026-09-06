@@ -1,10 +1,11 @@
 const FABRIC={
   contract:'glasscastles.fabric.registry.v1',
+  suite:{name:'ShatteredCastle(s)',contract:'shatteredcastles.suite.v1',company:'GlassCastle(s)',attack_model:{name:'Unified Kill Chain',version:'Pols-2017-final',endpoint:'/api/v1/ukc',contract:'shatteredcastles.ukc.model.v1'}},
   workflow:['scope','discover','assess','validate','impact','remediate'],
   stages:[
     {stage:'scope',name:'ScopeSentinel',base_url:'https://scopesentinel-saas.vercel.app',capabilities:'/api/v1/capabilities',agent:'/api/v1/agent',openapi:'/openapi.json'},
     {stage:'discover',name:'Kork',base_url:'https://kork-saas.vercel.app',capabilities:'/api/v1/capabilities',agent:'/api/v1/agent',openapi:'/openapi.json',network:{enrich:'/api/enrich'}},
-    {stage:'assess',name:'ShatteredCastle(s)',base_url:'https://glasscastle-launchguard.vercel.app',capabilities:'/api/v1/capabilities',agent:'/api/v1/agent',openapi:'/openapi.json',network:{assess:'/api/scan'}},
+    {stage:'assess',name:'ShatterAssay',base_url:'https://glasscastle-launchguard.vercel.app',capabilities:'/api/v1/capabilities',agent:'/api/v1/agent',openapi:'/openapi.json',network:{assess:'/api/scan'}},
     {stage:'validate',name:'GlassWitness',base_url:'https://glasswitness-saas.vercel.app',capabilities:'/api/v1/capabilities',agent:'/api/v1/agent',openapi:'/openapi.json'},
     {stage:'impact',name:'BlastRadial',base_url:'https://blastradial-saas.vercel.app',capabilities:'/api/v1/capabilities',agent:'/api/v1/agent',openapi:'/openapi.json'},
     {stage:'remediate',name:'Investigation Console',base_url:'https://glasscastle-investigation-console.vercel.app',capabilities:'/api/v1/capabilities',agent:'/api/v1/agent',openapi:'/openapi.json',network:{capture_source:'/api/research'}}

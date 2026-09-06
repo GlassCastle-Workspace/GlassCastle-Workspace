@@ -10,7 +10,9 @@ We build evidence-first security, connectivity, and analytical systems for peopl
 
 > **Evidence before assertion. Visibility before assumption.**
 
-## Security Fabric
+## ShatteredCastle(s) Security Fabric
+
+**ShatteredCastle(s)** is the umbrella name for the GlassCastle(s) security tool and SaaS suite.
 
 **Scope → Discover → Assess → Validate → Impact → Remediate**
 
@@ -18,7 +20,7 @@ We build evidence-first security, connectivity, and analytical systems for peopl
   Compile program prose, structured scope, exclusions, rate limits, asset-identity mismatches, and unresolved ambiguities into a fail-closed execution contract.
 - **Kork · Discover** — https://kork-saas.vercel.app/  
   Pin artifacts, map relationships, preserve provenance, and build an inspectable investigation topology.
-- **ShatteredCastle(s) · Assess** — https://glasscastle-launchguard.vercel.app/  
+- **ShatterAssay · Assess** — https://glasscastle-launchguard.vercel.app/
   Perform bounded outside-in assessment and static research while enforcing the current scope envelope.
 - **GlassWitness · Validate** — https://glasswitness-saas.vercel.app/  
   Turn controlled baselines, independent confirmations, negative controls, and evidence hashes into deterministic validation receipts.
@@ -29,13 +31,23 @@ We build evidence-first security, connectivity, and analytical systems for peopl
 
 The fabric is intentionally fail-closed: **unknown policy does not become permission, scanner output does not become proof, and proof does not silently rewrite impact.**
 
+### Unified Kill Chain attack-model lens
+
+ShatteredCastle(s) also exposes the final 2017 Unified Kill Chain developed by Paul Pols as a separate tactical attack-path model. The UKC does **not** replace the six-stage defender workflow. It describes attacker paths using 18 tactical phases and explicitly permits bypassed, repeated, branched, and out-of-order phase occurrence. Pivoting is modeled as a choke point.
+
+- Public model/API: `https://glasscastles.vercel.app/api/v1/ukc`
+- Offline utility: `node tools/ukc-engine.mjs model`
+- Model audit: [UKC-AUDIT.md](UKC-AUDIT.md)
+
+The UKC implementation is versioned as `Pols-2017-final`. Current MITRE ATT&CK mappings are intentionally not silently merged into this historical model.
+
 ## Public front doors
 
 - **GlassCastle(s)** — https://glasscastles.vercel.app/
 - **GlassCastle(s) Mining Co.** — https://glasscastles-mining.vercel.app/
 - **ScopeSentinel · Scope** — https://scopesentinel-saas.vercel.app/
 - **Kork · Discover** — https://kork-saas.vercel.app/
-- **ShatteredCastle(s) · Assess** — https://glasscastle-launchguard.vercel.app/
+- **ShatterAssay · Assess** — https://glasscastle-launchguard.vercel.app/
 - **GlassWitness · Validate** — https://glasswitness-saas.vercel.app/
 - **BlastRadial · Impact** — https://blastradial-saas.vercel.app/
 - **Investigation Console · Remediate** — https://glasscastle-investigation-console.vercel.app/
