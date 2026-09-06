@@ -76,6 +76,7 @@ jobs:
         run: |
           set -e
           node tools/scope-envelope.mjs --program Demo --policy test/fixtures/scope-policy.txt --scope test/fixtures/scope-structured.json --host api.example.com --action automation --max-requests 6 > /tmp/envelope.json
+          node -e "const x=require('/tmp/envelope.json');const e=x.envelope||{};console.log(JSON.stringify({top_keys:Object.keys(e),nested_keys:e.envelope&&typeof e.envelope==='object'?Object.keys(e.envelope):[],scope_keys:e.scope&&typeof e.scope==='object'?Object.keys(e.scope):[],authorized:e.authorized,scope_authorized:e.scope?.authorized,scope_state:e.scope_state,scope_state_nested:e.scope?.state,max_requests:e.max_requests,request_budget:e.request_budget},null,2))"
           node -e "const x=require('/tmp/envelope.json');const e=x.envelope?.envelope||x.envelope;if(!e||e.authorized!==false)process.exit(1);if(e.scope_state!=='clear')process.exit(2);if(Number(e.max_requests||e.request_budget||0)>6)process.exit(3);console.log('Fail-closed execution envelope OK')"
 
   public-contract:
