@@ -27,6 +27,19 @@ jobs:
       - name: Verify repository fabric contract
         run: node tools/fabric-conformance.mjs source
 
+  scope-bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify ScopeSentinel remains directly usable during registry drift
+        run: |
+          set -e
+          node tools/gc-fabric capabilities scope > /tmp/scope-capabilities.json
+          node -e "const x=require('/tmp/scope-capabilities.json');if((x.api||x.contract)!=='glasscastles.scopesentinel.agent-api.v1')process.exit(1);if(x.network_requests!==false)process.exit(2);console.log('Scope bootstrap OK')"
+
   public-contract:
     runs-on: ubuntu-latest
     steps:
@@ -39,7 +52,7 @@ jobs:
 
   drift-ledger:
     if: always()
-    needs: [source-contract, public-contract]
+    needs: [source-contract, scope-bootstrap, public-contract]
     runs-on: ubuntu-latest
     steps:
       - name: Reconcile production drift issue
@@ -47,10 +60,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
           SOURCE_RESULT: ${{ needs.source-contract.result }}
+          BOOTSTRAP_RESULT: ${{ needs.scope-bootstrap.result }}
           PUBLIC_RESULT: ${{ needs.public-contract.result }}
         run: |
           set -e
-          if [ "$SOURCE_RESULT" = "success" ] && [ "$PUBLIC_RESULT" = "success" ]; then
+          if [ "$SOURCE_RESULT" = "success" ] && [ "$BOOTSTRAP_RESULT" = "success" ] && [ "$PUBLIC_RESULT" = "success" ]; then
             gh issue close 1 --repo "$REPO" --reason completed --comment "Fabric Conformance is fully green. Canonical source and public six-stage fabric now agree. Auto-closing drift ledger from run $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" || true
           else
             gh issue reopen 1 --repo "$REPO" || true
