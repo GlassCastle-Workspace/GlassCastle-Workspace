@@ -1,0 +1,39 @@
+{
+  "contract": "shatteredcastles.ukc.release.v1",
+  "suite": "ShatteredCastle(s)",
+  "company": "GlassCastle(s)",
+  "model": "Unified Kill Chain",
+  "model_version": "Pols-2017-final",
+  "source": {
+    "title": "The Unified Kill Chain",
+    "author": "Paul Pols",
+    "date": "2017-12-07",
+    "canonical_phase_source": "Appendix A / Table 28"
+  },
+  "public_endpoint": "https://glasscastles.vercel.app/api/v1/ukc",
+  "model_contract": "shatteredcastles.ukc.model.v1",
+  "phase_count": 18,
+  "model_digest_sha256": "01c5e53f11f40e13dc0ef1b9f4ebcb7acdeae284ef6f4d7e0b51a599c2488966",
+  "semantics": {
+    "strict_sequence_required": false,
+    "repeats_valid": true,
+    "omissions_valid": true,
+    "branches_supported_as_distinct_paths": true,
+    "pivoting_is_chokepoint": true,
+    "annotation_policy": "explicit evidence or analyst mapping only"
+  },
+  "suite_integration": {
+    "scope": "model advertised",
+    "discover": "explicit UKC annotation extraction",
+    "assess": "UKC model reference and explicit-only research annotation lane",
+    "validate": "UKC path metadata preserved through plans and receipts",
+    "impact": "pivot/chokepoint context surfaced with no score multiplier",
+    "remediate": "UKC artifacts preserved as distinct investigation evidence lane"
+  },
+  "validation": {
+    "core_tests": "7/7",
+    "combined_canonical_tests": "15/15",
+    "public_conformance": "PASS",
+    "public_phase_count": 18
+  }
+}

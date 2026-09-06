@@ -56,6 +56,8 @@ async function checkCapabilities(reg){
     const body=await r.json();
     const actual=body.api||body.contract;
     if(actual!==contract)fail(`${stage} contract mismatch: ${actual} != ${contract}`);
+    if(body?.suite?.name!=='ShatteredCastle(s)')fail(`${stage} suite identity mismatch: ${body?.suite?.name||'missing'}`);
+    if(body?.suite?.ukc?.contract!=='shatteredcastles.ukc.model.v1')fail(`${stage} UKC suite contract missing`);
     if(stage==='scope'&&body.network_requests!==false)fail('ScopeSentinel must remain zero-target-network');
     found[stage]={url:String(url),contract:actual,version:body.version||null};
   }

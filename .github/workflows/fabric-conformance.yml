@@ -7,6 +7,11 @@ on:
       - 'site/api/v1/fabric.js'
       - 'tools/gc-fabric'
       - 'tools/fabric-conformance.mjs'
+      - 'site/api/v1/ukc.js'
+      - 'site/lib/ukc-model.js'
+      - 'tools/ukc-engine.mjs'
+      - 'test/ukc.test.mjs'
+      - 'UKC-AUDIT.md'
       - 'tools/scope-diff.mjs'
       - 'tools/scope-preflight.mjs'
       - 'tools/scope-envelope.mjs'
@@ -45,7 +50,7 @@ jobs:
         with:
           node-version: '22'
       - name: Verify ScopeSentinel and deployment-manifest semantics
-        run: node --test test/scope-diff.test.mjs test/deployment-manifest.test.mjs
+        run: node --test test/scope-diff.test.mjs test/deployment-manifest.test.mjs test/ukc.test.mjs
 
   scope-bootstrap:
     runs-on: ubuntu-latest
