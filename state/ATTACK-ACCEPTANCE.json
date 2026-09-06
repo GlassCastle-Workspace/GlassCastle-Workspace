@@ -1,0 +1,142 @@
+{
+  "contract": "shatteredcastles.attack.acceptance.v1",
+  "generated_at": "2026-09-06T15:55:22.774Z",
+  "source_model": "shatteredcastles.attack.model.v1",
+  "model_version": "v19.2",
+  "model_digest_sha256": "0be9d8a76b308b4838f9f0d4d6c26ad5b0cbcf04cb30d85032b6666d38627b39",
+  "catalog_digest_sha256": "e0e9feb0b5e6cdb7688e72e4c54ae4bd34ebc156196b62b93d02495a87cc4a25",
+  "model": {
+    "enterprise": {
+      "tactics": 15,
+      "techniques": 222,
+      "subtechniques": 475,
+      "technique_records": 697,
+      "source": {
+        "filename": "enterprise-attack-19.2.json",
+        "sha256": "f7eaf37fe53b50404084fe1fe67237278f7317e61c11ad550295722d13ede259",
+        "bytes": 47953963
+      }
+    },
+    "mobile": {
+      "tactics": 12,
+      "techniques": 77,
+      "subtechniques": 47,
+      "technique_records": 124,
+      "source": {
+        "filename": "mobile-attack-19.2.json",
+        "sha256": "e69c3886a3c55311f3f08fac2543bf4ee9647dba7106878274b4cc288e2051f8",
+        "bytes": 5155822
+      }
+    },
+    "ics": {
+      "tactics": 12,
+      "techniques": 79,
+      "subtechniques": 18,
+      "technique_records": 97,
+      "source": {
+        "filename": "ics-attack-19.2.json",
+        "sha256": "8a462b5d0103fba3eb941575bd15f3f7968c1362ac724cb03909415bdd5377c1",
+        "bytes": 3564629
+      }
+    },
+    "free_text_auto_classification": false,
+    "automatic_actor_attribution": false
+  },
+  "resolution": {
+    "exact_resolved": [
+      "T1059.001"
+    ],
+    "free_text_unresolved": [
+      "PowerShell behavior maybe"
+    ]
+  },
+  "behavior": {
+    "technique_ids": [
+      "T1059.001"
+    ],
+    "tactic_ids": [
+      "TA0002"
+    ],
+    "subtechnique_parent": "T1059",
+    "status": "observed"
+  },
+  "composition": {
+    "ukc_bindings": 1,
+    "diamond_bindings": 1,
+    "pyramid_bindings": 1,
+    "all_cross_model_bindings_explicit_only": true
+  },
+  "coverage": {
+    "technique_ids": [
+      "T1059.001"
+    ],
+    "detection_statuses": [
+      "covered"
+    ],
+    "missing_detection_is_unknown": true,
+    "no_weighted_score": true
+  },
+  "kork": {
+    "annotations": 1,
+    "unannotated_powershell_label_inferred": false,
+    "export_annotations": 1
+  },
+  "shatterassay": {
+    "inferred_annotations": 0
+  },
+  "witness": {
+    "authorization_reset": true,
+    "required_confirmations": 2,
+    "claim_ready": true,
+    "technique_ids": [
+      "T1059.001"
+    ],
+    "tactic_ids": [
+      "TA0002"
+    ],
+    "proof_effect": "none"
+  },
+  "blast": {
+    "attack": {
+      "artifacts": 1,
+      "behaviors": 1,
+      "technique_ids": [
+        "T1059.001"
+      ],
+      "tactic_ids": [
+        "TA0002"
+      ],
+      "score_effect": "none",
+      "severity_effect": "none"
+    },
+    "critical_path_impact_before": 0.5225,
+    "critical_path_impact_after": 0.5225,
+    "impact_unchanged": true
+  },
+  "console": {
+    "attack": {
+      "artifacts": 1,
+      "behaviors": 1,
+      "technique_ids": [
+        "T1059.001"
+      ],
+      "tactic_ids": [
+        "TA0002"
+      ],
+      "score_effect": "none",
+      "severity_effect": "none"
+    },
+    "findings": 0,
+    "validated": 0
+  },
+  "boundaries": {
+    "free_text_auto_classification": false,
+    "automatic_actor_attribution": false,
+    "automatic_ukc_mapping": false,
+    "automatic_diamond_mapping": false,
+    "automatic_pyramid_mapping": false,
+    "proof_effect": "none",
+    "impact_score_effect": "none",
+    "severity_effect": "none"
+  }
+}

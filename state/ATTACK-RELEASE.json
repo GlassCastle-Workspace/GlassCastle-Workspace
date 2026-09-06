@@ -1,0 +1,179 @@
+{
+  "contract": "shatteredcastles.attack.release.v1",
+  "version": "1.0.0",
+  "released_at": "2026-09-06T15:54:26Z",
+  "suite": "ShatteredCastle(s)",
+  "company": "GlassCastle(s)",
+  "source": {
+    "name": "MITRE ATT&CK",
+    "version": "v19.2",
+    "released": "2026-08-06",
+    "repository": "mitre/cti",
+    "domains": {
+      "enterprise": {
+        "source_sha256": "f7eaf37fe53b50404084fe1fe67237278f7317e61c11ad550295722d13ede259",
+        "source_bytes": 47953963,
+        "tactics": 15,
+        "techniques": 222,
+        "subtechniques": 475
+      },
+      "mobile": {
+        "source_sha256": "e69c3886a3c55311f3f08fac2543bf4ee9647dba7106878274b4cc288e2051f8",
+        "source_bytes": 5155822,
+        "tactics": 12,
+        "techniques": 77,
+        "subtechniques": 47
+      },
+      "ics": {
+        "source_sha256": "8a462b5d0103fba3eb941575bd15f3f7968c1362ac724cb03909415bdd5377c1",
+        "source_bytes": 3564629,
+        "tactics": 12,
+        "techniques": 79,
+        "subtechniques": 18
+      }
+    },
+    "raw_source_policy": "Raw MITRE CTI source is retained outside the repository and used only to regenerate the compact catalog.",
+    "builder": "tools/build-attack-catalog.py"
+  },
+  "model": {
+    "contract": "shatteredcastles.attack.model.v1",
+    "version": "v19.2",
+    "model_digest_sha256": "0be9d8a76b308b4838f9f0d4d6c26ad5b0cbcf04cb30d85032b6666d38627b39",
+    "catalog_digest_sha256": "e0e9feb0b5e6cdb7688e72e4c54ae4bd34ebc156196b62b93d02495a87cc4a25",
+    "compact_catalog": "site/data/attack-v19.2.json",
+    "compact_catalog_sha256": "b5ea2ece33ed42ce5e5999c3a42b2de39eb935b02986106357052c7cc8704edf",
+    "compact_catalog_bytes": 256650,
+    "public_endpoint": "https://glasscastles.vercel.app/api/v1/attack"
+  },
+  "composition": {
+    "ukc": {
+      "contract": "shatteredcastles.ukc.model.v1",
+      "role": "progression",
+      "binding": "explicit-only"
+    },
+    "diamond": {
+      "contract": "shatteredcastles.diamond.model.v1",
+      "role": "relationship",
+      "binding": "explicit-only"
+    },
+    "pyramid": {
+      "contract": "shatteredcastles.pyramid.model.v1",
+      "role": "relative adversary replacement burden",
+      "binding": "explicit-only"
+    },
+    "attack": {
+      "role": "adversary behavior taxonomy",
+      "selector_policy": "exact-only"
+    },
+    "workflow": [
+      "scope",
+      "discover",
+      "assess",
+      "validate",
+      "impact",
+      "remediate"
+    ]
+  },
+  "tests": {
+    "scope": "13/13",
+    "kork": "7/7",
+    "shatterassay": "70/70",
+    "glasswitness": "23/23",
+    "blastradial": "8/8",
+    "console": "11/11",
+    "umbrella": "40/40",
+    "total": "172/172"
+  },
+  "visual_qa": {
+    "desktop": {
+      "viewport": 1440,
+      "document_width": 1440,
+      "overflow_offenders": 0,
+      "enterprise_tactic_cells": 15,
+      "domain_cards": 3
+    },
+    "mobile": {
+      "viewport": 390,
+      "document_width": 390,
+      "overflow_offenders": 0,
+      "enterprise_tactic_cells": 15,
+      "domain_cards": 3
+    },
+    "stealth_present": true,
+    "defense_impairment_present": true,
+    "copyright_notice_present": true
+  },
+  "acceptance": {
+    "artifact": "state/ATTACK-ACCEPTANCE.json",
+    "sha256": "73e4bc68d52dd232ab0706018bd4a393f82f574910132cc91ab16647063bb83b",
+    "exact_selector": "T1059.001",
+    "free_text_unresolved": true,
+    "kork_unannotated_powershell_inferred": false,
+    "shatterassay_inferred_annotations": 0,
+    "witness_authorization_reset": true,
+    "witness_required_confirmations": 2,
+    "witness_proof_effect": "none",
+    "blast_score_effect": "none",
+    "blast_severity_effect": "none",
+    "console_findings": 0,
+    "cross_model_bindings": {
+      "ukc": 1,
+      "diamond": 1,
+      "pyramid": 1
+    }
+  },
+  "production": {
+    "public_conformance": "PASS",
+    "conformance_checked_at": "2026-09-06T15:51:48.406Z",
+    "live_smoke": {
+      "http": 200,
+      "selector": "T1059.001",
+      "resolved_name": "PowerShell",
+      "parent": "T1059",
+      "tactic": "TA0002"
+    },
+    "deployments": {
+      "scope": "https://scopesentinel-saas-h3db4pd4d-glass-castle.vercel.app",
+      "discover": "https://kork-saas-9xrrduny4-glass-castle.vercel.app",
+      "assess": "https://glasscastle-launchguard-1lwze8ytx-glass-castle.vercel.app",
+      "validate": "https://glasswitness-saas-l7eckig2t-glass-castle.vercel.app",
+      "impact": "https://blastradial-saas-cald4agtz-glass-castle.vercel.app",
+      "remediate": "https://glasscastle-investigation-console-l87dsv62w-glass-castle.vercel.app",
+      "hub": "https://glasscastles-z8z17q2y8-glass-castle.vercel.app"
+    },
+    "canonical_aliases": {
+      "scope": "https://scopesentinel-saas.vercel.app",
+      "discover": "https://kork-saas.vercel.app",
+      "assess": "https://glasscastle-launchguard.vercel.app",
+      "validate": "https://glasswitness-saas.vercel.app",
+      "impact": "https://blastradial-saas.vercel.app",
+      "remediate": "https://glasscastle-investigation-console.vercel.app",
+      "hub": "https://glasscastles.vercel.app"
+    }
+  },
+  "stage_commits": {
+    "scope": "37a4d00",
+    "assess": "e153f88",
+    "validate": "652e273",
+    "discover": "local Vercel deploy tree",
+    "impact": "local Vercel deploy tree",
+    "remediate": "local Vercel deploy tree"
+  },
+  "boundaries": [
+    "Exact ATT&CK IDs or exact catalog names only; no free-text technique classification.",
+    "No automatic actor, group, campaign, or software attribution.",
+    "No automatic UKC phase mapping.",
+    "No automatic Diamond event or feature mapping.",
+    "No automatic Pyramid indicator mapping.",
+    "ATT&CK context does not expand authorization.",
+    "ATT&CK context does not change GlassWitness proof thresholds.",
+    "ATT&CK context does not change BlastRadial impact scores or severity.",
+    "Missing detection evidence remains unknown rather than proof of no detection.",
+    "No target-network action in the ATT&CK model API."
+  ],
+  "legal": {
+    "copyright": "\u00a9 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.",
+    "trademark": "MITRE ATT&CK\u00ae and ATT&CK\u00ae are registered trademarks of The MITRE Corporation.",
+    "endorsement": "MITRE does not endorse GlassCastle(s) or ShatteredCastle(s)."
+  }
+}

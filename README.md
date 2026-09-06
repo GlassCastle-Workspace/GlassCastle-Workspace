@@ -61,6 +61,18 @@ ShatteredCastle(s) implements David J. Bianco's revised Pyramid of Pain as a thi
 
 The composition follows Bianco's own kill-chain guidance: indicators can be explicitly bound to UKC phases to build a detection plan, while explicit Pyramid-to-Diamond bindings preserve event context. ShatteredCastle(s) never guesses an indicator type from its value and never converts a Pyramid tier into a numeric adversary-cost claim.
 
+### MITRE ATT&CK® adversary-behavior lens
+
+ShatteredCastle(s) integrates **MITRE ATT&CK® v19.2** as a separate behavior taxonomy. ATT&CK tactics represent adversary goals, techniques represent how those goals are pursued, and sub-techniques provide lower-level behavior descriptions. The local compact catalog covers Enterprise, Mobile, and ICS while preserving exact ATT&CK identifiers, tactic membership, platforms, parent relationships, object versions, modification times, and source hashes.
+
+- Public model/API: `https://glasscastles.vercel.app/api/v1/attack`
+- Offline utility: `node tools/attack-engine.mjs model`
+- Model audit: [ATTACK-AUDIT.md](ATTACK-AUDIT.md)
+
+ATT&CK selectors are exact-only. ShatteredCastle(s) does not classify free text, scanner findings, topology labels, or telemetry into ATT&CK techniques automatically. Cross-model bindings to UKC, Diamond, and Pyramid are explicit-only; ATT&CK context does not change authorization, proof thresholds, severity, or BlastRadial impact scores.
+
+© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE does not endorse GlassCastle(s) or ShatteredCastle(s). See the MITRE ATT&CK Terms of Use for license details.
+
 ## Public front doors
 
 - **GlassCastle(s)** — https://glasscastles.vercel.app/
