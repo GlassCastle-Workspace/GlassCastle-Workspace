@@ -1,0 +1,141 @@
+{
+  "contract": "shatteredcastles.d3fend.acceptance.v1",
+  "generated_at": "2026-09-06T18:24:27.115Z",
+  "source_model": "shatteredcastles.d3fend.model.v1",
+  "model_version": "1.6.0",
+  "model_digest_sha256": "599f6f4c0b5db7f614b6d63322f1c6e637fe00c3567605677d9ce4a5469afdc3",
+  "catalog_digest_sha256": "e92ca2fc2e10d98da6147372c5956850c9004f98f123911948b56aa2d4f76baf",
+  "model": {
+    "counts": {
+      "defensive_tactics": 7,
+      "defensive_techniques": 271,
+      "inferred_mapping_pairs": 4133,
+      "top_level_technique_families": 30
+    },
+    "ontology_ttl_sha256": "4909a5bb66b75d2c359624398848936fb56a6b246bcd5cfcd277977a1277753a",
+    "mapping_attack_version": "v19.0",
+    "current_attack_version": "v19.2",
+    "full_mappings_are_inferred_relationships": true
+  },
+  "attack_behavior": {
+    "technique_ids": [
+      "T1003.001"
+    ],
+    "tactic_ids": [
+      "TA0006"
+    ]
+  },
+  "inferred_mapping": {
+    "attack_id": "T1003.001",
+    "candidate_count": 12,
+    "selected_candidate": {
+      "d3fend_id": "D3-ABPI",
+      "d3fend_name": "Application-based Process Isolation",
+      "tactics": [
+        "Isolate"
+      ]
+    },
+    "relationships_are_inferred": true,
+    "candidates_are_not_prescriptions": true
+  },
+  "explicit_selection": {
+    "defense_id": "def-abpi",
+    "technique_ids": [
+      "D3-ABPI"
+    ],
+    "status": "planned",
+    "implementation_does_not_imply_effectiveness": true,
+    "binding_basis": "d3fend_inferred",
+    "candidate_pairs": [
+      {
+        "attack_id": "T1003.001",
+        "d3fend_id": "D3-ABPI"
+      }
+    ],
+    "binding_explicit": true
+  },
+  "alignment": {
+    "explicit_overlap_present": true,
+    "inferred_candidate_overlap_is_not_coverage_proof": true
+  },
+  "negative_controls": {
+    "free_text_unresolved": [
+      "isolate LSASS somehow"
+    ],
+    "retired_attack_selector_rejected": true,
+    "retired_attack_selector_error": "Unresolved current ATT&CK selector(s): T1562.001",
+    "mobile_mapping_candidate_count": 0,
+    "mobile_mapping_remains_unknown": true
+  },
+  "kork": {
+    "annotations": 1,
+    "unannotated_defense_like_node_inferred": false,
+    "export_annotations": 1
+  },
+  "shatterassay": {
+    "inferred_annotations": 0
+  },
+  "witness": {
+    "authorization_reset": true,
+    "required_confirmations": 2,
+    "claim_ready": true,
+    "technique_ids": [
+      "D3-ABPI"
+    ],
+    "proof_effect": "none",
+    "effectiveness_inferred": false
+  },
+  "blast": {
+    "d3fend": {
+      "artifacts": 1,
+      "defenses": 1,
+      "technique_ids": [
+        "D3-ABPI"
+      ],
+      "tactics": [
+        "Isolate"
+      ],
+      "statuses": [
+        "planned"
+      ],
+      "inferred_candidate_pairs": 0,
+      "score_effect": "none",
+      "severity_effect": "none",
+      "effectiveness_inferred": false
+    },
+    "critical_path_impact_before": 0.5225,
+    "critical_path_impact_after": 0.5225,
+    "impact_unchanged": true
+  },
+  "console": {
+    "d3fend": {
+      "artifacts": 1,
+      "defenses": 1,
+      "technique_ids": [
+        "D3-ABPI"
+      ],
+      "tactics": [
+        "Isolate"
+      ],
+      "statuses": [
+        "planned"
+      ],
+      "score_effect": "none",
+      "severity_effect": "none",
+      "effectiveness_inferred": false
+    },
+    "findings": 0,
+    "validated": 0,
+    "remediation_queue_before": 1,
+    "remediation_queue_after": 1,
+    "remediation_queue_unchanged": true
+  },
+  "boundaries": {
+    "automatic_remediation": false,
+    "automatic_authorization": false,
+    "effectiveness_inferred": false,
+    "proof_effect": "none",
+    "impact_score_effect": "none",
+    "severity_effect": "none"
+  }
+}

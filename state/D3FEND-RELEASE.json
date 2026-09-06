@@ -1,0 +1,188 @@
+{
+  "contract": "shatteredcastles.d3fend.release.v1",
+  "version": "1.0.0",
+  "released_at": "2026-09-06T18:28:55Z",
+  "suite": "ShatteredCastle(s)",
+  "company": "GlassCastle(s)",
+  "source": {
+    "name": "MITRE D3FEND",
+    "ontology_version": "1.6.0",
+    "released": "2026-08-31",
+    "ontology_json": {
+      "sha256": "e1546d432c6aa64d45b62dd9e9484b0774ae84de7ff3605ff9dd4e20278957bf",
+      "bytes": 4833645
+    },
+    "ontology_ttl": {
+      "sha256": "4909a5bb66b75d2c359624398848936fb56a6b246bcd5cfcd277977a1277753a",
+      "bytes": 3862115
+    },
+    "full_mappings_json": {
+      "sha256": "098e48e2c6de532ac37be6ecdd532da6bb78e85906927c2bcc78b53c45cfe04f",
+      "bytes": 60304720,
+      "relationship_semantics": "inferred"
+    },
+    "mapping_attack_version": "v19.0",
+    "current_shatteredcastle_attack_version": "v19.2",
+    "raw_source_policy": "Raw MITRE D3FEND source is retained outside the repository and used to regenerate the compact catalog.",
+    "builder": "tools/build-d3fend-catalog.py"
+  },
+  "model": {
+    "contract": "shatteredcastles.d3fend.model.v1",
+    "version": "1.6.0",
+    "defensive_tactics": 7,
+    "top_level_technique_families": 30,
+    "defensive_techniques": 271,
+    "inferred_mapping_pairs": 4133,
+    "model_digest_sha256": "599f6f4c0b5db7f614b6d63322f1c6e637fe00c3567605677d9ce4a5469afdc3",
+    "catalog_digest_sha256": "e92ca2fc2e10d98da6147372c5956850c9004f98f123911948b56aa2d4f76baf",
+    "compact_catalog": "site/data/d3fend-1.6.0.json",
+    "compact_catalog_sha256": "6ffe35bc62436c01fcd50ee70534ffa94e0ca075bb659f92fae02959c5398677",
+    "compact_catalog_bytes": 2250523,
+    "public_endpoint": "https://glasscastles.vercel.app/api/v1/d3fend"
+  },
+  "mapping": {
+    "enterprise": {
+      "source_attack_ids": 326,
+      "current_exact_ids": 311,
+      "inferred_pairs": 3237
+    },
+    "ics": {
+      "source_attack_ids": 66,
+      "current_exact_ids": 58,
+      "inferred_pairs": 690
+    },
+    "sparta": {
+      "source_attack_ids": 35,
+      "inferred_pairs": 206
+    },
+    "mobile": {
+      "source_rows": 0,
+      "semantics": "mapping knowledge gap; no fabricated candidates"
+    }
+  },
+  "composition": {
+    "attack": {
+      "contract": "shatteredcastles.attack.model.v1",
+      "current_version": "v19.2",
+      "d3fend_mapping_version": "v19.0",
+      "join": "exact current ATT&CK external ID only"
+    },
+    "d3fend": {
+      "role": "defensive countermeasure knowledge graph",
+      "inferred_relationships": "candidates only"
+    },
+    "workflow": [
+      "scope",
+      "discover",
+      "assess",
+      "validate",
+      "impact",
+      "remediate"
+    ]
+  },
+  "tests": {
+    "scope": "13/13",
+    "kork": "8/8",
+    "shatterassay": "70/70",
+    "glasswitness": "24/24",
+    "blastradial": "9/9",
+    "console": "13/13",
+    "umbrella": "50/50",
+    "total": "187/187"
+  },
+  "visual_qa": {
+    "desktop": {
+      "viewport": 1440,
+      "document_width": 1440,
+      "overflow_offenders": 0,
+      "tactic_cells": 7,
+      "stat_cards": 3
+    },
+    "mobile": {
+      "viewport": 390,
+      "document_width": 390,
+      "overflow_offenders": 0,
+      "tactic_cells": 7,
+      "stat_cards": 3
+    },
+    "inferred_candidate_copy": true,
+    "no_magic_remediation_copy": true,
+    "copyright_notice_present": true
+  },
+  "acceptance": {
+    "artifact": "state/D3FEND-ACCEPTANCE.json",
+    "sha256": "8c50a6cc50e98313126a8b50bb108b9568a20979da274d7f699e030f5f8ad2ec",
+    "attack_selector": "T1003.001",
+    "inferred_candidate_count": 12,
+    "selected_d3fend": "D3-ABPI",
+    "binding_basis": "d3fend_inferred",
+    "free_text_unresolved": true,
+    "retired_attack_selector_rejected": true,
+    "mobile_mapping_remains_unknown": true,
+    "kork_unannotated_defense_inferred": false,
+    "shatterassay_inferred_annotations": 0,
+    "witness_authorization_reset": true,
+    "witness_required_confirmations": 2,
+    "witness_effectiveness_inferred": false,
+    "blast_impact_unchanged": true,
+    "blast_score_effect": "none",
+    "blast_severity_effect": "none",
+    "console_remediation_queue_unchanged": true
+  },
+  "production": {
+    "public_conformance": "PASS",
+    "conformance_checked_at": "2026-09-06T18:26:54.120Z",
+    "live_smoke": {
+      "attack_id": "T1003.001",
+      "candidate_count": 12,
+      "selected_candidate_available": "D3-ABPI",
+      "defense_status": "planned",
+      "catalog_sha256_matches_source": true
+    },
+    "deployments": {
+      "scope": "https://scopesentinel-saas-7xttt6jea-glass-castle.vercel.app",
+      "discover": "https://kork-saas-h0b4du7xk-glass-castle.vercel.app",
+      "assess": "https://glasscastle-launchguard-3w60s2ain-glass-castle.vercel.app",
+      "validate": "https://glasswitness-saas-814507tu5-glass-castle.vercel.app",
+      "impact": "https://blastradial-saas-4plcfx0ov-glass-castle.vercel.app",
+      "remediate": "https://glasscastle-investigation-console-ipc1iswzh-glass-castle.vercel.app",
+      "hub": "https://glasscastles-1sklax2uk-glass-castle.vercel.app"
+    },
+    "canonical_aliases": {
+      "scope": "https://scopesentinel-saas.vercel.app",
+      "discover": "https://kork-saas.vercel.app",
+      "assess": "https://glasscastle-launchguard.vercel.app",
+      "validate": "https://glasswitness-saas.vercel.app",
+      "impact": "https://blastradial-saas.vercel.app",
+      "remediate": "https://glasscastle-investigation-console.vercel.app",
+      "hub": "https://glasscastles.vercel.app"
+    }
+  },
+  "stage_commits": {
+    "scope": "8c27440",
+    "assess": "27febb1",
+    "validate": "6717818",
+    "discover": "local Vercel deploy tree",
+    "impact": "local Vercel deploy tree",
+    "remediate": "local Vercel deploy tree"
+  },
+  "boundaries": [
+    "D3FEND full mappings are treated as inferred candidate relationships, not prescriptions.",
+    "Exact current ATT&CK ID joins only; v19.0-only identifiers are refused by the v19.2 bridge.",
+    "No free-text defensive-technique classification.",
+    "No automatic remediation selection.",
+    "Implemented or planned D3FEND status does not imply effectiveness.",
+    "No authorization expansion.",
+    "No GlassWitness proof-threshold changes.",
+    "No BlastRadial impact-score or severity changes.",
+    "No remediation-queue inflation from D3FEND context.",
+    "Missing Mobile mapping remains unknown rather than fabricated coverage.",
+    "No target-network action in the D3FEND model API."
+  ],
+  "legal": {
+    "copyright": "\u00a9 2025 The MITRE Corporation.",
+    "trademark": "MITRE D3FEND\u2122 and the D3FEND logo are trademarks of The MITRE Corporation.",
+    "license_notice": "D3FEND use is subject to MITRE D3FEND Terms of Use; see D3FEND-NOTICE.md.",
+    "endorsement": "MITRE does not endorse GlassCastle(s) or ShatteredCastle(s)."
+  }
+}

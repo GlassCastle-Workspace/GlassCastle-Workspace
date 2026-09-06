@@ -73,6 +73,17 @@ ATT&CK selectors are exact-only. ShatteredCastle(s) does not classify free text,
 
 © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE does not endorse GlassCastle(s) or ShatteredCastle(s). See the MITRE ATT&CK Terms of Use for license details.
 
+### MITRE D3FEND™ defensive-technique lens
+
+ShatteredCastle(s) integrates **MITRE D3FEND™ ontology 1.6.0** as the defensive countermeasure knowledge-graph lens. Its seven defensive tactics are preserved in ontology order: **Model → Harden → Detect → Isolate → Deceive → Evict → Restore**. The compact catalog contains 271 defensive techniques across 30 top-level technique families.
+
+- Public model/API: `https://glasscastles.vercel.app/api/v1/d3fend`
+- Offline utility: `node tools/d3fend-engine.mjs model`
+- Model audit: [D3FEND-AUDIT.md](D3FEND-AUDIT.md)
+- License/trademark notice: [D3FEND-NOTICE.md](D3FEND-NOTICE.md)
+
+D3FEND's downloadable full mappings are explicitly treated as inferred knowledge-graph relationships. ShatteredCastle(s) returns them as defensive **candidates**, never automatic prescriptions or effectiveness claims. D3FEND 1.6.0's ATT&CK mapping substrate is v19.0 while ShatteredCastle ATT&CK is v19.2, so cross-version joins require an exact current ATT&CK external ID. Mobile has no rows in the D3FEND 1.6.0 full inferred mapping file and remains an explicit knowledge gap.
+
 ## Public front doors
 
 - **GlassCastle(s)** — https://glasscastles.vercel.app/
