@@ -1,0 +1,63 @@
+{
+  "contract": "glasscastles.fabric.deployment-manifest.v1",
+  "team_id": "team_WvVOluTlm0VvPNr4wZH5vThL",
+  "workflow": ["scope","discover","assess","validate","impact","remediate"],
+  "projects": [
+    {
+      "stage": "scope",
+      "name": "ScopeSentinel",
+      "local_root": "~/Desktop/ScopeSentinel-SaaS",
+      "project_name": "scopesentinel-saas",
+      "project_id": "prj_hoKYAG2pXZSkp6bX4zYKVOABTiip",
+      "production_url": "https://scopesentinel-saas.vercel.app"
+    },
+    {
+      "stage": "discover",
+      "name": "Kork",
+      "local_root": "~/Desktop/Kork-SaaS",
+      "project_name": "kork-saas",
+      "project_id": "prj_vfHnp4sljjIohOLcdlg5g4GoL4SQ",
+      "production_url": "https://kork-saas.vercel.app"
+    },
+    {
+      "stage": "assess",
+      "name": "ShatteredCastle(s)",
+      "local_root": "~/Desktop/LaunchGuard-SaaS",
+      "project_name": "glasscastle-launchguard",
+      "project_id": "prj_8kcjUcNpbyE0PlTOugiDrKWFUWlx",
+      "production_url": "https://glasscastle-launchguard.vercel.app"
+    },
+    {
+      "stage": "validate",
+      "name": "GlassWitness",
+      "local_root": "~/Desktop/GlassWitness-SaaS",
+      "project_name": "glasswitness-saas",
+      "project_id": "prj_jZMCzB7YmujKyKhjBk8L56cbLoGg",
+      "production_url": "https://glasswitness-saas.vercel.app"
+    },
+    {
+      "stage": "impact",
+      "name": "BlastRadial",
+      "local_root": "~/Desktop/BlastRadial-SaaS",
+      "project_name": "blastradial-saas",
+      "project_id": "prj_IF5b3hXmOAWamWUKy3UMITotMcvC",
+      "production_url": "https://blastradial-saas.vercel.app"
+    },
+    {
+      "stage": "remediate",
+      "name": "Investigation Console",
+      "local_root": "~/Desktop/GlassCastle-Console-SaaS",
+      "project_name": "glasscastle-investigation-console",
+      "project_id": "prj_2Bbbt9M3ogTMzCDtI3gGkiGO0qgi",
+      "production_url": "https://glasscastle-investigation-console.vercel.app"
+    },
+    {
+      "stage": "hub",
+      "name": "GlassCastle(s) Public Hub",
+      "local_root": "~/Desktop/GlassCastle-Workspace/site",
+      "project_name": "glasscastles",
+      "project_id": "prj_zfPwujaTmWhzqtYQ4zhKvSF7tacu",
+      "production_url": "https://glasscastles.vercel.app"
+    }
+  ]
+}
