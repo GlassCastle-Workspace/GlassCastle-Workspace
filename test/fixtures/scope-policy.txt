@@ -1,0 +1,5 @@
+Testing is allowed only on assets listed in structured scope.
+Automation is permitted up to 100 requests per minute.
+Social engineering is prohibited.
+Do not test admin.example.com.
+Only interact with accounts you own or have explicit permission to use.
