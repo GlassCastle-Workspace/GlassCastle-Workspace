@@ -2,7 +2,7 @@
 
 ## Security Through Visibility
 
-**[glasscastles.vercel.app](https://glasscastles.vercel.app/) · [Security policy](SECURITY.md) · [Sec-TP RC1](https://glasscastle-sectp.vercel.app/)**
+**[glasscastles.vercel.app](https://glasscastles.vercel.app/) · [Public assets](PUBLIC-ASSETS.md) · [Security policy](SECURITY.md) · [Sec-TP RC1](https://glasscastle-sectp.vercel.app/)**
 
 **GlassCastle(s) makes complex systems visible enough to inspect, understand, and improve.**
 
@@ -106,6 +106,7 @@ A DML number is never accepted as an organization-wide maturity claim by itself.
 - **Investigation Console · Remediate** — https://glasscastle-investigation-console.vercel.app/
 - **Sec-TP RC1 · Secure capability transport** — https://glasscastle-sectp.vercel.app/
 - **Web3 Launch Readiness · Bounded evidence service** — https://web3-launch-readiness.vercel.app/
+- **Torus OSINT · Public OSINT/OSR research surface** — https://torus-osint.vercel.app/
 
 The public visual system uses **Roboto Mono**, void-black surfaces, emerald signal (`#35ff95`), violet boundary (`#9a6cff`), and evidence-first hierarchy across the live product family.
 
