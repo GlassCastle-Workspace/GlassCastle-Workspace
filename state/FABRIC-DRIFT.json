@@ -1,25 +1,44 @@
 {
   "contract": "glasscastles.fabric.drift.v1",
-  "observed_at": "2026-09-06T10:55:34Z",
+  "observed_at": "2026-09-06T11:27:12Z",
   "source": {
-    "commit": "07bb639395ab99d881e7a2c6155e2beddbbe96c6",
+    "commit": "a618cca4d0882c6723dccd8e3d81d85a0314c59b",
     "workflow": ["scope","discover","assess","validate","impact","remediate"],
-    "conformance": "PASS"
+    "conformance": "PASS",
+    "deployment_manifest": "state/FABRIC-DEPLOYMENT-MANIFEST.json",
+    "deployment_manifest_tests": "PASS"
   },
   "production": {
     "registry_url": "https://glasscastles.vercel.app/api/v1/fabric",
     "observed_workflow": ["discover","assess","validate","impact","remediate"],
     "conformance": "FAIL",
-    "missing_stages": ["scope"]
+    "missing_stages": ["scope"],
+    "last_conformance_run": 34030284670
   },
   "scope_service": {
     "url": "https://scopesentinel-saas.vercel.app",
-    "status": "deployed_and_previously_smoke_verified"
+    "status": "HEALTHY",
+    "capabilities": "PASS",
+    "contract_drift_semantics": "PASS",
+    "allow_block_rate_semantics": "PASS",
+    "fail_closed_execution_envelope": "PASS",
+    "owned_scope_to_shattered_handoff": "PASS",
+    "authorization_boundary": "ScopeSentinel envelope begins authorized=false and requires an explicit authorization assertion before execution."
+  },
+  "handoff": {
+    "contract": "glasscastles.scoped-assessment.v1",
+    "owned_target": "https://glasscastles.vercel.app",
+    "request_ceiling": 4,
+    "scope_preflight": "ALLOW",
+    "authorization_explicit": true,
+    "shattered_assessment": "PASS"
   },
   "recovery": [
-    "Deploy canonical GlassCastle workspace source to the glasscastles Vercel project.",
-    "Deploy staged Scope navigation and Console bridge changes from the GlassCastle workstation when reachable.",
-    "Re-run Fabric Conformance and require both source-contract and public-contract jobs to pass."
+    "Reconnect the GlassCastle workstation / Remote Desktop Commander.",
+    "Run tools/fabric-deploy-preflight.mjs and require every local .vercel/project.json to match state/FABRIC-DEPLOYMENT-MANIFEST.json.",
+    "Reconcile local staged app-shell changes with newer canonical GitHub source before deploying.",
+    "Deploy Kork, ShatteredCastle(s), GlassWitness, BlastRadial, Investigation Console, and the public hub/registry to their manifest-bound Vercel projects.",
+    "Re-run Fabric Conformance and require every job, including public-contract, to pass before clearing drift."
   ],
-  "claim": "Canonical source is six-stage; production registry was observed as five-stage by GitHub Actions."
+  "claim": "ScopeSentinel and its owned-target Scope-to-Shattered handoff are healthy; the remaining observed defect is production parent-registry/app-shell convergence."
 }
