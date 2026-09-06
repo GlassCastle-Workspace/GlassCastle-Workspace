@@ -1,0 +1,13 @@
+{
+  "scopes": [
+    {
+      "id": "gc-owned-1",
+      "asset_type": "URL",
+      "asset_identifier": "glasscastles.vercel.app",
+      "eligible_for_submission": true,
+      "eligible_for_bounty": true,
+      "max_severity": "critical",
+      "instruction": "Only this exact GlassCastle-owned host is authorized for this CI smoke."
+    }
+  ]
+}
