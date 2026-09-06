@@ -84,6 +84,16 @@ ShatteredCastle(s) integrates **MITRE D3FEND™ ontology 1.6.0** as the defensiv
 
 D3FEND's downloadable full mappings are explicitly treated as inferred knowledge-graph relationships. ShatteredCastle(s) returns them as defensive **candidates**, never automatic prescriptions or effectiveness claims. D3FEND 1.6.0's ATT&CK mapping substrate is v19.0 while ShatteredCastle ATT&CK is v19.2, so cross-version joins require an exact current ATT&CK external ID. Mobile has no rows in the D3FEND 1.6.0 full inferred mapping file and remains an explicit knowledge gap.
 
+### Detection Maturity Level · Stillions 2014
+
+ShatteredCastle(s) implements Ryan Stillions' original **Detection Maturity Level (DML)** model as the detection-abstraction and evidence-backed maturity lens. The original ladder contains DML-0 through DML-8: None/Unknown, Atomic Indicators, Host & Network Artifacts, Tools, Procedures, Techniques, Tactics, Strategy, and Goals. The later DML-9 Identity extension is deliberately excluded from this v1 so detection maturity never becomes automatic actor attribution.
+
+- Public model/API: `https://glasscastles.vercel.app/api/v1/dml`
+- Offline utility: `node tools/dml-engine.mjs model`
+- Model audit: [DML-AUDIT.md](DML-AUDIT.md)
+
+A DML number is never accepted as an organization-wide maturity claim by itself. ShatteredCastle only marks a detection record `demonstrated=true` when its supplied evidence shows that the stated scope can **consume** the relevant threat information, **detect** it, and **act** on it, with validated/deployed status. Assessments are input-bound and non-cumulative: one DML-6 analytic does not prove DML-6 organizational maturity or complete DML-1 through DML-5 coverage.
+
 ## Public front doors
 
 - **GlassCastle(s)** — https://glasscastles.vercel.app/

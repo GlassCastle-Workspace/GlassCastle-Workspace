@@ -1,0 +1,158 @@
+{
+  "contract": "shatteredcastles.dml.acceptance.v1",
+  "generated_at": "2026-09-06T18:43:28.901Z",
+  "source_model": "shatteredcastles.dml.model.v1",
+  "model_version": "Stillions-2014-original",
+  "model_digest_sha256": "8a700d26790908acb9b268a6340d2fc8c8d5be26e84b030c72ce4b417ed11be9",
+  "model": {
+    "levels": 9,
+    "range": [
+      0,
+      8
+    ],
+    "identity_extension_excluded": true,
+    "detection_not_prevention": true
+  },
+  "explicitness": {
+    "missing_level_rejected": true,
+    "missing_level_error": "DML level must be explicit from 0 through 8: missing",
+    "explicit_dml0": {
+      "level": 0,
+      "id": "DML-0"
+    }
+  },
+  "semantic_bridges": {
+    "attack_technique": {
+      "source_id": "T1059.001",
+      "candidate_levels": [
+        5
+      ]
+    },
+    "attack_tactic": {
+      "source_id": "TA0002",
+      "candidate_levels": [
+        6
+      ]
+    },
+    "free_text_unresolved": [
+      "PowerShell behavior maybe"
+    ],
+    "pyramid_ttp_candidate_levels": [
+      4,
+      5,
+      6
+    ],
+    "candidate_levels_only": true
+  },
+  "assessment": {
+    "scope_type": "program",
+    "highest_present_level": 6,
+    "highest_demonstrated_level": 5,
+    "demonstrated_levels": [
+      5
+    ],
+    "undemonstrated_present_levels": [
+      6
+    ],
+    "det5": {
+      "level": 5,
+      "status": "validated",
+      "demonstrated": true,
+      "requirements": {
+        "validated_or_deployed": true,
+        "consume_capability_with_evidence": true,
+        "detection_evidence": true,
+        "action_capability_with_evidence": true
+      }
+    },
+    "det6": {
+      "level": 6,
+      "status": "designed",
+      "demonstrated": false,
+      "requirements": {
+        "validated_or_deployed": false,
+        "consume_capability_with_evidence": true,
+        "detection_evidence": false,
+        "action_capability_with_evidence": false
+      }
+    },
+    "non_cumulative": true,
+    "no_weighted_score": true
+  },
+  "scope_boundary": {
+    "analytic_dml8_highest_demonstrated": 8,
+    "analytic_scope_type": "analytic",
+    "organization_wide_not_inferred": true
+  },
+  "composition": {
+    "bindings": 1,
+    "binding_explicit": true,
+    "binding_does_not_assign_level": true
+  },
+  "kork": {
+    "annotations": 1,
+    "unannotated_dml_like_node_inferred": false,
+    "demonstrated_certified_by_kork": false,
+    "export_annotations": 1
+  },
+  "shatterassay": {
+    "inferred_annotations": 0
+  },
+  "witness": {
+    "authorization_reset": true,
+    "required_confirmations": 2,
+    "claim_ready": true,
+    "highest_present_level": 6,
+    "highest_demonstrated_level": 5,
+    "proof_effect": "none",
+    "maturity_recomputed": false,
+    "organization_wide_inferred": false
+  },
+  "blast": {
+    "dml": {
+      "artifacts": 1,
+      "detections": 2,
+      "highest_present_level": 6,
+      "highest_demonstrated_level": 5,
+      "demonstrated_detections": 1,
+      "score_effect": "none",
+      "severity_effect": "none",
+      "maturity_recomputed": false,
+      "organization_wide_inferred": false
+    },
+    "critical_path_impact_before": 0.5225,
+    "critical_path_impact_after": 0.5225,
+    "impact_unchanged": true
+  },
+  "console": {
+    "dml": {
+      "artifacts": 1,
+      "detections": 2,
+      "demonstrated_detections": 1,
+      "highest_present_level": 6,
+      "highest_demonstrated_level": 5,
+      "scope_types": [
+        "program"
+      ],
+      "score_effect": "none",
+      "severity_effect": "none",
+      "maturity_recomputed": false,
+      "organization_wide_inferred": false
+    },
+    "findings": 0,
+    "validated": 0,
+    "remediation_queue_before": 1,
+    "remediation_queue_after": 1,
+    "remediation_queue_unchanged": true
+  },
+  "boundaries": {
+    "automatic_dml_assignment": false,
+    "automatic_organization_maturity": false,
+    "automatic_attribution": false,
+    "prevention_claim": false,
+    "proof_effect": "none",
+    "impact_score_effect": "none",
+    "severity_effect": "none",
+    "remediation_priority_effect": "none"
+  }
+}

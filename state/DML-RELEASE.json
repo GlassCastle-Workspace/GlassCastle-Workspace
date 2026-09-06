@@ -1,0 +1,188 @@
+{
+  "contract": "shatteredcastles.dml.release.v1",
+  "version": "1.0.0",
+  "released_at": "2026-09-06T18:50:08Z",
+  "suite": "ShatteredCastle(s)",
+  "company": "GlassCastle(s)",
+  "source": {
+    "name": "Detection Maturity Level",
+    "author": "Ryan Stillions",
+    "published": "2014-04-21",
+    "version": "Stillions-2014-original",
+    "source_url": "https://ryanstillions.blogspot.com/2014/04/the-dml-model_21.html",
+    "levels": "DML-0 through DML-8",
+    "later_identity_extension_included": false
+  },
+  "model": {
+    "contract": "shatteredcastles.dml.model.v1",
+    "version": "Stillions-2014-original",
+    "levels": 9,
+    "model_digest_sha256": "8a700d26790908acb9b268a6340d2fc8c8d5be26e84b030c72ce4b417ed11be9",
+    "public_endpoint": "https://glasscastles.vercel.app/api/v1/dml"
+  },
+  "composition": {
+    "attack": {
+      "contract": "shatteredcastles.attack.model.v1",
+      "technique_candidate_level": 5,
+      "tactic_candidate_level": 6,
+      "bridge": "semantic-candidate-only"
+    },
+    "pyramid": {
+      "contract": "shatteredcastles.pyramid.model.v1",
+      "bridge": "semantic-candidate-only",
+      "ttp_candidate_levels": [
+        4,
+        5,
+        6
+      ]
+    },
+    "dml": {
+      "role": "detection semantic abstraction and evidence-backed maturity",
+      "demonstration_rule": "validated/deployed + consume evidence + detection evidence + act evidence"
+    },
+    "workflow": [
+      "scope",
+      "discover",
+      "assess",
+      "validate",
+      "impact",
+      "remediate"
+    ]
+  },
+  "tests": {
+    "scope": "13/13",
+    "kork": "9/9",
+    "shatterassay": "70/70",
+    "glasswitness": "25/25",
+    "blastradial": "10/10",
+    "console": "15/15",
+    "umbrella": "59/59",
+    "total": "201/201"
+  },
+  "visual_qa": {
+    "desktop": {
+      "viewport": 1440,
+      "document_width": 1440,
+      "overflow_offenders": 0,
+      "rungs": 9,
+      "proof_cards": 3
+    },
+    "mobile": {
+      "viewport": 390,
+      "document_width": 390,
+      "overflow_offenders": 0,
+      "rungs": 9,
+      "proof_cards": 3
+    },
+    "consume_detect_act_copy": true,
+    "non_cumulative_copy": true,
+    "maturity_without_make_believe_copy": true
+  },
+  "acceptance": {
+    "artifact": "state/DML-ACCEPTANCE.json",
+    "sha256": "daee512d0fefed72462bbac6b1ac44835b55994a5be9c555643235c91d71c518",
+    "missing_level_rejected": true,
+    "explicit_dml0_supported": true,
+    "attack_technique_candidate": [
+      5
+    ],
+    "attack_tactic_candidate": [
+      6
+    ],
+    "pyramid_ttp_candidates": [
+      4,
+      5,
+      6
+    ],
+    "highest_present_level": 6,
+    "highest_demonstrated_level": 5,
+    "demonstrated_levels": [
+      5
+    ],
+    "undemonstrated_present_levels": [
+      6
+    ],
+    "analytic_dml8_not_organization_wide": true,
+    "kork_inference": false,
+    "shatterassay_inferred_annotations": 0,
+    "witness_authorization_reset": true,
+    "witness_required_confirmations": 2,
+    "witness_maturity_recomputed": false,
+    "blast_impact_unchanged": true,
+    "blast_score_effect": "none",
+    "blast_severity_effect": "none",
+    "console_remediation_queue_unchanged": true
+  },
+  "production": {
+    "public_conformance": "PASS",
+    "conformance_checked_at": "2026-09-06T18:52:21.936Z",
+    "initial_conformance_transport_note": "First public conformance attempt hit a transient hub connect timeout; direct probes recovered and the subsequent full public conformance passed.",
+    "live_smoke": {
+      "scope_type": "program",
+      "highest_present_level": 6,
+      "highest_demonstrated_level": 5,
+      "demonstrated_levels": [
+        5
+      ],
+      "undemonstrated_present_levels": [
+        6
+      ],
+      "non_cumulative": true,
+      "no_weighted_score": true,
+      "attack_technique_candidate": [
+        5
+      ],
+      "attack_tactic_candidate": [
+        6
+      ]
+    },
+    "deployments": {
+      "scope": "https://scopesentinel-saas-9z2kx3ost-glass-castle.vercel.app",
+      "discover": "https://kork-saas-dmbt6skwp-glass-castle.vercel.app",
+      "assess": "https://glasscastle-launchguard-oipzz0ka6-glass-castle.vercel.app",
+      "validate": "https://glasswitness-saas-7vvr254hj-glass-castle.vercel.app",
+      "impact": "https://blastradial-saas-qdfl724pj-glass-castle.vercel.app",
+      "remediate": "https://glasscastle-investigation-console-kt58oa5vf-glass-castle.vercel.app",
+      "hub": "https://glasscastles-9gs8sienw-glass-castle.vercel.app"
+    },
+    "canonical_aliases": {
+      "scope": "https://scopesentinel-saas.vercel.app",
+      "discover": "https://kork-saas.vercel.app",
+      "assess": "https://glasscastle-launchguard.vercel.app",
+      "validate": "https://glasswitness-saas.vercel.app",
+      "impact": "https://blastradial-saas.vercel.app",
+      "remediate": "https://glasscastle-investigation-console.vercel.app",
+      "hub": "https://glasscastles.vercel.app"
+    },
+    "coexistence": {
+      "rebased_on_canonical_commit": "7e0f387",
+      "canonical_change": "Publish Secret Tunnel policy routes",
+      "secret_tunnel_routes": {
+        "/secret-tunnel/privacy/": 200,
+        "/secret-tunnel/terms/": 200,
+        "/secret-tunnel/support/": 200
+      },
+      "dml_digest_preserved": "8a700d26790908acb9b268a6340d2fc8c8d5be26e84b030c72ce4b417ed11be9"
+    }
+  },
+  "stage_commits": {
+    "scope": "7212005",
+    "assess": "3485741",
+    "validate": "3bee2a6",
+    "discover": "local Vercel deploy tree",
+    "impact": "local Vercel deploy tree",
+    "remediate": "local Vercel deploy tree"
+  },
+  "boundaries": [
+    "DML level must be explicitly supplied; missing does not become DML-0.",
+    "No automatic DML assignment from ATT&CK, Pyramid, free text, scanner findings, telemetry, or topology.",
+    "DML-0 is explicit None/Unknown, not a parser default.",
+    "A present level is not a demonstrated maturity claim.",
+    "Demonstrated maturity requires validated/deployed status plus consume, detect, and act evidence.",
+    "Assessments are input-bound and non-cumulative.",
+    "A high-level analytic does not imply lower-level coverage.",
+    "No organization-wide maturity claim unless the assessment is explicitly organization-scoped.",
+    "The later DML-9 Identity extension is excluded from v1; no automatic attribution.",
+    "No prevention, severity, GlassWitness proof-threshold, BlastRadial impact-score, or remediation-priority effect."
+  ]
+}

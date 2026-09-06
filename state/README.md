@@ -4,6 +4,7 @@ Machine-readable public-source state that should survive chat/session boundaries
 
 ## Current records
 
+- `DML-RELEASE.json` / `DML-ACCEPTANCE.json` / `DML-SHA256SUMS.txt` — Detection Maturity Level integration release, evidence-backed acceptance, and integrity evidence.
 - `FABRIC-DRIFT.json` — canonical-vs-production Security Fabric conformance state.
 - `PYRAMID-RELEASE.json` / `PYRAMID-ACCEPTANCE.json` / `PYRAMID-SHA256SUMS.txt` — Pyramid of Pain integration release, cross-stage acceptance, and integrity evidence.
 - `ATTACK-RELEASE.json` / `ATTACK-ACCEPTANCE.json` / `ATTACK-SHA256SUMS.txt` — MITRE ATT&CK® v19.2 behavior-lens release, cross-stage acceptance, and integrity evidence.
