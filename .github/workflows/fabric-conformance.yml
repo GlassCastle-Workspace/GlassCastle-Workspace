@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: read
+  issues: write
 
 jobs:
   source-contract:
@@ -35,3 +36,22 @@ jobs:
           node-version: '22'
       - name: Verify live registry and stage capabilities
         run: node tools/fabric-conformance.mjs public
+
+  drift-ledger:
+    if: always()
+    needs: [source-contract, public-contract]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reconcile production drift issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          SOURCE_RESULT: ${{ needs.source-contract.result }}
+          PUBLIC_RESULT: ${{ needs.public-contract.result }}
+        run: |
+          set -e
+          if [ "$SOURCE_RESULT" = "success" ] && [ "$PUBLIC_RESULT" = "success" ]; then
+            gh issue close 1 --repo "$REPO" --reason completed --comment "Fabric Conformance is fully green. Canonical source and public six-stage fabric now agree. Auto-closing drift ledger from run $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" || true
+          else
+            gh issue reopen 1 --repo "$REPO" || true
+          fi
