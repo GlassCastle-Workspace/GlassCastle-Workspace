@@ -10,12 +10,33 @@ We build evidence-first security, connectivity, and analytical systems for peopl
 
 > **Evidence before assertion. Visibility before assumption.**
 
+## Security Fabric
+
+**Scope → Discover → Assess → Validate → Impact → Remediate**
+
+- **ScopeSentinel · Scope** — https://scopesentinel-saas.vercel.app/  
+  Compile program prose, structured scope, exclusions, rate limits, asset-identity mismatches, and unresolved ambiguities into a fail-closed execution contract.
+- **Kork · Discover** — https://kork-saas.vercel.app/  
+  Pin artifacts, map relationships, preserve provenance, and build an inspectable investigation topology.
+- **ShatteredCastle(s) · Assess** — https://glasscastle-launchguard.vercel.app/  
+  Perform bounded outside-in assessment and static research while enforcing the current scope envelope.
+- **GlassWitness · Validate** — https://glasswitness-saas.vercel.app/  
+  Turn controlled baselines, independent confirmations, negative controls, and evidence hashes into deterministic validation receipts.
+- **BlastRadial · Impact** — https://blastradial-saas.vercel.app/  
+  Model downstream propagation and identify relationship paths carrying the greatest consequence.
+- **Investigation Console · Remediate** — https://glasscastle-investigation-console.vercel.app/  
+  Bring scope, evidence, findings, validation, impact, claims, and remediation into one local-first investigation surface.
+
+The fabric is intentionally fail-closed: **unknown policy does not become permission, scanner output does not become proof, and proof does not silently rewrite impact.**
+
 ## Public front doors
 
 - **GlassCastle(s)** — https://glasscastles.vercel.app/
 - **GlassCastle(s) Mining Co.** — https://glasscastles-mining.vercel.app/
+- **ScopeSentinel · Scope** — https://scopesentinel-saas.vercel.app/
 - **Kork · Discover** — https://kork-saas.vercel.app/
 - **ShatteredCastle(s) · Assess** — https://glasscastle-launchguard.vercel.app/
+- **GlassWitness · Validate** — https://glasswitness-saas.vercel.app/
 - **BlastRadial · Impact** — https://blastradial-saas.vercel.app/
 - **Investigation Console · Remediate** — https://glasscastle-investigation-console.vercel.app/
 - **Sec-TP RC1 · Secure capability transport** — https://glasscastle-sectp.vercel.app/
