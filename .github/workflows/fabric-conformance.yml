@@ -90,6 +90,23 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Refuse assessment without explicit authorization assertion
+        run: |
+          set -e
+          if node tools/scoped-assess.mjs --program GlassCastle-Owned-CI --policy test/fixtures/owned-glasscastle-policy.txt --scope test/fixtures/owned-glasscastle-scope.json --target https://glasscastles.vercel.app --max-requests 4 >/tmp/noauth.out 2>/tmp/noauth.err; then
+            echo 'scoped-assess unexpectedly ran without explicit authorization' >&2
+            exit 1
+          fi
+          echo 'Missing authorization assertion blocked before handoff'
+      - name: Explicit authorization cannot override a ScopeSentinel BLOCK
+        run: |
+          set -e
+          if node tools/scoped-assess.mjs --program Demo --policy test/fixtures/scope-policy.txt --scope test/fixtures/scope-structured.json --target https://admin.example.com --authorized yes --max-requests 2 >/tmp/blocked.out 2>/tmp/blocked.err; then
+            echo 'scoped-assess unexpectedly overrode ScopeSentinel BLOCK' >&2
+            exit 1
+          fi
+          grep -q 'ScopeSentinel refused execution: BLOCK' /tmp/blocked.err
+          echo 'Policy BLOCK remains authoritative even with explicit authorization assertion'
       - name: Run owned-host scoped assessment through ScopeSentinel envelope
         run: |
           set -e
