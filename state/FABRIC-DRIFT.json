@@ -1,8 +1,8 @@
 {
   "contract": "glasscastles.fabric.drift.v1",
-  "observed_at": "2026-09-06T11:27:12Z",
+  "observed_at": "2026-09-06T12:01:20Z",
+  "state": "RESOLVED",
   "source": {
-    "commit": "a618cca4d0882c6723dccd8e3d81d85a0314c59b",
     "workflow": ["scope","discover","assess","validate","impact","remediate"],
     "conformance": "PASS",
     "deployment_manifest": "state/FABRIC-DEPLOYMENT-MANIFEST.json",
@@ -10,10 +10,12 @@
   },
   "production": {
     "registry_url": "https://glasscastles.vercel.app/api/v1/fabric",
-    "observed_workflow": ["discover","assess","validate","impact","remediate"],
-    "conformance": "FAIL",
-    "missing_stages": ["scope"],
-    "last_conformance_run": 34030284670
+    "observed_workflow": ["scope","discover","assess","validate","impact","remediate"],
+    "conformance": "PASS",
+    "missing_stages": [],
+    "conformance_run": 34031718828,
+    "issue": 1,
+    "issue_state": "CLOSED"
   },
   "scope_service": {
     "url": "https://scopesentinel-saas.vercel.app",
@@ -31,14 +33,11 @@
     "request_ceiling": 4,
     "scope_preflight": "ALLOW",
     "authorization_explicit": true,
-    "shattered_assessment": "PASS"
+    "shattered_assessment": "PASS",
+    "negative_controls": {
+      "missing_authorization": "REFUSED",
+      "policy_block_with_authorization": "REFUSED"
+    }
   },
-  "recovery": [
-    "Reconnect the GlassCastle workstation / Remote Desktop Commander.",
-    "Run tools/fabric-deploy-preflight.mjs and require every local .vercel/project.json to match state/FABRIC-DEPLOYMENT-MANIFEST.json.",
-    "Reconcile local staged app-shell changes with newer canonical GitHub source before deploying.",
-    "Deploy Kork, ShatteredCastle(s), GlassWitness, BlastRadial, Investigation Console, and the public hub/registry to their manifest-bound Vercel projects.",
-    "Re-run Fabric Conformance and require every job, including public-contract, to pass before clearing drift."
-  ],
-  "claim": "ScopeSentinel and its owned-target Scope-to-Shattered handoff are healthy; the remaining observed defect is production parent-registry/app-shell convergence."
+  "claim": "Canonical source and public production fabric are converged on the six-stage workflow. ScopeSentinel and the bounded Scope-to-Shattered handoff are healthy."
 }
