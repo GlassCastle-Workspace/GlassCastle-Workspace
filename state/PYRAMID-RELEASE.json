@@ -1,0 +1,125 @@
+{
+  "contract": "shatteredcastles.pyramid.release.v1",
+  "version": "1.0.0",
+  "released_at": "2026-09-06T15:04:03Z",
+  "suite": "ShatteredCastle(s)",
+  "company": "GlassCastle(s)",
+  "source": {
+    "title": "The Pyramid of Pain",
+    "author": "David J. Bianco",
+    "published": "2013-03-01",
+    "revised": "2014-01-17",
+    "kill_chain_companion": "What Do You Get When You Cross a Pyramid With A Chain?",
+    "audit": "PYRAMID-AUDIT.md"
+  },
+  "model": {
+    "contract": "shatteredcastles.pyramid.model.v1",
+    "version": "Bianco-2014-revised",
+    "categories": 7,
+    "pain_tiers": 6,
+    "model_digest_sha256": "35df471825f18369caad1c2ec188f3f0b9c11d4b4fe44d18bd41feb67a0c7bb8",
+    "public_endpoint": "https://glasscastles.vercel.app/api/v1/pyramid"
+  },
+  "composition": {
+    "ukc": {
+      "contract": "shatteredcastles.ukc.model.v1",
+      "role": "progression",
+      "binding": "explicit-only"
+    },
+    "diamond": {
+      "contract": "shatteredcastles.diamond.model.v1",
+      "role": "relationship",
+      "binding": "explicit-only"
+    },
+    "pyramid": {
+      "role": "relative adversary change burden and defender detection leverage",
+      "rank_semantics": "ordinal-only"
+    },
+    "defender_workflow": [
+      "scope",
+      "discover",
+      "assess",
+      "validate",
+      "impact",
+      "remediate"
+    ]
+  },
+  "tests": {
+    "scope": "13/13",
+    "kork": "6/6",
+    "shatterassay": "70/70",
+    "glasswitness": "22/22",
+    "blastradial": "7/7",
+    "console": "9/9",
+    "umbrella": "31/31",
+    "total": "158/158"
+  },
+  "visual_qa": {
+    "desktop": {
+      "viewport": 1440,
+      "document_width": 1440,
+      "overflow_offenders": 0,
+      "pyramid_tiers": 6
+    },
+    "mobile": {
+      "viewport": 390,
+      "document_width": 390,
+      "overflow_offenders": 0,
+      "pyramid_tiers": 6
+    }
+  },
+  "acceptance": {
+    "artifact": "state/PYRAMID-ACCEPTANCE.json",
+    "sha256": "fd3878efe49f5b603a963bbc2ddd1b20725e60bbf73a45a7a8a3273c188ab528",
+    "kork_unannotated_ip_like_node_inferred": false,
+    "shatterassay_inferred_annotations": 0,
+    "witness_authorization_reset": true,
+    "witness_required_confirmations": 2,
+    "witness_proof_effect": "none",
+    "blast_score_effect": "none",
+    "blast_severity_effect": "none",
+    "console_detection_gaps": 1,
+    "automatic_value_classification": false,
+    "quantitative_cost_score": false
+  },
+  "production": {
+    "public_conformance": "PASS",
+    "conformance_checked_at": "2026-09-06T15:02:30.304Z",
+    "deployments": {
+      "scope": "https://scopesentinel-saas-pkeb1ba86-glass-castle.vercel.app",
+      "discover": "https://kork-saas-9dzv9lt2z-glass-castle.vercel.app",
+      "assess": "https://glasscastle-launchguard-pee85s0h5-glass-castle.vercel.app",
+      "validate": "https://glasswitness-saas-b8dhh3y66-glass-castle.vercel.app",
+      "impact": "https://blastradial-saas-n6uu7cqvr-glass-castle.vercel.app",
+      "remediate": "https://glasscastle-investigation-console-fs63b229y-glass-castle.vercel.app",
+      "hub": "https://glasscastles-o44jakbky-glass-castle.vercel.app"
+    },
+    "canonical_aliases": {
+      "scope": "https://scopesentinel-saas.vercel.app",
+      "discover": "https://kork-saas.vercel.app",
+      "assess": "https://glasscastle-launchguard.vercel.app",
+      "validate": "https://glasswitness-saas.vercel.app",
+      "impact": "https://blastradial-saas.vercel.app",
+      "remediate": "https://glasscastle-investigation-console.vercel.app",
+      "hub": "https://glasscastles.vercel.app"
+    }
+  },
+  "stage_commits": {
+    "scope": "3893f6a",
+    "assess": "d0735d7",
+    "validate": "a511f24",
+    "discover": "local Vercel deploy tree",
+    "impact": "local Vercel deploy tree",
+    "remediate": "local Vercel deploy tree"
+  },
+  "boundaries": [
+    "Indicator type is explicit; values are not auto-classified.",
+    "No automatic maliciousness or adversary attribution.",
+    "Pyramid tier is ordinal and is not converted to dollars, severity, probability, or impact.",
+    "No automatic UKC phase mapping.",
+    "No automatic Diamond feature or event mapping.",
+    "Pyramid context does not alter GlassWitness proof thresholds.",
+    "Pyramid context does not alter BlastRadial impact scores or severity.",
+    "No target-network action in the Pyramid model API."
+  ]
+}

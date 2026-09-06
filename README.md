@@ -51,6 +51,16 @@ ShatteredCastle(s) also implements the original 2013 Diamond Model of Intrusion 
 
 Unknown Diamond features remain knowledge gaps, per-feature confidence is preserved as supplied, Phase may explicitly reference UKC, and v1 does not auto-attribute, auto-cluster Activity Groups, infer causality, or alter impact scores.
 
+### Pyramid of Pain adversary-cost lens
+
+ShatteredCastle(s) implements David J. Bianco's revised Pyramid of Pain as a third orthogonal lens. It ranks explicitly supplied detection-indicator categories by **relative adversary replacement burden**, from hashes through TTPs. The rank is ordinal only: it is not a severity score, dollar estimate, attribution signal, or permission to act.
+
+- Public model/API: `https://glasscastles.vercel.app/api/v1/pyramid`
+- Offline utility: `node tools/pyramid-engine.mjs model`
+- Model audit: [PYRAMID-AUDIT.md](PYRAMID-AUDIT.md)
+
+The composition follows Bianco's own kill-chain guidance: indicators can be explicitly bound to UKC phases to build a detection plan, while explicit Pyramid-to-Diamond bindings preserve event context. ShatteredCastle(s) never guesses an indicator type from its value and never converts a Pyramid tier into a numeric adversary-cost claim.
+
 ## Public front doors
 
 - **GlassCastle(s)** — https://glasscastles.vercel.app/

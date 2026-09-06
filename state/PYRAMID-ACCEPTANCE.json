@@ -1,0 +1,81 @@
+{
+  "contract": "shatteredcastles.pyramid.acceptance.v1",
+  "generated_at": "2026-09-06T15:02:30.255Z",
+  "source_model": "shatteredcastles.pyramid.model.v1",
+  "model_digest_sha256": "35df471825f18369caad1c2ec188f3f0b9c11d4b4fe44d18bd41feb67a0c7bb8",
+  "model": {
+    "categories": 7,
+    "pain_tiers": 6,
+    "quantitative_cost_score": false,
+    "automatic_value_classification": false
+  },
+  "portfolio": {
+    "indicators": 3,
+    "highest_supplied_pain_tier": 6,
+    "weighted_score_present": false
+  },
+  "ukc_plan": {
+    "c2": {
+      "detected": 1,
+      "gap": 1,
+      "highest_supplied_pain_tier": 6
+    },
+    "pivot": {
+      "detectable": 1,
+      "highest_supplied_pain_tier": 5
+    },
+    "phase_binding_explicit_only": true
+  },
+  "diamond_overlay": {
+    "bindings": 1,
+    "bindings_explicit_only": true,
+    "diamond_role_not_inferred_from_indicator_type": true
+  },
+  "kork": {
+    "annotations": 1,
+    "unannotated_ip_like_node_inferred": false,
+    "export_annotations": 1
+  },
+  "shatterassay": {
+    "inferred_annotations": 0
+  },
+  "witness": {
+    "authorization_reset": true,
+    "required_confirmations": 2,
+    "claim_ready": true,
+    "pyramid_indicator_count": 3,
+    "proof_effect": "none"
+  },
+  "blast": {
+    "pyramid": {
+      "artifacts": 1,
+      "indicators": 3,
+      "highest_supplied_pain_tier": 6,
+      "score_effect": "none",
+      "severity_effect": "none"
+    },
+    "critical_path_impact_before": 0.5225,
+    "critical_path_impact_after": 0.5225,
+    "impact_unchanged": true
+  },
+  "console": {
+    "pyramid": {
+      "artifacts": 1,
+      "indicators": 3,
+      "highest_supplied_pain_tier": 6,
+      "gaps": 1,
+      "score_effect": "none",
+      "severity_effect": "none"
+    },
+    "findings": 0,
+    "validated": 0
+  },
+  "boundaries": {
+    "automatic_value_classification": false,
+    "automatic_maliciousness_inference": false,
+    "automatic_attribution": false,
+    "quantitative_cost_score": false,
+    "impact_score_effect": "none",
+    "severity_effect": "none"
+  }
+}
