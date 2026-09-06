@@ -1,0 +1,4 @@
+Testing is authorized on the GlassCastle-owned public host glasscastles.vercel.app.
+Automation is permitted up to 20 requests per minute.
+Do not test any other host discovered through redirects, links, scripts, or dependencies unless separately and explicitly scoped.
+Do not perform denial of service, social engineering, credential attacks, destructive actions, or access to non-test user data.
