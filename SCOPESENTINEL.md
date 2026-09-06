@@ -18,6 +18,8 @@ It does **not** contact bounty targets. It does **not** assert researcher author
 - `glasscastles.scopesentinel.decision.v1`
 - `glasscastles.scopesentinel.execution-envelope.v1`
 - `glasscastles.scopesentinel.hold.v1`
+- `glasscastles.scopesentinel.diff.v1`
+- `glasscastles.scoped-assessment.v1`
 - `glasscastles.scopesentinel.agent-api.v1`
 
 Machine API:
@@ -60,7 +62,83 @@ A clear policy decision may produce `scope_state: clear`, but exported envelopes
 {"authorized": false}
 ```
 
-The researcher must explicitly assert current authorization before live execution. Policy compilation and human authorization remain separate facts.
+The envelope also advertises `authorization_assertion_required: true`. The researcher must explicitly assert current authorization before live execution. Policy compilation and human authorization remain separate facts.
+
+## Operator tooling
+
+### Preflight one intended operation
+
+```bash
+node tools/scope-preflight.mjs \
+  --program ProgramName \
+  --policy policy.txt \
+  --scope structured-scope.json \
+  --host target.example \
+  --action automation
+```
+
+Output includes the compiled contract digest, source hashes, holds, the full `ALLOW` / `HOLD` / `BLOCK` decision, and any rate or action constraints.
+
+### Compare two scope contracts
+
+```bash
+node tools/scope-diff.mjs before.json after.json
+```
+
+The diff keeps four kinds of change separate:
+
+- authority expansion
+- authority reduction
+- ambiguity / hold changes
+- rate-policy changes
+
+A scope diff is evidence about authorization policy drift. It does not authorize execution.
+
+### Inspect a fail-closed execution envelope
+
+```bash
+node tools/scope-envelope.mjs \
+  --program ProgramName \
+  --policy policy.txt \
+  --scope structured-scope.json \
+  --host target.example \
+  --action automation \
+  --max-requests 6
+```
+
+The returned Shattered bounty envelope must remain `authorized: false` until a separate explicit authorization assertion occurs.
+
+### Perform a scoped Shattered assessment
+
+```bash
+node tools/scoped-assess.mjs \
+  --program ProgramName \
+  --policy policy.txt \
+  --scope structured-scope.json \
+  --target https://target.example \
+  --authorized yes \
+  --max-requests 4
+```
+
+This path refuses execution unless ScopeSentinel returns `ALLOW`, its generated envelope is structurally fail-closed, and the caller supplies the explicit authorization assertion. It then passes the exact ScopeSentinel host/budget envelope to ShatteredCastle.
+
+CI continuously exercises this handoff against the GlassCastle-owned public hub with a four-request ceiling.
+
+## Deployment and conformance
+
+Canonical deployment identities live in:
+
+`state/FABRIC-DEPLOYMENT-MANIFEST.json`
+
+When the GlassCastle workstation is reachable, run:
+
+```bash
+node tools/fabric-deploy-preflight.mjs
+```
+
+before any production deployment. It fails if a local `.vercel/project.json` does not match the expected project ID, project name, or team ID.
+
+`Fabric Conformance` CI independently checks source topology, ScopeSentinel drift semantics, live stage-zero API behavior, fail-closed envelopes, the owned Scope-to-Shattered handoff, and the public fabric registry. Production drift remains open as GitHub issue #1 until all required jobs are green.
 
 ## Hyatt acceptance benchmark
 
