@@ -11,7 +11,10 @@ on:
       - 'tools/scope-preflight.mjs'
       - 'tools/scope-envelope.mjs'
       - 'tools/scoped-assess.mjs'
+      - 'tools/fabric-deploy-preflight.mjs'
+      - 'state/FABRIC-DEPLOYMENT-MANIFEST.json'
       - 'test/scope-diff.test.mjs'
+      - 'test/deployment-manifest.test.mjs'
       - 'test/fixtures/scope-*'
       - 'test/fixtures/owned-*'
       - '.github/workflows/fabric-conformance.yml'
@@ -41,8 +44,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Verify ScopeSentinel drift semantics
-        run: node --test test/scope-diff.test.mjs
+      - name: Verify ScopeSentinel and deployment-manifest semantics
+        run: node --test test/scope-diff.test.mjs test/deployment-manifest.test.mjs
 
   scope-bootstrap:
     runs-on: ubuntu-latest
