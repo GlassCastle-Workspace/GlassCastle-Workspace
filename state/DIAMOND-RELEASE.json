@@ -1,0 +1,71 @@
+{
+  "contract": "shatteredcastles.diamond.release.v1",
+  "version": "1.0.0",
+  "released_at": "2026-09-06T14:24:31Z",
+  "suite": "ShatteredCastle(s)",
+  "company": "GlassCastle(s)",
+  "source": {
+    "artifact": "DMIA.pdf",
+    "title": "The Diamond Model of Intrusion Analysis",
+    "authors": ["Sergio Caltagirone", "Andrew Pendergast", "Christopher Betz"],
+    "source_sha256": "ed177039dcca97a778823953a07ed525d6e0b6dce4fd44fa287d7ec4683a5d25",
+    "source_bytes": 1920651
+  },
+  "model": {
+    "contract": "shatteredcastles.diamond.model.v1",
+    "version": "Caltagirone-Pendergast-Betz-2013",
+    "core_features": 4,
+    "core_edges": 5,
+    "model_digest_sha256": "32d50d192c6adb6dcf136604d932cefe725a1bbcb577a03b511279bfcd88c5c5",
+    "public_endpoint": "https://glasscastles.vercel.app/api/v1/diamond"
+  },
+  "composition": {
+    "ukc_contract": "shatteredcastles.ukc.model.v1",
+    "diamond_phase_binding": "explicit-only",
+    "defender_workflow": ["scope", "discover", "assess", "validate", "impact", "remediate"]
+  },
+  "tests": {
+    "scope": "13/13",
+    "kork": "5/5",
+    "shatterassay": "70/70",
+    "glasswitness": "21/21",
+    "blastradial": "6/6",
+    "console": "7/7",
+    "umbrella": "24/24"
+  },
+  "visual_qa": {
+    "desktop": {"viewport": 1440, "document_width": 1425, "overflow_offenders": 0},
+    "mobile": {"viewport": 390, "document_width": 390, "overflow_offenders": 0}
+  },
+  "acceptance": {
+    "artifact": "state/DIAMOND-ACCEPTANCE.json",
+    "sha256": "285fa71924d32ae79a469067aaa535d6b82b73e06809eea12d60115b1f4a2b93",
+    "kork_inferred_annotations": 0,
+    "witness_authorization_reset": true,
+    "witness_required_confirmations": 2,
+    "blast_score_effect": "none",
+    "automatic_attribution": false,
+    "automatic_group_clustering": false
+  },
+  "production": {
+    "public_conformance": "PASS",
+    "conformance_checked_at": "2026-09-06T14:24:31.998Z",
+    "deployments": {
+      "scope": "https://scopesentinel-saas-f3co8qsno-glass-castle.vercel.app",
+      "discover": "https://kork-saas-p7i98n3nq-glass-castle.vercel.app",
+      "assess": "https://glasscastle-launchguard-qs5cpl7dn-glass-castle.vercel.app",
+      "validate": "https://glasswitness-saas-9zx8gfusu-glass-castle.vercel.app",
+      "impact": "https://blastradial-saas-lpwjj8enk-glass-castle.vercel.app",
+      "remediate": "https://glasscastle-investigation-console-i4x7lmahg-glass-castle.vercel.app",
+      "hub": "https://glasscastles-8f0wf1759-glass-castle.vercel.app"
+    }
+  },
+  "boundaries": [
+    "No automatic adversary attribution.",
+    "No automatic Activity Group clustering or membership.",
+    "No causal inference from timestamp order alone.",
+    "No automatic Diamond vertex assignment from artifact type.",
+    "No Diamond-driven impact score changes in v1.",
+    "No target-network action in the Diamond model API."
+  ]
+}

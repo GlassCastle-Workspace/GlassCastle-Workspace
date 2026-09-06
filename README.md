@@ -41,6 +41,16 @@ ShatteredCastle(s) also exposes the final 2017 Unified Kill Chain developed by P
 
 The UKC implementation is versioned as `Pols-2017-final`. Current MITRE ATT&CK mappings are intentionally not silently merged into this historical model.
 
+### Diamond Model intrusion-relationship lens
+
+ShatteredCastle(s) also implements the original 2013 Diamond Model of Intrusion Analysis by Sergio Caltagirone, Andrew Pendergast, and Christopher Betz. Diamond complements UKC rather than replacing it: UKC models explicit tactical progression while Diamond models the relationships among **Adversary, Infrastructure, Capability, and Victim** within evidence-bearing intrusion events.
+
+- Public model/API: `https://glasscastles.vercel.app/api/v1/diamond`
+- Offline utility: `node tools/diamond-engine.mjs model`
+- Model audit: [DIAMOND-AUDIT.md](DIAMOND-AUDIT.md)
+
+Unknown Diamond features remain knowledge gaps, per-feature confidence is preserved as supplied, Phase may explicitly reference UKC, and v1 does not auto-attribute, auto-cluster Activity Groups, infer causality, or alter impact scores.
+
 ## Public front doors
 
 - **GlassCastle(s)** — https://glasscastles.vercel.app/

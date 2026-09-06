@@ -1,0 +1,79 @@
+{
+  "contract": "shatteredcastles.diamond.acceptance.v1",
+  "generated_at": "2026-09-06T14:17:52.512Z",
+  "source_model": "shatteredcastles.diamond.model.v1",
+  "event": {
+    "known_core": [
+      "infrastructure",
+      "capability",
+      "victim"
+    ],
+    "knowledge_gaps": [
+      "adversary",
+      "timestamp",
+      "result",
+      "direction",
+      "resources",
+      "social_political",
+      "technology"
+    ],
+    "digest": "78be44137a4653378ba39f963c2ea4b6b79d40d50edc4e02e9cc20d0ef87488f"
+  },
+  "pivot": {
+    "center": "infrastructure",
+    "knowledge_gap_targets": [
+      "adversary",
+      "technology"
+    ],
+    "possible_not_certain": true
+  },
+  "thread": {
+    "events": 2,
+    "arcs": 1,
+    "ukc_phases": [
+      "reconnaissance",
+      "pivoting"
+    ],
+    "ukc_pivots": 1,
+    "digest": "533fa706e9b398c508b535b56627293ed96f1226aaca6509c6e81004de5bbcef"
+  },
+  "kork": {
+    "annotations": 1,
+    "inferred": false,
+    "export_annotations": 1
+  },
+  "witness": {
+    "authorization_reset": true,
+    "diamond_thread_id": "dia-thread-1",
+    "claim_ready": true,
+    "proof_threshold": 2
+  },
+  "blast": {
+    "diamond": {
+      "artifacts": 3,
+      "events": 2,
+      "threads": 1,
+      "groups": 0,
+      "activity_attack_overlays": 0,
+      "knowledge_gaps": 28,
+      "score_effect": "none"
+    },
+    "critical_path_impact": 0.5225
+  },
+  "console": {
+    "diamond": {
+      "artifacts": 3,
+      "events": 2,
+      "threads": 1,
+      "groups": 0,
+      "knowledge_gaps": 28
+    },
+    "validated": 1,
+    "findings": 0
+  },
+  "boundaries": {
+    "automatic_attribution": false,
+    "auto_cluster": false,
+    "diamond_score_effect": "none"
+  }
+}
