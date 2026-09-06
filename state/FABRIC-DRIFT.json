@@ -1,0 +1,25 @@
+{
+  "contract": "glasscastles.fabric.drift.v1",
+  "observed_at": "2026-09-06T10:55:34Z",
+  "source": {
+    "commit": "07bb639395ab99d881e7a2c6155e2beddbbe96c6",
+    "workflow": ["scope","discover","assess","validate","impact","remediate"],
+    "conformance": "PASS"
+  },
+  "production": {
+    "registry_url": "https://glasscastles.vercel.app/api/v1/fabric",
+    "observed_workflow": ["discover","assess","validate","impact","remediate"],
+    "conformance": "FAIL",
+    "missing_stages": ["scope"]
+  },
+  "scope_service": {
+    "url": "https://scopesentinel-saas.vercel.app",
+    "status": "deployed_and_previously_smoke_verified"
+  },
+  "recovery": [
+    "Deploy canonical GlassCastle workspace source to the glasscastles Vercel project.",
+    "Deploy staged Scope navigation and Console bridge changes from the GlassCastle workstation when reachable.",
+    "Re-run Fabric Conformance and require both source-contract and public-contract jobs to pass."
+  ],
+  "claim": "Canonical source is six-stage; production registry was observed as five-stage by GitHub Actions."
+}
