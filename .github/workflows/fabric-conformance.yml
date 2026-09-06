@@ -7,6 +7,8 @@ on:
       - 'site/api/v1/fabric.js'
       - 'tools/gc-fabric'
       - 'tools/fabric-conformance.mjs'
+      - 'tools/scope-diff.mjs'
+      - 'test/scope-diff.test.mjs'
       - '.github/workflows/fabric-conformance.yml'
   workflow_dispatch:
   schedule:
@@ -26,6 +28,16 @@ jobs:
           node-version: '22'
       - name: Verify repository fabric contract
         run: node tools/fabric-conformance.mjs source
+
+  scope-contract-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify ScopeSentinel drift semantics
+        run: node --test test/scope-diff.test.mjs
 
   scope-bootstrap:
     runs-on: ubuntu-latest
@@ -52,7 +64,7 @@ jobs:
 
   drift-ledger:
     if: always()
-    needs: [source-contract, scope-bootstrap, public-contract]
+    needs: [source-contract, scope-contract-tools, scope-bootstrap, public-contract]
     runs-on: ubuntu-latest
     steps:
       - name: Reconcile production drift issue
@@ -60,11 +72,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
           SOURCE_RESULT: ${{ needs.source-contract.result }}
+          SCOPE_TOOLS_RESULT: ${{ needs.scope-contract-tools.result }}
           BOOTSTRAP_RESULT: ${{ needs.scope-bootstrap.result }}
           PUBLIC_RESULT: ${{ needs.public-contract.result }}
         run: |
           set -e
-          if [ "$SOURCE_RESULT" = "success" ] && [ "$BOOTSTRAP_RESULT" = "success" ] && [ "$PUBLIC_RESULT" = "success" ]; then
+          if [ "$SOURCE_RESULT" = "success" ] && [ "$SCOPE_TOOLS_RESULT" = "success" ] && [ "$BOOTSTRAP_RESULT" = "success" ] && [ "$PUBLIC_RESULT" = "success" ]; then
             gh issue close 1 --repo "$REPO" --reason completed --comment "Fabric Conformance is fully green. Canonical source and public six-stage fabric now agree. Auto-closing drift ledger from run $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" || true
           else
             gh issue reopen 1 --repo "$REPO" || true
