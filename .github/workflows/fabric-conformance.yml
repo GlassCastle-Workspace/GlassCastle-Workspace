@@ -10,8 +10,10 @@ on:
       - 'tools/scope-diff.mjs'
       - 'tools/scope-preflight.mjs'
       - 'tools/scope-envelope.mjs'
+      - 'tools/scoped-assess.mjs'
       - 'test/scope-diff.test.mjs'
       - 'test/fixtures/scope-*'
+      - 'test/fixtures/owned-*'
       - '.github/workflows/fabric-conformance.yml'
   workflow_dispatch:
   schedule:
@@ -78,6 +80,19 @@ jobs:
           node tools/scope-envelope.mjs --program Demo --policy test/fixtures/scope-policy.txt --scope test/fixtures/scope-structured.json --host api.example.com --action automation --max-requests 6 > /tmp/envelope.json
           node -e "const x=require('/tmp/envelope.json');const e=x.envelope||{},b=e.bounty||{};if(e.authorization_assertion_required!==true)process.exit(1);if(b.authorized!==false)process.exit(2);if(b.scope_state!=='clear')process.exit(3);if(Number(b.max_requests||b.request_budget||0)>6)process.exit(4);console.log('Fail-closed execution envelope OK')"
 
+  scope-to-assess-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run owned-host scoped assessment through ScopeSentinel envelope
+        run: |
+          set -e
+          node tools/scoped-assess.mjs --program GlassCastle-Owned-CI --policy test/fixtures/owned-glasscastle-policy.txt --scope test/fixtures/owned-glasscastle-scope.json --target https://glasscastles.vercel.app --authorized yes --max-requests 4 > /tmp/scoped-assess.json
+          node -e "const x=require('/tmp/scoped-assess.json');const a=x.assessment||{},b=a.bounty||{};if(x.preflight?.decision!=='ALLOW')process.exit(1);if(x.preflight?.authorization_explicit!==true)process.exit(2);if(a.meta?.status_code!==200)process.exit(3);if(b.execution?.requests_used>4)process.exit(4);if((b.execution?.boundary_stops||[]).some(s=>s.followed!==false))process.exit(5);console.log('Scope -> Shattered scoped handoff OK')"
+
   public-contract:
     runs-on: ubuntu-latest
     steps:
@@ -90,7 +105,7 @@ jobs:
 
   drift-ledger:
     if: always()
-    needs: [source-contract, scope-contract-tools, scope-bootstrap, scope-api-smoke, public-contract]
+    needs: [source-contract, scope-contract-tools, scope-bootstrap, scope-api-smoke, scope-to-assess-smoke, public-contract]
     runs-on: ubuntu-latest
     steps:
       - name: Reconcile production drift issue
@@ -101,10 +116,11 @@ jobs:
           SCOPE_TOOLS_RESULT: ${{ needs.scope-contract-tools.result }}
           BOOTSTRAP_RESULT: ${{ needs.scope-bootstrap.result }}
           SCOPE_API_RESULT: ${{ needs.scope-api-smoke.result }}
+          HANDOFF_RESULT: ${{ needs.scope-to-assess-smoke.result }}
           PUBLIC_RESULT: ${{ needs.public-contract.result }}
         run: |
           set -e
-          if [ "$SOURCE_RESULT" = "success" ] && [ "$SCOPE_TOOLS_RESULT" = "success" ] && [ "$BOOTSTRAP_RESULT" = "success" ] && [ "$SCOPE_API_RESULT" = "success" ] && [ "$PUBLIC_RESULT" = "success" ]; then
+          if [ "$SOURCE_RESULT" = "success" ] && [ "$SCOPE_TOOLS_RESULT" = "success" ] && [ "$BOOTSTRAP_RESULT" = "success" ] && [ "$SCOPE_API_RESULT" = "success" ] && [ "$HANDOFF_RESULT" = "success" ] && [ "$PUBLIC_RESULT" = "success" ]; then
             gh issue close 1 --repo "$REPO" --reason completed --comment "Fabric Conformance is fully green. Canonical source and public six-stage fabric now agree. Auto-closing drift ledger from run $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" || true
           else
             gh issue reopen 1 --repo "$REPO" || true
