@@ -1,0 +1,13 @@
+{
+  "scopes": [
+    {
+      "id": "1",
+      "asset_type": "URL",
+      "asset_identifier": "api.example.com",
+      "eligible_for_submission": true,
+      "eligible_for_bounty": true,
+      "max_severity": "critical",
+      "instruction": ""
+    }
+  ]
+}
