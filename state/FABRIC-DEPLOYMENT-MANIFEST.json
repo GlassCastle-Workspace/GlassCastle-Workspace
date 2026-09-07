@@ -9,7 +9,7 @@
       "local_root": "~/Desktop/ScopeSentinel-SaaS",
       "project_name": "scopesentinel-saas",
       "project_id": "prj_hoKYAG2pXZSkp6bX4zYKVOABTiip",
-      "production_url": "https://scopesentinel-saas.vercel.app"
+      "production_url": "https://glasscastles-scopesentinel.vercel.app"
     },
     {
       "stage": "discover",
@@ -17,7 +17,7 @@
       "local_root": "~/Desktop/Kork-SaaS",
       "project_name": "kork-saas",
       "project_id": "prj_vfHnp4sljjIohOLcdlg5g4GoL4SQ",
-      "production_url": "https://kork-saas.vercel.app"
+      "production_url": "https://glasscastles-kork.vercel.app"
     },
     {
       "stage": "assess",
@@ -25,7 +25,7 @@
       "local_root": "~/Desktop/LaunchGuard-SaaS",
       "project_name": "glasscastle-launchguard",
       "project_id": "prj_8kcjUcNpbyE0PlTOugiDrKWFUWlx",
-      "production_url": "https://glasscastle-launchguard.vercel.app"
+      "production_url": "https://glasscastles-shatterassay.vercel.app"
     },
     {
       "stage": "validate",
@@ -33,7 +33,7 @@
       "local_root": "~/Desktop/GlassWitness-SaaS",
       "project_name": "glasswitness-saas",
       "project_id": "prj_jZMCzB7YmujKyKhjBk8L56cbLoGg",
-      "production_url": "https://glasswitness-saas.vercel.app"
+      "production_url": "https://glasscastles-glasswitness.vercel.app"
     },
     {
       "stage": "impact",
@@ -41,7 +41,7 @@
       "local_root": "~/Desktop/BlastRadial-SaaS",
       "project_name": "blastradial-saas",
       "project_id": "prj_IF5b3hXmOAWamWUKy3UMITotMcvC",
-      "production_url": "https://blastradial-saas.vercel.app"
+      "production_url": "https://glasscastles-blastradial.vercel.app"
     },
     {
       "stage": "remediate",
@@ -49,7 +49,7 @@
       "local_root": "~/Desktop/GlassCastle-Console-SaaS",
       "project_name": "glasscastle-investigation-console",
       "project_id": "prj_2Bbbt9M3ogTMzCDtI3gGkiGO0qgi",
-      "production_url": "https://glasscastle-investigation-console.vercel.app"
+      "production_url": "https://glasscastles-investigation-console.vercel.app"
     },
     {
       "stage": "hub",

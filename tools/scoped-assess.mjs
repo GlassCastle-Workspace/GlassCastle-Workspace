@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import fs from 'node:fs/promises';
 
-const SCOPE='https://scopesentinel-saas.vercel.app';
-const SHATTER='https://glasscastle-launchguard.vercel.app';
+const SCOPE='https://glasscastles-scopesentinel.vercel.app';
+const SHATTER='https://glasscastles-shatterassay.vercel.app';
 function usage(){console.error('Usage: scoped-assess.mjs --program NAME --policy FILE --scope FILE --target URL --authorized yes [--max-requests N]');process.exit(2)}
 function args(argv){const out={};for(let i=0;i<argv.length;i+=2){const k=argv[i],v=argv[i+1];if(!k?.startsWith('--')||v==null)usage();out[k.slice(2)]=v}return out}
 async function post(base,path,body){const r=await fetch(new URL(path,base),{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const text=await r.text();let data;try{data=JSON.parse(text)}catch{data={raw:text}}if(!r.ok)throw Object.assign(new Error(data.error||`HTTP ${r.status}`),{status:r.status,data});return data}

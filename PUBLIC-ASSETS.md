@@ -4,32 +4,34 @@
 
 This is the curated map of stable, intentionally public GlassCastle(s) surfaces. Preview deployments, internal infrastructure, and ephemeral lab endpoints are deliberately excluded.
 
-_Last reviewed: 2026-09-06._
+_Last reviewed: 2026-09-07._
 
 ## Start here
 
 - **GlassCastle(s)** — https://glasscastles.vercel.app/
 - **Public repository** — https://github.com/GlassCastle-Workspace/GlassCastle-Workspace
 - **Security policy** — https://github.com/GlassCastle-Workspace/GlassCastle-Workspace/blob/main/SECURITY.md
+- **Canonical URL registry** — [PUBLIC-URL-REGISTRY.json](PUBLIC-URL-REGISTRY.json)
+- **GlassCastle(S) CTF** — https://glasscastles.vercel.app/ctf
 
 ## ShatteredCastle(S) security fabric
 
 **Scope → Discover → Assess → Validate → Impact → Remediate**
 
-- **ScopeSentinel · Scope** — https://scopesentinel-saas.vercel.app/
-- **Kork · Discover** — https://kork-saas.vercel.app/
-- **ShatterAssay · Assess** — https://glasscastle-launchguard.vercel.app/
-- **GlassWitness · Validate** — https://glasswitness-saas.vercel.app/
-- **BlastRadial · Impact** — https://blastradial-saas.vercel.app/
-- **Investigation Console · Remediate** — https://glasscastle-investigation-console.vercel.app/
+- **ScopeSentinel · Scope** — https://glasscastles-scopesentinel.vercel.app/
+- **Kork · Discover** — https://glasscastles-kork.vercel.app/
+- **ShatterAssay · Assess** — https://glasscastles-shatterassay.vercel.app/
+- **GlassWitness · Validate** — https://glasscastles-glasswitness.vercel.app/
+- **BlastRadial · Impact** — https://glasscastles-blastradial.vercel.app/
+- **Investigation Console · Remediate** — https://glasscastles-investigation-console.vercel.app/
 
 The fabric is evidence-first and fail-closed. Unknown policy does not become permission, scanner output does not become proof, and proof does not silently rewrite impact.
 
 ## Research and technical releases
 
-- **Sec-TP v0.6.0rc1** — https://glasscastle-sectp.vercel.app/  
+- **Sec-TP v0.6.0rc1** — https://glasscastles-sectp.vercel.app/
   Controlled-evaluation release candidate for secure capability transport. It is a research/reference implementation, not an audited production VPN.
-- **Torus OSINT** — https://torus-osint.vercel.app/  
+- **Torus OSINT** — https://glasscastles-torus-osint.vercel.app/
   Public OSINT/OSR investigation surface that keeps observations, relationships, provenance, uncertainty, and analyst claims distinct.
 
 ## GlassCastle(s) Mining Co.
@@ -43,7 +45,7 @@ Economic work is represented as evidence states rather than profit theater. Work
 - **Free · Outside-In Launch Readiness Quick Scan** — [FREE-QUICK-SCAN.md](FREE-QUICK-SCAN.md)
 - **$3 · Outside-In Launch Readiness Mini Kit** — https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04 · https://ko-fi.com/s/ed21feb147
 - **$25 · Real-Device APK Smoke Test** — https://buy.stripe.com/5kQaEX7zzgmN8bjbIE0VO08
-- **$50 · Web3 Launch Readiness Evidence Snapshot** — https://web3-launch-readiness.vercel.app/ · https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05
+- **$50 · Web3 Launch Readiness Evidence Snapshot** — https://glasscastles-web3-launch-readiness.vercel.app/ · https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05
 - **$250 · GlassCastle Surface Survey** — [SURFACE-SURVEY.md](SURFACE-SURVEY.md) · https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06
 - **$750 · GlassCastle Evidence Expedition** — [EVIDENCE-EXPEDITION.md](EVIDENCE-EXPEDITION.md) · https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07
 

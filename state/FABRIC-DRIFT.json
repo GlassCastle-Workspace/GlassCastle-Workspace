@@ -18,7 +18,7 @@
     "issue_state": "CLOSED"
   },
   "scope_service": {
-    "url": "https://scopesentinel-saas.vercel.app",
+    "url": "https://glasscastles-scopesentinel.vercel.app",
     "status": "HEALTHY",
     "capabilities": "PASS",
     "contract_drift_semantics": "PASS",

@@ -4,7 +4,7 @@ ScopeSentinel is the policy and authorization preflight stage for the GlassCastl
 
 **Scope → Discover → Assess → Validate → Impact → Remediate**
 
-Production: https://scopesentinel-saas.vercel.app/
+Production: https://glasscastles-scopesentinel.vercel.app/
 
 ## Purpose
 

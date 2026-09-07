@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "last_reviewed": "2026-09-07",
+  "namespace": {
+    "parent": "https://glasscastles.vercel.app",
+    "product_pattern": "https://glasscastles-<slug>.vercel.app",
+    "ctf_front_door": "https://glasscastles.vercel.app/ctf"
+  },
+  "assets": [
+    {
+      "id": "glasscastles",
+      "name": "GlassCastle(s)",
+      "canonical": "https://glasscastles.vercel.app"
+    },
+    {
+      "id": "scopesentinel",
+      "name": "ScopeSentinel",
+      "canonical": "https://glasscastles-scopesentinel.vercel.app",
+      "legacy": [
+        "https://scopesentinel-saas.vercel.app"
+      ]
+    },
+    {
+      "id": "kork",
+      "name": "Kork",
+      "canonical": "https://glasscastles-kork.vercel.app",
+      "legacy": [
+        "https://kork-saas.vercel.app"
+      ]
+    },
+    {
+      "id": "shatterassay",
+      "name": "ShatterAssay",
+      "canonical": "https://glasscastles-shatterassay.vercel.app",
+      "legacy": [
+        "https://glasscastle-launchguard.vercel.app"
+      ]
+    },
+    {
+      "id": "glasswitness",
+      "name": "GlassWitness",
+      "canonical": "https://glasscastles-glasswitness.vercel.app",
+      "legacy": [
+        "https://glasswitness-saas.vercel.app"
+      ]
+    },
+    {
+      "id": "blastradial",
+      "name": "BlastRadial",
+      "canonical": "https://glasscastles-blastradial.vercel.app",
+      "legacy": [
+        "https://blastradial-saas.vercel.app"
+      ]
+    },
+    {
+      "id": "investigation-console",
+      "name": "Investigation Console",
+      "canonical": "https://glasscastles-investigation-console.vercel.app",
+      "legacy": [
+        "https://glasscastle-investigation-console.vercel.app"
+      ]
+    },
+    {
+      "id": "sectp",
+      "name": "Sec-TP",
+      "canonical": "https://glasscastles-sectp.vercel.app",
+      "legacy": [
+        "https://glasscastle-sectp.vercel.app",
+        "https://sectp-glasscastle.vercel.app"
+      ]
+    },
+    {
+      "id": "torus-osint",
+      "name": "Torus OSINT",
+      "canonical": "https://glasscastles-torus-osint.vercel.app",
+      "legacy": [
+        "https://torus-osint.vercel.app"
+      ]
+    },
+    {
+      "id": "mining",
+      "name": "GlassCastle(s) Mining Co.",
+      "canonical": "https://glasscastles-mining.vercel.app"
+    },
+    {
+      "id": "web3-launch-readiness",
+      "name": "Web3 Launch Readiness",
+      "canonical": "https://glasscastles-web3-launch-readiness.vercel.app",
+      "legacy": [
+        "https://web3-launch-readiness.vercel.app"
+      ]
+    },
+    {
+      "id": "ctf",
+      "name": "GlassCastle(S) CTF",
+      "canonical": "https://glasscastles.vercel.app/ctf"
+    }
+  ],
+  "policy": {
+    "internal_links": "Use canonical URLs only.",
+    "legacy_urls": "Compatibility only. Do not publish as official URLs.",
+    "third_party_checkout": "Stripe, Ko-fi, and Buy Me a Coffee URLs remain provider transaction endpoints, not GlassCastle canonical asset URLs."
+  }
+}

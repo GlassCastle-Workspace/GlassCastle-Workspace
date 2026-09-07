@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from 'node:fs/promises';
 
-const BASE='https://scopesentinel-saas.vercel.app';
+const BASE='https://glasscastles-scopesentinel.vercel.app';
 function usage(){console.error('Usage: scope-preflight.mjs --program NAME --policy FILE --scope FILE [--observed FILE] [--host HOST|--url URL] [--action ACTION] [--account-mode MODE]');process.exit(2)}
 function argMap(argv){const out={};for(let i=0;i<argv.length;i+=2){const k=argv[i],v=argv[i+1];if(!k?.startsWith('--')||v==null)usage();out[k.slice(2)]=v}return out}
 async function jsonFile(path){return JSON.parse(await fs.readFile(path,'utf8'))}

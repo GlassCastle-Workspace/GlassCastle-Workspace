@@ -2,7 +2,7 @@
 
 ## Security Through Visibility
 
-**[glasscastles.vercel.app](https://glasscastles.vercel.app/) · [Public assets](PUBLIC-ASSETS.md) · [Security policy](SECURITY.md) · [Sec-TP RC1](https://glasscastle-sectp.vercel.app/)**
+**[glasscastles.vercel.app](https://glasscastles.vercel.app/) · [Public assets](PUBLIC-ASSETS.md) · [Canonical URLs](PUBLIC-URL-REGISTRY.json) · [Security policy](SECURITY.md) · [Sec-TP RC1](https://glasscastles-sectp.vercel.app/)**
 
 **GlassCastle(s) makes complex systems visible enough to inspect, understand, and improve.**
 
@@ -16,17 +16,17 @@ We build evidence-first security, connectivity, and analytical systems for peopl
 
 **Scope → Discover → Assess → Validate → Impact → Remediate**
 
-- **ScopeSentinel · Scope** — https://scopesentinel-saas.vercel.app/  
+- **ScopeSentinel · Scope** — https://glasscastles-scopesentinel.vercel.app/
   Compile program prose, structured scope, exclusions, rate limits, asset-identity mismatches, and unresolved ambiguities into a fail-closed execution contract.
-- **Kork · Discover** — https://kork-saas.vercel.app/  
+- **Kork · Discover** — https://glasscastles-kork.vercel.app/
   Pin artifacts, map relationships, preserve provenance, and build an inspectable investigation topology.
-- **ShatterAssay · Assess** — https://glasscastle-launchguard.vercel.app/
+- **ShatterAssay · Assess** — https://glasscastles-shatterassay.vercel.app/
   Perform bounded outside-in assessment and static research while enforcing the current scope envelope.
-- **GlassWitness · Validate** — https://glasswitness-saas.vercel.app/  
+- **GlassWitness · Validate** — https://glasscastles-glasswitness.vercel.app/
   Turn controlled baselines, independent confirmations, negative controls, and evidence hashes into deterministic validation receipts.
-- **BlastRadial · Impact** — https://blastradial-saas.vercel.app/  
+- **BlastRadial · Impact** — https://glasscastles-blastradial.vercel.app/
   Model downstream propagation and identify relationship paths carrying the greatest consequence.
-- **Investigation Console · Remediate** — https://glasscastle-investigation-console.vercel.app/  
+- **Investigation Console · Remediate** — https://glasscastles-investigation-console.vercel.app/
   Bring scope, evidence, findings, validation, impact, claims, and remediation into one local-first investigation surface.
 
 The fabric is intentionally fail-closed: **unknown policy does not become permission, scanner output does not become proof, and proof does not silently rewrite impact.**
@@ -98,15 +98,15 @@ A DML number is never accepted as an organization-wide maturity claim by itself.
 
 - **GlassCastle(s)** — https://glasscastles.vercel.app/
 - **GlassCastle(s) Mining Co.** — https://glasscastles-mining.vercel.app/
-- **ScopeSentinel · Scope** — https://scopesentinel-saas.vercel.app/
-- **Kork · Discover** — https://kork-saas.vercel.app/
-- **ShatterAssay · Assess** — https://glasscastle-launchguard.vercel.app/
-- **GlassWitness · Validate** — https://glasswitness-saas.vercel.app/
-- **BlastRadial · Impact** — https://blastradial-saas.vercel.app/
-- **Investigation Console · Remediate** — https://glasscastle-investigation-console.vercel.app/
-- **Sec-TP RC1 · Secure capability transport** — https://glasscastle-sectp.vercel.app/
-- **Web3 Launch Readiness · Bounded evidence service** — https://web3-launch-readiness.vercel.app/
-- **Torus OSINT · Public OSINT/OSR research surface** — https://torus-osint.vercel.app/
+- **ScopeSentinel · Scope** — https://glasscastles-scopesentinel.vercel.app/
+- **Kork · Discover** — https://glasscastles-kork.vercel.app/
+- **ShatterAssay · Assess** — https://glasscastles-shatterassay.vercel.app/
+- **GlassWitness · Validate** — https://glasscastles-glasswitness.vercel.app/
+- **BlastRadial · Impact** — https://glasscastles-blastradial.vercel.app/
+- **Investigation Console · Remediate** — https://glasscastles-investigation-console.vercel.app/
+- **Sec-TP RC1 · Secure capability transport** — https://glasscastles-sectp.vercel.app/
+- **Web3 Launch Readiness · Bounded evidence service** — https://glasscastles-web3-launch-readiness.vercel.app/
+- **Torus OSINT · Public OSINT/OSR research surface** — https://glasscastles-torus-osint.vercel.app/
 
 The public visual system uses **Roboto Mono**, void-black surfaces, emerald signal (`#35ff95`), violet boundary (`#9a6cff`), and evidence-first hierarchy across the live product family.
 
@@ -116,7 +116,7 @@ The shortest path from curiosity to a real GlassCastle artifact:
 
 - **$3 Outside-In Launch Readiness Mini Kit** — a repeatable self-service workflow plus machine-readable evidence template. [Buy with Stripe](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
 - **$25 Real-Device APK Smoke Test** — one bounded test pass on GlassCastle-owned physical Android hardware. You provide the APK URL and what you want tested; fulfillment begins when a compatible reviewed Android node is online. [Book the smoke test](https://buy.stripe.com/5kQaEX7zzgmN8bjbIE0VO08)
-- **$50 Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle(s). [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://web3-launch-readiness.vercel.app/)
+- **$50 Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle(s). [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://glasscastles-web3-launch-readiness.vercel.app/)
 
 For larger work: **$250 Surface Survey** · [Book](https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06) | **$750 Evidence Expedition** · [Book](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
 
@@ -138,13 +138,13 @@ Each step increases evidence depth without silently expanding authority.
 
 - **Prospect · Free — Outside-In Launch Readiness Quick Scan** — inspect one public surface yourself in about five minutes. [Run the Quick Scan](FREE-QUICK-SCAN.md)
 - **Ore · $3 — Outside-In Launch Readiness Mini Kit** — repeatable self-service workflow with a machine-readable evidence template. [Get the Mini Kit](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
-- **Assay · $50 — Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle(s). [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://web3-launch-readiness.vercel.app/)
+- **Assay · $50 — Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle(s). [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://glasscastles-web3-launch-readiness.vercel.app/)
 - **Survey · $250 — GlassCastle Surface Survey** — up to five related public targets examined together with a compact evidence map. [Review scope](SURFACE-SURVEY.md) · [Book with Stripe](https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06)
 - **Expedition · $750 — GlassCastle Evidence Expedition** — one bounded investigation objective across multiple public evidence sources. [Review scope](EVIDENCE-EXPEDITION.md) · [Book with Stripe](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
 
 ### Technical evaluation
 
-- **Sec-TP v0.6.0rc1** — research/reference secure capability tunnel with TCP/QUIC carriers, pinned identity, default-deny authorization, bounded sessions, tamper-evident audit chaining, and HHT-informed defensive telemetry. RC1 passed 162 automated tests before packaging. It is not an audited production VPN. [Evaluate Sec-TP RC1](SECTP-RC1.md) · [Download release](https://glasscastle-sectp.vercel.app/)
+- **Sec-TP v0.6.0rc1** — research/reference secure capability tunnel with TCP/QUIC carriers, pinned identity, default-deny authorization, bounded sessions, tamper-evident audit chaining, and HHT-informed defensive telemetry. RC1 passed 162 automated tests before packaging. It is not an audited production VPN. [Evaluate Sec-TP RC1](SECTP-RC1.md) · [Download release](https://glasscastles-sectp.vercel.app/)
 
 Publication is exposure, not demand. GlassCastle(s) reports revenue only when a payment provider verifies a completed payment.
 
@@ -166,7 +166,7 @@ We say when something is experimental. We distinguish hypotheses from measuremen
 
 ### Operating principles
 
-`Evidence before assertion.`  
-`Latest != canonical.`  
-`Unknown != False.`  
+`Evidence before assertion.`
+`Latest != canonical.`
+`Unknown != False.`
 `Security Through Visibility.`

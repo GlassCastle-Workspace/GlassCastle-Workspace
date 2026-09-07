@@ -4,9 +4,9 @@ Sec-TP (Secret Tunnel Protocol) is a research/reference secure capability tunnel
 
 ## Get RC1
 
-- Release page: https://glasscastle-sectp.vercel.app
-- Wheel: https://glasscastle-sectp.vercel.app/api/download?artifact=wheel
-- Source distribution: https://glasscastle-sectp.vercel.app/api/download?artifact=sdist
+- Release page: https://glasscastles-sectp.vercel.app
+- Wheel: https://glasscastles-sectp.vercel.app/api/download?artifact=wheel
+- Source distribution: https://glasscastles-sectp.vercel.app/api/download?artifact=sdist
 
 ## Verify the bytes
 
@@ -35,7 +35,7 @@ The public artifacts were fetched back over HTTPS and matched the canonical Oper
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install 'https://glasscastle-sectp.vercel.app/api/download?artifact=wheel'
+pip install 'https://glasscastles-sectp.vercel.app/api/download?artifact=wheel'
 sectp --help
 sectp inspect "hello from evaluator"
 ```

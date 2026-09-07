@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from 'node:fs/promises';
 
-const BASE='https://scopesentinel-saas.vercel.app';
+const BASE='https://glasscastles-scopesentinel.vercel.app';
 function usage(){console.error('Usage: scope-envelope.mjs --program NAME --policy FILE --scope FILE --host HOST [--action ACTION] [--max-requests N]');process.exit(2)}
 function args(argv){const out={};for(let i=0;i<argv.length;i+=2){const k=argv[i],v=argv[i+1];if(!k?.startsWith('--')||v==null)usage();out[k.slice(2)]=v}return out}
 async function post(path,body){const r=await fetch(new URL(path,BASE),{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)});const text=await r.text();let data;try{data=JSON.parse(text)}catch{data={raw:text}}if(!r.ok)throw new Error(data.error||`HTTP ${r.status}`);return data}
