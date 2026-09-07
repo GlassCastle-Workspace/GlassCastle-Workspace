@@ -98,7 +98,8 @@
   ],
   "policy": {
     "internal_links": "Use canonical URLs only.",
-    "legacy_urls": "Compatibility only. Do not publish as official URLs.",
-    "third_party_checkout": "Stripe, Ko-fi, and Buy Me a Coffee URLs remain provider transaction endpoints, not GlassCastle canonical asset URLs."
+    "legacy_urls": "Compatibility only. Legacy first-party hostnames permanently redirect to their canonical URL with HTTP 308 and must not be published as official URLs.",
+    "third_party_checkout": "Stripe, Ko-fi, and Buy Me a Coffee URLs remain provider transaction endpoints, not GlassCastle canonical asset URLs.",
+    "legacy_redirect_status": 308
   }
 }
