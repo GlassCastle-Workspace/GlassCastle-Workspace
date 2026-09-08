@@ -8,24 +8,28 @@ A single human Founder/Owner remains accountable for consequential company decis
 
 AI systems are operational tools and delegated agents. They are **not** presented as legal employees, officers, directors, signatories, or independent sources of company authority.
 
-## Departments
+## Departments and cadence
 
-| Hourly minute | Department | Primary responsibility |
+**10 departments. 10 recurring tasks. One task per department, every 2 hours, with task starts staggered 12 minutes apart.**
+
+Cycles begin on even local hours in **America/New_York (Eastern time)**. The table shows each department's offset from the start of a two-hour cycle; the sequence repeats throughout the day.
+
+| Cycle offset | Department | Primary responsibility |
 |---:|---|---|
-| `:00` | Executive & Strategy | Strategy, portfolio priorities, organizational design, company pulse |
-| `:05` | Human Relations & AI Workforce Operations | Role charters, responsibility boundaries, access/separation of duties, workforce planning |
-| `:10` | Research & Development | Research, experiments, prototypes, evaluation |
-| `:15` | Revenue & Finance | Financial truth, budgets, pricing, economics, revenue experiments |
-| `:20` | Product & Engineering | Requirements, architecture, implementation, testing, releases |
-| `:25` | Security & Operations | SOC/NOC, security governance, risk, release review, incident readiness |
-| `:30` | Sales & Partnerships | Segmentation, qualification, offers, partnerships, commercial feedback |
-| `:35` | Marketing & Communications | Positioning, brand, content, public claims and evidence |
-| `:40` | Legal, Risk & Compliance | Issue spotting, risk register, IP/licensing, privacy, policy support |
-| `:45` | Customer Success & Support | Customer-experience readiness, onboarding, support, feedback |
-| `:50` | Education & Training | Courses, labs, CTFs, workshops, assessments |
-| `:55` | Infrastructure & Automation | GlassCastle(L), monitoring, backups, integrations, deployment substrate |
+| `00:00` | Executive & Strategy | Strategy, portfolio priorities, organizational design, company pulse |
+| `00:12` | Human Relations & AI Workforce Operations | Role charters, responsibility boundaries, access/separation of duties, workforce planning |
+| `00:24` | Research & Development | Research, experiments, prototypes, evaluation |
+| `00:36` | Revenue & Finance | Financial truth, budgets, pricing, economics, revenue experiments |
+| `00:48` | Product & Engineering | Requirements, architecture, implementation, testing, releases |
+| `01:00` | Security & Operations | SOC/NOC, security governance, risk, release review, incident readiness |
+| `01:12` | Growth & Partnerships | Sales, partnerships, positioning, marketing, communications, commercial feedback |
+| `01:24` | Legal, Risk & Compliance | Issue spotting, risk register, IP/licensing, privacy, policy support |
+| `01:36` | Education & Customer Success | Courses, labs, CTFs, assessments, onboarding, support, customer feedback |
+| `01:48` | Infrastructure & Automation | GlassCastle(L), monitoring, backups, integrations, deployment substrate |
 
-The staggered schedule is an operating cadence, not an authority grant.
+Growth & Partnerships combines the former Sales & Partnerships and Marketing & Communications departments. Education & Customer Success combines the former Education & Training and Customer Success & Support departments. Their responsibilities continue under the combined owners, while existing function-specific authority and approval boundaries remain in force.
+
+The staggered schedule is an operating cadence, not an authority grant or a guarantee that work has completed.
 
 ## Human approval boundary
 
@@ -42,7 +46,7 @@ The human principal retains approval for consequential actions including:
 - destructive or irreversible production/data changes
 - regulatory, audit, certification, or compliance representations
 
-Tool access, credentials, an hourly schedule, or receipt of a message never create permission by themselves.
+Tool access, credentials, a recurring schedule, or receipt of a message never create permission by themselves.
 
 ## Separation of duties
 

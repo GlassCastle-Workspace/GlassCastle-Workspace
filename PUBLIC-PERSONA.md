@@ -75,6 +75,8 @@ We are most credible when we show the evidence surface, the boundary conditions,
 
 GlassCastle Security operates as a **one-human, multiple-AI company**. The Founder/Owner remains the accountable human authority; specialized AI departments assist with research, engineering, security operations, finance, customer work, education, communications, and infrastructure.
 
+The current organization has **10 departments and 10 recurring tasks**. Each department has one task scheduled every 2 hours, with starts staggered 12 minutes apart across even-hour cycles in America/New_York (Eastern time). Use the [public operating model](OPERATING-MODEL.md) for the current department map; describe Growth & Partnerships and Education & Customer Success as the combined owners of their respective functions.
+
 Public language must preserve that distinction:
 
 - AI departments are delegated tools/agents, not human employees, officers, directors, or independent company authorities

@@ -9,7 +9,8 @@ _Last reviewed: 2026-09-08._
 ## Company operating model
 
 - **One Human / Multiple AI operating model** — [OPERATING-MODEL.md](OPERATING-MODEL.md)
-- Defines the public department structure, separation of duties, and human approval boundary.
+- Defines the public structure of **10 departments and 10 recurring tasks**, each repeating every 2 hours with starts staggered 12 minutes apart, alongside separation of duties and the human approval boundary.
+- Cycles begin on even hours in America/New_York (Eastern time); the operating model is the public department and cadence reference.
 
 ## Start here
 
