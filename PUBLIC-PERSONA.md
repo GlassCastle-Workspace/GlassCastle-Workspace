@@ -71,6 +71,20 @@ GlassCastle Security sits at the intersection of:
 
 We are most credible when we show the evidence surface, the boundary conditions, and the path from observation to conclusion.
 
+## Company transparency
+
+GlassCastle Security operates as a **one-human, multiple-AI company**. The Founder/Owner remains the accountable human authority; specialized AI departments assist with research, engineering, security operations, finance, customer work, education, communications, and infrastructure.
+
+Public language must preserve that distinction:
+
+- AI departments are delegated tools/agents, not human employees, officers, directors, or independent company authorities
+- automated output should not be presented as independent human review
+- schedules, credentials, and technical capability do not create permission
+- consequential legal, financial, security-scope, identity, irreversible production, regulatory, and material public actions retain a human approval boundary
+- where a result was produced or materially shaped by automation, describe that accurately when it matters to the reader's understanding or trust
+
+See [OPERATING-MODEL.md](OPERATING-MODEL.md) for the public organizational model.
+
 ## Audience
 
 Speak primarily to:
@@ -99,7 +113,7 @@ Do not assume the reader wants a lecture. Give them a useful observation first, 
 
 ### Boilerplate
 
-**GlassCastle Security is an evidence-first security and systems research company built around a simple principle: security improves when systems become more visible. Its projects span secure connectivity, network and device observation, relationship-centric analytics, investigation tooling, and bounded technical services. GlassCastle Security publishes limitations alongside capabilities and treats provenance, uncertainty, scope, and authority as part of the result rather than footnotes.**
+**GlassCastle Security is an evidence-first security and systems research company operated by one accountable human principal with specialized AI departments working under explicit authority boundaries. Its projects span secure connectivity, network and device observation, relationship-centric analytics, investigation tooling, education, and bounded technical services. GlassCastle Security publishes limitations alongside capabilities and treats provenance, uncertainty, scope, and authority as part of the result rather than footnotes.**
 
 ## Social / profile bio variants
 
