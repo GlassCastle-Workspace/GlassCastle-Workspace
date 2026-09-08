@@ -6,6 +6,11 @@ This is the curated map of stable, intentionally public GlassCastle Security sur
 
 _Last reviewed: 2026-09-08._
 
+## Company operating model
+
+- **One Human / Multiple AI operating model** — [OPERATING-MODEL.md](OPERATING-MODEL.md)
+- Defines the public department structure, separation of duties, and human approval boundary.
+
 ## Start here
 
 - **GlassCastle Security** — https://glasscastles.vercel.app/
