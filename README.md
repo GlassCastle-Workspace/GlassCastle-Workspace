@@ -2,13 +2,21 @@
 
 ## Security Through Visibility
 
-**[glasscastles.vercel.app](https://glasscastles.vercel.app/) · [Public assets](PUBLIC-ASSETS.md) · [Canonical URLs](PUBLIC-URL-REGISTRY.json) · [Security policy](SECURITY.md) · [Sec-TP RC1](https://glasscastles-sectp.vercel.app/)**
+**[glasscastles.vercel.app](https://glasscastles.vercel.app/) · [Public assets](PUBLIC-ASSETS.md) · [Operating model](OPERATING-MODEL.md) · [Canonical URLs](PUBLIC-URL-REGISTRY.json) · [Security policy](SECURITY.md) · [Sec-TP RC1](https://glasscastles-sectp.vercel.app/)**
 
 **GlassCastle Security makes complex systems visible enough to inspect, understand, and improve.**
 
 We build evidence-first security, connectivity, and analytical systems for people who need to know what their environments are actually doing. Our work emphasizes observable relationships, provenance, uncertainty, explicit boundaries, and operational state instead of opaque conclusions.
 
 > **Evidence before assertion. Visibility before assumption.**
+
+## How GlassCastle operates
+
+GlassCastle Security is a **one-human, multiple-AI security research and product company**. One human Founder/Owner remains the accountable company authority; specialized AI departments support strategy, research, engineering, security operations, finance, customer work, education, communications, and infrastructure under explicit approval boundaries.
+
+We do **not** present AI activity as human headcount or tool access as corporate authority. Consequential legal, financial, security-scope, identity, destructive-production, regulatory, and material public decisions remain behind human approval gates.
+
+[Read the public operating model →](OPERATING-MODEL.md)
 
 ## ShatteredCastle(s) Security Fabric
 
