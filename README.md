@@ -16,6 +16,8 @@ GlassCastle Security is a **one-human, multiple-AI security research and product
 
 We do **not** present AI activity as human headcount or tool access as corporate authority. Consequential legal, financial, security-scope, identity, destructive-production, regulatory, and material public decisions remain behind human approval gates.
 
+**10 departments · 10 recurring tasks · every 2 hours · starts staggered 12 minutes apart.** Cycles begin on even hours in America/New_York (Eastern time). Growth & Partnerships brings together sales and marketing; Education & Customer Success brings together learning and customer support.
+
 [Read the public operating model →](OPERATING-MODEL.md)
 
 ## ShatteredCastle(s) Security Fabric
