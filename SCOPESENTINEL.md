@@ -1,6 +1,6 @@
 # ScopeSentinel
 
-ScopeSentinel is the policy and authorization preflight stage for the GlassCastle(s) Security Fabric.
+ScopeSentinel is the policy and authorization preflight stage for the ShatteredCastle(S) Security Fabric.
 
 **Scope → Discover → Assess → Validate → Impact → Remediate**
 

@@ -6,4 +6,4 @@ MITRE's published D3FEND Terms of Use grant a **non-exclusive, royalty-free lice
 
 Official terms: https://d3fend.mitre.org/tou/
 
-MITRE D3FEND™ and the D3FEND logo are trademarks of The MITRE Corporation. GlassCastle(s) / ShatteredCastle(s) is an independent integration and does not imply MITRE sponsorship or endorsement.
+MITRE D3FEND™ and the D3FEND logo are trademarks of The MITRE Corporation. The GlassCastle Security / ShatteredCastle(s) integration is independent and does not imply MITRE sponsorship or endorsement.

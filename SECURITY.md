@@ -1,12 +1,12 @@
-# GlassCastle(s) Security Policy
+# GlassCastle Security Policy
 
-GlassCastle(s) welcomes good-faith reports about security issues in our public software and public web properties.
+GlassCastle Security welcomes good-faith reports about security issues in our public software and public web properties.
 
 ## Report privately
 
 Email **glasscastles@proton.me** with:
 
-- the affected GlassCastle(s) URL, repository path, release, or component;
+- the affected GlassCastle Security URL, repository path, release, or component;
 - a concise description of the issue and its security impact;
 - reproducible steps or a minimal proof of concept when practical;
 - relevant logs, hashes, screenshots, or request/response evidence;
@@ -15,7 +15,7 @@ Email **glasscastles@proton.me** with:
 Please do not publish an unresolved vulnerability before we have had a reasonable opportunity to investigate it.
 ## Boundaries
 
-This policy applies only to GlassCastle(s) assets that we own or explicitly operate. It does **not** authorize testing of third-party providers linked from our properties, including payment processors, hosting platforms, marketplaces, or other external services.
+This policy applies only to GlassCastle Security assets that we own or explicitly operate. It does **not** authorize testing of third-party providers linked from our properties, including payment processors, hosting platforms, marketplaces, or other external services.
 
 Good-faith research should remain bounded and non-destructive. Do not:
 
@@ -23,7 +23,7 @@ Good-faith research should remain bounded and non-destructive. Do not:
 - degrade availability, exhaust resources, or perform denial-of-service testing;
 - use social engineering, credential theft, or physical intrusion;
 - run high-volume automated scanning that materially affects service;
-- pivot from a GlassCastle(s) property into a third-party system;
+- pivot from a GlassCastle Security property into a third-party system;
 - use a discovered issue to obtain funds, secrets, privileges, or persistent access.
 
 If a proof requires an action that could affect another user or external system, stop and report the hypothesis instead.

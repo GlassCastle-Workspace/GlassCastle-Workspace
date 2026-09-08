@@ -1,10 +1,10 @@
-# GlassCastle(s)
+# GlassCastle Security
 
 ## Security Through Visibility
 
 **[glasscastles.vercel.app](https://glasscastles.vercel.app/) · [Public assets](PUBLIC-ASSETS.md) · [Canonical URLs](PUBLIC-URL-REGISTRY.json) · [Security policy](SECURITY.md) · [Sec-TP RC1](https://glasscastles-sectp.vercel.app/)**
 
-**GlassCastle(s) makes complex systems visible enough to inspect, understand, and improve.**
+**GlassCastle Security makes complex systems visible enough to inspect, understand, and improve.**
 
 We build evidence-first security, connectivity, and analytical systems for people who need to know what their environments are actually doing. Our work emphasizes observable relationships, provenance, uncertainty, explicit boundaries, and operational state instead of opaque conclusions.
 
@@ -12,7 +12,7 @@ We build evidence-first security, connectivity, and analytical systems for peopl
 
 ## ShatteredCastle(s) Security Fabric
 
-**ShatteredCastle(s)** is the umbrella name for the GlassCastle(s) security tool and SaaS suite.
+**ShatteredCastle(s)** is the umbrella name for GlassCastle Security's security tool and SaaS suite.
 
 **Scope → Discover → Assess → Validate → Impact → Remediate**
 
@@ -71,7 +71,7 @@ ShatteredCastle(s) integrates **MITRE ATT&CK® v19.2** as a separate behavior ta
 
 ATT&CK selectors are exact-only. ShatteredCastle(s) does not classify free text, scanner findings, topology labels, or telemetry into ATT&CK techniques automatically. Cross-model bindings to UKC, Diamond, and Pyramid are explicit-only; ATT&CK context does not change authorization, proof thresholds, severity, or BlastRadial impact scores.
 
-© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE does not endorse GlassCastle(s) or ShatteredCastle(s). See the MITRE ATT&CK Terms of Use for license details.
+© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE does not endorse GlassCastle Security or ShatteredCastle(s). See the MITRE ATT&CK Terms of Use for license details.
 
 ### MITRE D3FEND™ defensive-technique lens
 
@@ -96,7 +96,7 @@ A DML number is never accepted as an organization-wide maturity claim by itself.
 
 ## Public front doors
 
-- **GlassCastle(s)** — https://glasscastles.vercel.app/
+- **GlassCastle Security** — https://glasscastles.vercel.app/
 - **GlassCastle(s) Mining Co.** — https://glasscastles-mining.vercel.app/
 - **ScopeSentinel · Scope** — https://glasscastles-scopesentinel.vercel.app/
 - **Kork · Discover** — https://glasscastles-kork.vercel.app/
@@ -116,7 +116,7 @@ The shortest path from curiosity to a real GlassCastle artifact:
 
 - **$3 Outside-In Launch Readiness Mini Kit** — a repeatable self-service workflow plus machine-readable evidence template. [Buy with Stripe](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
 - **$25 Real-Device APK Smoke Test** — one bounded test pass on GlassCastle-owned physical Android hardware. You provide the APK URL and what you want tested; fulfillment begins when a compatible reviewed Android node is online. [Book the smoke test](https://buy.stripe.com/5kQaEX7zzgmN8bjbIE0VO08)
-- **$50 Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle(s). [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://glasscastles-web3-launch-readiness.vercel.app/)
+- **$50 Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle Security. [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://glasscastles-web3-launch-readiness.vercel.app/)
 
 For larger work: **$250 Surface Survey** · [Book](https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06) | **$750 Evidence Expedition** · [Book](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
 
@@ -138,7 +138,7 @@ Each step increases evidence depth without silently expanding authority.
 
 - **Prospect · Free — Outside-In Launch Readiness Quick Scan** — inspect one public surface yourself in about five minutes. [Run the Quick Scan](FREE-QUICK-SCAN.md)
 - **Ore · $3 — Outside-In Launch Readiness Mini Kit** — repeatable self-service workflow with a machine-readable evidence template. [Get the Mini Kit](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
-- **Assay · $50 — Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle(s). [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://glasscastles-web3-launch-readiness.vercel.app/)
+- **Assay · $50 — Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle Security. [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://glasscastles-web3-launch-readiness.vercel.app/)
 - **Survey · $250 — GlassCastle Surface Survey** — up to five related public targets examined together with a compact evidence map. [Review scope](SURFACE-SURVEY.md) · [Book with Stripe](https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06)
 - **Expedition · $750 — GlassCastle Evidence Expedition** — one bounded investigation objective across multiple public evidence sources. [Review scope](EVIDENCE-EXPEDITION.md) · [Book with Stripe](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
 
@@ -146,7 +146,7 @@ Each step increases evidence depth without silently expanding authority.
 
 - **Sec-TP v0.6.0rc1** — research/reference secure capability tunnel with TCP/QUIC carriers, pinned identity, default-deny authorization, bounded sessions, tamper-evident audit chaining, and HHT-informed defensive telemetry. RC1 passed 162 automated tests before packaging. It is not an audited production VPN. [Evaluate Sec-TP RC1](SECTP-RC1.md) · [Download release](https://glasscastles-sectp.vercel.app/)
 
-Publication is exposure, not demand. GlassCastle(s) reports revenue only when a payment provider verifies a completed payment.
+Publication is exposure, not demand. GlassCastle Security reports revenue only when a payment provider verifies a completed payment.
 
 ### How we work
 

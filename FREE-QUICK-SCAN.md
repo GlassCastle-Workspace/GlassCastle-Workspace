@@ -1,4 +1,4 @@
-# GlassCastle(s) Outside-In Launch Readiness Quick Scan
+# GlassCastle Security Outside-In Launch Readiness Quick Scan
 
 **Prospect · Free · One public target · About 5 minutes**
 
@@ -105,7 +105,7 @@ Absence is evidence, not automatically a vulnerability. Suitability depends on t
 ## Choose the next depth
 
 - **Need a reusable self-service artifact?** Outside-In Launch Readiness Mini Kit · **$3**
-- **Want GlassCastle(s) to inspect one public target and package the evidence?** Evidence Snapshot · **$50**
+- **Want GlassCastle Security to inspect one public target and package the evidence?** Evidence Snapshot · **$50**
 - **Need several related public targets examined together?** Surface Survey · **$250**
 
 [Get the $3 Mini Kit](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Book the $50 Evidence Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05)

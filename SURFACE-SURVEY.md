@@ -10,7 +10,7 @@ The Surface Survey is a bounded outside-in evidence review for one organization 
 
 ## What we observe
 
-For up to five supplied public targets, GlassCastle(s) collects and packages evidence across:
+For up to five supplied public targets, GlassCastle Security collects and packages evidence across:
 
 - DNS and target resolution
 - TLS and certificate observations

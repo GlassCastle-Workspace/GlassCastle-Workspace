@@ -1,8 +1,8 @@
-# GlassCastle(s) Offer Ladder
+# GlassCastle Security Offer Ladder
 
 ## Security Through Visibility
 
-GlassCastle(s) offers increasing levels of evidence depth without silently expanding authority. Every tier keeps scope, provenance, uncertainty, and boundaries visible.
+GlassCastle Security offers increasing levels of evidence depth without silently expanding authority. Every tier keeps scope, provenance, uncertainty, and boundaries visible.
 
 | Tier | Offer | Price | Best for | Output |
 |---|---|---:|---|---|

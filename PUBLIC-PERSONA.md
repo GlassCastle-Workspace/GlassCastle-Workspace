@@ -1,14 +1,14 @@
-# GlassCastle(s) Public Persona
+# GlassCastle Security Public Persona
 
 ## Core identity
 
-**GlassCastle(s) makes complex systems visible enough to inspect, understand, and improve.**
+**GlassCastle Security makes complex systems visible enough to inspect, understand, and improve.**
 
 Our public promise is simple: **Security Through Visibility.** We build evidence-first security, connectivity, and analytical systems that expose observations, relationships, provenance, uncertainty, and operational state instead of hiding them behind opaque conclusions.
 
 ## The impression we should leave
 
-GlassCastle(s) should feel:
+GlassCastle Security should feel:
 
 - technically serious without becoming sterile
 - curious without becoming speculative
@@ -59,7 +59,7 @@ The brand is a **glass castle**, not a black box. Strength comes from inspectabi
 
 ## Positioning
 
-GlassCastle(s) sits at the intersection of:
+GlassCastle Security sits at the intersection of:
 
 - security visibility and evidence
 - network and protocol observation
@@ -91,15 +91,15 @@ Do not assume the reader wants a lecture. Give them a useful observation first, 
 
 ### One-line description
 
-**GlassCastle(s) builds evidence-first security, connectivity, and analytical systems that make complex technical environments inspectable.**
+**GlassCastle Security builds evidence-first security, connectivity, and analytical systems that make complex technical environments inspectable.**
 
 ### Short bio
 
-**GlassCastle(s) builds tools for seeing systems clearly: security evidence, network relationships, secure connectivity, device orchestration, and investigation workflows. We favor inspectable evidence over opaque conclusions and explicit uncertainty over manufactured certainty.**
+**GlassCastle Security builds tools for seeing systems clearly: security evidence, network relationships, secure connectivity, device orchestration, and investigation workflows. We favor inspectable evidence over opaque conclusions and explicit uncertainty over manufactured certainty.**
 
 ### Boilerplate
 
-**GlassCastle(s) is an evidence-first security and systems research company built around a simple principle: security improves when systems become more visible. Its projects span secure connectivity, network and device observation, relationship-centric analytics, investigation tooling, and bounded technical services. GlassCastle(s) publishes limitations alongside capabilities and treats provenance, uncertainty, scope, and authority as part of the result rather than footnotes.**
+**GlassCastle Security is an evidence-first security and systems research company built around a simple principle: security improves when systems become more visible. Its projects span secure connectivity, network and device observation, relationship-centric analytics, investigation tooling, and bounded technical services. GlassCastle Security publishes limitations alongside capabilities and treats provenance, uncertainty, scope, and authority as part of the result rather than footnotes.**
 
 ## Social / profile bio variants
 
@@ -117,7 +117,7 @@ Do not assume the reader wants a lecture. Give them a useful observation first, 
 
 ## Publishing doctrine
 
-A public GlassCastle(s) post should normally do at least one of these:
+A public GlassCastle Security post should normally do at least one of these:
 
 - reveal a useful observation
 - explain a system clearly
@@ -162,6 +162,6 @@ The Mining Co. may sound like a lantern-lit technical guild with pickaxes and le
 
 ## Public trust rule
 
-**Never make GlassCastle(s) sound larger, richer, more mature, more autonomous, more audited, or more certain than the evidence supports.**
+**Never make GlassCastle Security sound larger, richer, more mature, more autonomous, more audited, or more certain than the evidence supports.**
 
 Credibility is a compounding asset. Protect it.

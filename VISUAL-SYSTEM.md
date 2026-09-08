@@ -1,8 +1,8 @@
-# GlassCastle(s) Visual System
+# GlassCastle Security Visual System
 
 ## Canonical direction
 
-**The interface is the evidence surface.** Public GlassCastle(s) and GlassCastle(s) Mining Co. assets should feel like a live operational topology rather than a static marketing page.
+**The interface is the evidence surface.** Public GlassCastle Security and GlassCastle(s) Mining Co. assets should feel like a live operational topology rather than a static marketing page.
 
 ### Foundation
 
@@ -28,7 +28,7 @@ Use depth to reveal relationships, not to decorate them.
 - Panels should resemble instruments, not generic SaaS cards.
 - Hover/focus should reveal topology or state rather than merely brighten a button.
 
-### Public GlassCastle(s)
+### Public GlassCastle Security
 
 The primary field models the security fabric around a control node:
 

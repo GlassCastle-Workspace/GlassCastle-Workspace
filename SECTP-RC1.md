@@ -1,6 +1,6 @@
 # Sec-TP v0.6.0rc1 — Evaluator Guide
 
-Sec-TP (Secret Tunnel Protocol) is a research/reference secure capability tunnel from GlassCastle(s). RC1 is available for controlled technical evaluation.
+Sec-TP (Secret Tunnel Protocol) is a research/reference secure capability tunnel from GlassCastle Security. RC1 is available for controlled technical evaluation.
 
 ## Get RC1
 
