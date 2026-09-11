@@ -1,14 +1,14 @@
-# GlassCastle Security Public Persona
+# GlassCastle(S) Public Persona
 
 ## Core identity
 
-**GlassCastle Security makes complex systems visible enough to inspect, understand, and improve.**
+**GlassCastle(S) is a Security and Education Company that makes complex systems visible enough to inspect, understand, defend, and teach.**
 
-Our public promise is simple: **Security Through Visibility.** We build evidence-first security, connectivity, and analytical systems that expose observations, relationships, provenance, uncertainty, and operational state instead of hiding them behind opaque conclusions.
+Our public promise is simple: **Security Through Visibility, Knowledge Through Understanding.** We build evidence-first security systems and learning experiences that expose observations, relationships, provenance, uncertainty, and operational state, then turn that evidence into practical understanding.
 
 ## The impression we should leave
 
-GlassCastle Security should feel:
+GlassCastle(S) should feel:
 
 - technically serious without becoming sterile
 - curious without becoming speculative
@@ -59,7 +59,7 @@ The brand is a **glass castle**, not a black box. Strength comes from inspectabi
 
 ## Positioning
 
-GlassCastle Security sits at the intersection of:
+GlassCastle(S) sits at the intersection of:
 
 - security visibility and evidence
 - network and protocol observation
@@ -68,12 +68,13 @@ GlassCastle Security sits at the intersection of:
 - relationship-centric analytics
 - investigation tooling
 - practical technical research
+- security education, labs, CTFs, curriculum, and applied learning
 
 We are most credible when we show the evidence surface, the boundary conditions, and the path from observation to conclusion.
 
 ## Company transparency
 
-GlassCastle Security operates as a **one-human, multiple-AI company**. The Founder/Owner remains the accountable human authority; specialized AI departments assist with research, engineering, security operations, finance, customer work, education, communications, and infrastructure.
+GlassCastle(S) operates as a **one-human, multiple-AI company**. The Founder/Owner remains the accountable human authority; specialized AI departments assist with research, engineering, security operations, finance, customer work, education, communications, and infrastructure.
 
 The current organization has **10 departments and 10 recurring tasks**. Each department has one task scheduled every 2 hours, with starts staggered 12 minutes apart across even-hour cycles in America/New_York (Eastern time). Use the [public operating model](OPERATING-MODEL.md) for the current department map; describe Growth & Partnerships and Education & Customer Success as the combined owners of their respective functions.
 
@@ -96,6 +97,7 @@ Speak primarily to:
 - infrastructure and platform operators
 - researchers and investigators
 - technically curious teams that need to understand what their systems are actually doing
+- learners, instructors, and security teams building practical capability
 
 Do not assume the reader wants a lecture. Give them a useful observation first, then let depth unfold.
 
@@ -103,25 +105,25 @@ Do not assume the reader wants a lecture. Give them a useful observation first, 
 
 ### Tagline
 
-**Security Through Visibility.**
+**Security Through Visibility, Knowledge Through Understanding.**
 
 ### One-line description
 
-**GlassCastle Security builds evidence-first security, connectivity, and analytical systems that make complex technical environments inspectable.**
+**GlassCastle(S) is a Security and Education Company building evidence-first security systems, technical learning experiences, secure connectivity, and analytical tooling that make complex environments inspectable and understandable.**
 
 ### Short bio
 
-**GlassCastle Security builds tools for seeing systems clearly: security evidence, network relationships, secure connectivity, device orchestration, and investigation workflows. We favor inspectable evidence over opaque conclusions and explicit uncertainty over manufactured certainty.**
+**GlassCastle(S) builds tools and learning experiences for seeing systems clearly: security evidence, network relationships, secure connectivity, device orchestration, investigation workflows, labs, quests, and curriculum. We favor inspectable evidence over opaque conclusions and understanding over memorization.**
 
 ### Boilerplate
 
-**GlassCastle Security is an evidence-first security and systems research company operated by one accountable human principal with specialized AI departments working under explicit authority boundaries. Its projects span secure connectivity, network and device observation, relationship-centric analytics, investigation tooling, education, and bounded technical services. GlassCastle Security publishes limitations alongside capabilities and treats provenance, uncertainty, scope, and authority as part of the result rather than footnotes.**
+**GlassCastle(S) is an evidence-first Security and Education Company operated by one accountable human principal with specialized AI departments working under explicit authority boundaries. Its work spans security tooling, secure connectivity, network and device observation, relationship-centric analytics, investigation workflows, CTFs, labs, curriculum, and bounded technical services. GlassCastle(S) publishes limitations alongside capabilities and treats provenance, uncertainty, scope, authority, and learner understanding as part of the result rather than footnotes.**
 
 ## Social / profile bio variants
 
 ### Compact
 
-**Evidence-first security + systems research. Visibility, relationships, provenance, and bounded automation. Security Through Visibility.**
+**Security + education, evidence-first. Visibility, relationships, provenance, practical learning, and bounded automation. Security Through Visibility, Knowledge Through Understanding.**
 
 ### Human
 
@@ -133,7 +135,7 @@ Do not assume the reader wants a lecture. Give them a useful observation first, 
 
 ## Publishing doctrine
 
-A public GlassCastle Security post should normally do at least one of these:
+A public GlassCastle(S) post should normally do at least one of these:
 
 - reveal a useful observation
 - explain a system clearly
@@ -178,6 +180,6 @@ The Mining Co. may sound like a lantern-lit technical guild with pickaxes and le
 
 ## Public trust rule
 
-**Never make GlassCastle Security sound larger, richer, more mature, more autonomous, more audited, or more certain than the evidence supports.**
+**Never make GlassCastle(S) sound larger, richer, more mature, more autonomous, more audited, or more certain than the evidence supports.**
 
 Credibility is a compounding asset. Protect it.

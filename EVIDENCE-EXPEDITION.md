@@ -6,7 +6,7 @@
 
 A GlassCastle Evidence Expedition is for a clearly bounded public investigation objective that needs multiple evidence sources, relationship analysis, and explicit uncertainty rather than a simple checklist.
 
-> **Security Through Visibility.** Investigation begins where inventory stops.
+> **Security Through Visibility, Knowledge Through Understanding.** Investigation begins where inventory stops.
 
 ## What we investigate
 

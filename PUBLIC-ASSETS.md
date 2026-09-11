@@ -1,8 +1,8 @@
-# GlassCastle Security Public Assets
+# GlassCastle(S) Public Assets
 
-**Security Through Visibility.**
+**Security Through Visibility, Knowledge Through Understanding.**
 
-This is the curated map of stable, intentionally public GlassCastle Security surfaces. Preview deployments, internal infrastructure, and ephemeral lab endpoints are deliberately excluded.
+This is the curated map of stable, intentionally public GlassCastle(S) surfaces. Preview deployments, internal infrastructure, and ephemeral lab endpoints are deliberately excluded.
 
 _Last reviewed: 2026-09-08._
 
@@ -14,7 +14,7 @@ _Last reviewed: 2026-09-08._
 
 ## Start here
 
-- **GlassCastle Security** — https://glasscastles.vercel.app/
+- **GlassCastle(S)** — https://glasscastles.vercel.app/
 - **Public repository** — https://github.com/GlassCastle-Workspace/GlassCastle-Workspace
 - **Security policy** — https://github.com/GlassCastle-Workspace/GlassCastle-Workspace/blob/main/SECURITY.md
 - **Canonical URL registry** — [PUBLIC-URL-REGISTRY.json](PUBLIC-URL-REGISTRY.json)
@@ -86,8 +86,9 @@ Model integrations preserve source boundaries and do not silently turn taxonomy,
 
 ## Brand system
 
-- Public display name: **GlassCastle Security**
-- Core promise: **Security Through Visibility.**
+- Public display name: **GlassCastle(S)**
+- Company type: **Security and Education Company**
+- Core promise: **Security Through Visibility, Knowledge Through Understanding.**
 - Principle: **Evidence before assertion. Visibility before assumption.**
 - Type: **Roboto Mono**
 - Foundation: void black / near-black

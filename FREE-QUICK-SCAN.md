@@ -6,7 +6,7 @@
 
 The Quick Scan is a compact, evidence-first check of one public website or launch surface. It helps you capture what is observable now, compare it with what you expected, and leave with useful follow-up questions.
 
-> **Security Through Visibility.** Start with the evidence.
+> **Security Through Visibility, Knowledge Through Understanding.** Start with the evidence.
 
 ## What you inspect
 

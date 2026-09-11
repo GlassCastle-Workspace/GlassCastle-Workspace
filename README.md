@@ -1,18 +1,18 @@
-# GlassCastle Security
+# GlassCastle(S)
 
-## Security Through Visibility
+## Security Through Visibility, Knowledge Through Understanding
 
 **[glasscastles.vercel.app](https://glasscastles.vercel.app/) · [Public assets](PUBLIC-ASSETS.md) · [Operating model](OPERATING-MODEL.md) · [Canonical URLs](PUBLIC-URL-REGISTRY.json) · [Security policy](SECURITY.md) · [Sec-TP RC1](https://glasscastles-sectp.vercel.app/)**
 
-**GlassCastle Security makes complex systems visible enough to inspect, understand, and improve.**
+**GlassCastle(S) is a Security and Education Company that makes complex systems visible enough to inspect, understand, defend, and teach.**
 
-We build evidence-first security, connectivity, and analytical systems for people who need to know what their environments are actually doing. Our work emphasizes observable relationships, provenance, uncertainty, explicit boundaries, and operational state instead of opaque conclusions.
+We build evidence-first security systems, practical learning experiences, secure connectivity, and analytical tooling for people who need to know what their environments are actually doing and why. Our work emphasizes observable relationships, provenance, uncertainty, explicit boundaries, and operational state instead of opaque conclusions.
 
 > **Evidence before assertion. Visibility before assumption.**
 
 ## How GlassCastle operates
 
-GlassCastle Security is a **one-human, multiple-AI security research and product company**. One human Founder/Owner remains the accountable company authority; specialized AI departments support strategy, research, engineering, security operations, finance, customer work, education, communications, and infrastructure under explicit approval boundaries.
+GlassCastle(S) is a **one-human, multiple-AI Security and Education Company**. One human Founder/Owner remains the accountable company authority; specialized AI departments support strategy, research, engineering, security operations, finance, customer work, education, communications, and infrastructure under explicit approval boundaries.
 
 We do **not** present AI activity as human headcount or tool access as corporate authority. Consequential legal, financial, security-scope, identity, destructive-production, regulatory, and material public decisions remain behind human approval gates.
 
@@ -22,7 +22,7 @@ We do **not** present AI activity as human headcount or tool access as corporate
 
 ## ShatteredCastle(s) Security Fabric
 
-**ShatteredCastle(s)** is the umbrella name for GlassCastle Security's security tool and SaaS suite.
+**ShatteredCastle(s)** is the umbrella name for GlassCastle(S)'s security tool and SaaS suite.
 
 **Scope → Discover → Assess → Validate → Impact → Remediate**
 
@@ -81,7 +81,7 @@ ShatteredCastle(s) integrates **MITRE ATT&CK® v19.2** as a separate behavior ta
 
 ATT&CK selectors are exact-only. ShatteredCastle(s) does not classify free text, scanner findings, topology labels, or telemetry into ATT&CK techniques automatically. Cross-model bindings to UKC, Diamond, and Pyramid are explicit-only; ATT&CK context does not change authorization, proof thresholds, severity, or BlastRadial impact scores.
 
-© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE does not endorse GlassCastle Security or ShatteredCastle(s). See the MITRE ATT&CK Terms of Use for license details.
+© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation. MITRE does not endorse GlassCastle(S) or ShatteredCastle(s). See the MITRE ATT&CK Terms of Use for license details.
 
 ### MITRE D3FEND™ defensive-technique lens
 
@@ -106,7 +106,7 @@ A DML number is never accepted as an organization-wide maturity claim by itself.
 
 ## Public front doors
 
-- **GlassCastle Security** — https://glasscastles.vercel.app/
+- **GlassCastle(S)** — https://glasscastles.vercel.app/
 - **GlassCastle(s) Mining Co.** — https://glasscastles-mining.vercel.app/
 - **ScopeSentinel · Scope** — https://glasscastles-scopesentinel.vercel.app/
 - **Kork · Discover** — https://glasscastles-kork.vercel.app/
@@ -126,7 +126,7 @@ The shortest path from curiosity to a real GlassCastle artifact:
 
 - **$3 Outside-In Launch Readiness Mini Kit** — a repeatable self-service workflow plus machine-readable evidence template. [Buy with Stripe](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
 - **$25 Real-Device APK Smoke Test** — one bounded test pass on GlassCastle-owned physical Android hardware. You provide the APK URL and what you want tested; fulfillment begins when a compatible reviewed Android node is online. [Book the smoke test](https://buy.stripe.com/5kQaEX7zzgmN8bjbIE0VO08)
-- **$50 Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle Security. [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://glasscastles-web3-launch-readiness.vercel.app/)
+- **$50 Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle(S). [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://glasscastles-web3-launch-readiness.vercel.app/)
 
 For larger work: **$250 Surface Survey** · [Book](https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06) | **$750 Evidence Expedition** · [Book](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
 
@@ -135,6 +135,7 @@ For larger work: **$250 Surface Survey** · [Book](https://book.stripe.com/8x25k
 ### What we build
 
 - **Security visibility** — bounded observations, evidence packaging, relationship maps, and investigation workflows
+- **Education + training** — CTFs, quests, tomes, labs, assessments, and curriculum that turn evidence into understanding
 - **Secure connectivity** — capability-scoped tunnels, routing, translation, and protocol boundaries
 - **Edge + device systems** — endpoint runtimes, orchestration, field nodes, and human/device interfaces
 - **Analytical systems** — search, discovery, representation, provenance, and relationship-centric security analytics
@@ -148,7 +149,7 @@ Each step increases evidence depth without silently expanding authority.
 
 - **Prospect · Free — Outside-In Launch Readiness Quick Scan** — inspect one public surface yourself in about five minutes. [Run the Quick Scan](FREE-QUICK-SCAN.md)
 - **Ore · $3 — Outside-In Launch Readiness Mini Kit** — repeatable self-service workflow with a machine-readable evidence template. [Get the Mini Kit](https://buy.stripe.com/7sYcN56vv5I93V3h2Y0VO04) · [Ko-fi](https://ko-fi.com/s/ed21feb147)
-- **Assay · $50 — Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle Security. [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://glasscastles-web3-launch-readiness.vercel.app/)
+- **Assay · $50 — Web3 Launch Readiness Evidence Snapshot** — one bounded public launch surface reviewed and packaged by GlassCastle(S). [Book the Snapshot](https://buy.stripe.com/eVqaEXf210nP0IR4gc0VO05) · [View the offer](https://glasscastles-web3-launch-readiness.vercel.app/)
 - **Survey · $250 — GlassCastle Surface Survey** — up to five related public targets examined together with a compact evidence map. [Review scope](SURFACE-SURVEY.md) · [Book with Stripe](https://book.stripe.com/8x25kD5rr3A1dvDaEA0VO06)
 - **Expedition · $750 — GlassCastle Evidence Expedition** — one bounded investigation objective across multiple public evidence sources. [Review scope](EVIDENCE-EXPEDITION.md) · [Book with Stripe](https://book.stripe.com/5kQfZhbPP2vXajr8ws0VO07)
 
@@ -156,7 +157,7 @@ Each step increases evidence depth without silently expanding authority.
 
 - **Sec-TP v0.6.0rc1** — research/reference secure capability tunnel with TCP/QUIC carriers, pinned identity, default-deny authorization, bounded sessions, tamper-evident audit chaining, and HHT-informed defensive telemetry. RC1 passed 162 automated tests before packaging. It is not an audited production VPN. [Evaluate Sec-TP RC1](SECTP-RC1.md) · [Download release](https://glasscastles-sectp.vercel.app/)
 
-Publication is exposure, not demand. GlassCastle Security reports revenue only when a payment provider verifies a completed payment.
+Publication is exposure, not demand. GlassCastle(S) reports revenue only when a payment provider verifies a completed payment.
 
 ### How we work
 
@@ -179,4 +180,4 @@ We say when something is experimental. We distinguish hypotheses from measuremen
 `Evidence before assertion.`
 `Latest != canonical.`
 `Unknown != False.`
-`Security Through Visibility.`
+`Security Through Visibility, Knowledge Through Understanding.`

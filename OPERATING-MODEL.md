@@ -1,8 +1,8 @@
-# GlassCastle Security Operating Model
+# GlassCastle(S) Operating Model
 
 Effective: 2026-09-08
 
-GlassCastle Security / GlassCastle(S) operates as a **one-human, multiple-AI security research and product company**.
+GlassCastle(S) operates as a **one-human, multiple-AI Security and Education Company**.
 
 A single human Founder/Owner remains accountable for consequential company decisions. Specialized AI departments support research, engineering, security operations, finance, customer work, education, communications, and infrastructure under documented authority boundaries.
 
@@ -64,7 +64,7 @@ Examples:
 
 `Research → Productize → Security / Legal Gate → Market / Sell → Support → Evidence → Strategy → New Research`
 
-Cross-cutting functions such as Finance, Human Relations, Education, and Infrastructure support that flow without replacing product or risk owners.
+Cross-cutting functions such as Finance, Human Relations, Education, and Infrastructure support that flow without replacing product or risk owners. Education is also a first-class company output: validated security knowledge should be translated into curriculum, labs, quests, and instruction when doing so creates durable understanding.
 
 ## Organizational domains
 
@@ -81,4 +81,4 @@ These organizational/product domains coexist with platform capability layers suc
 
 GlassCastle does not present AI activity as human headcount or AI autonomy as independent corporate authority. Public descriptions should distinguish what was automated, what was verified, what remains experimental, and where human approval is required.
 
-**Evidence before assertion. Security Through Visibility.**
+**Evidence before assertion. Security Through Visibility, Knowledge Through Understanding.**

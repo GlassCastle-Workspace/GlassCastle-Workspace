@@ -34,4 +34,4 @@ We will evaluate reproducible reports against the affected component's documente
 
 This policy does not promise a bounty, payment, or particular response time. Any future reward program will be stated separately and explicitly.
 
-**Security Through Visibility. Evidence before assertion.**
+**Security Through Visibility, Knowledge Through Understanding. Evidence before assertion.**

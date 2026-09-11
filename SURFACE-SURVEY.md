@@ -6,7 +6,7 @@
 
 The Surface Survey is a bounded outside-in evidence review for one organization or project with several related public-facing targets. It is designed for buyers who need a broader picture than a single-target snapshot.
 
-> **Security Through Visibility.** Relationships matter when the evidence supports them.
+> **Security Through Visibility, Knowledge Through Understanding.** Relationships matter when the evidence supports them.
 
 ## What we observe
 
