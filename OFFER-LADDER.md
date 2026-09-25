@@ -1,6 +1,6 @@
 # GlassCastle Security Offer Ladder
 
-## Security Through Visibility, Knowledge Through Understanding
+## Security Through Visibility, Learning Through Understanding
 
 GlassCastle Security offers increasing levels of evidence depth without silently expanding authority. Every tier keeps scope, provenance, uncertainty, and boundaries visible.
 
