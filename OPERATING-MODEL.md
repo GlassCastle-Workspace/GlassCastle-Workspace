@@ -1,84 +1,75 @@
 # GlassCastle(S) Operating Model
 
-Effective: 2026-09-08
+**Security Through Visibility, Learning Through Understanding.**
 
-GlassCastle(S) operates as a **one-human, multiple-AI Security and Education Company**.
+GlassCastle(S) is a **One Human / Multiple AI** Security and Education company.
 
-A single human Founder/Owner remains accountable for consequential company decisions. Specialized AI departments support research, engineering, security operations, finance, customer work, education, communications, and infrastructure under documented authority boundaries.
+A single human Founder/Owner remains accountable for consequential company decisions. AI-assisted functions research, build, protect, teach, communicate, operate, and learn inside explicit authority boundaries.
 
-AI systems are operational tools and delegated agents. They are **not** presented as legal employees, officers, directors, signatories, or independent sources of company authority.
+## Organization is not a scheduler
 
-## Departments and cadence
+GlassCastle separates:
 
-**10 departments. 10 recurring tasks. One task per department, every 2 hours, with task starts staggered 12 minutes apart.**
+`Organization != Orchestration != Runtime`
 
-Cycles begin on even local hours in **America/New_York (Eastern time)**. The table shows each department's offset from the start of a two-hour cycle; the sequence repeats throughout the day.
+- **Organization** defines who owns an outcome and where authority stops.
+- **Orchestration** coordinates work when a dependency, event, condition, or recurrence justifies it.
+- **Runtime** is what is actually executing or configured now.
 
-| Cycle offset | Department | Primary responsibility |
-|---:|---|---|
-| `00:00` | Executive & Strategy | Strategy, portfolio priorities, organizational design, company pulse |
-| `00:12` | Human Relations & AI Workforce Operations | Role charters, responsibility boundaries, access/separation of duties, workforce planning |
-| `00:24` | Research & Development | Research, experiments, prototypes, evaluation |
-| `00:36` | Revenue & Finance | Financial truth, budgets, pricing, economics, revenue experiments |
-| `00:48` | Product & Engineering | Requirements, architecture, implementation, testing, releases |
-| `01:00` | Security & Operations | SOC/NOC, security governance, risk, release review, incident readiness |
-| `01:12` | Growth & Partnerships | Sales, partnerships, positioning, marketing, communications, commercial feedback |
-| `01:24` | Legal, Risk & Compliance | Issue spotting, risk register, IP/licensing, privacy, policy support |
-| `01:36` | Education & Customer Success | Courses, labs, CTFs, assessments, onboarding, support, customer feedback |
-| `01:48` | Infrastructure & Automation | GlassCastle(L), monitoring, backups, integrations, deployment substrate |
+No AI function is considered active merely because an old task ID exists, and no timer creates authority.
 
-Growth & Partnerships combines the former Sales & Partnerships and Marketing & Communications departments. Education & Customer Success combines the former Education & Training and Customer Success & Support departments. Their responsibilities continue under the combined owners, while existing function-specific authority and approval boundaries remain in force.
+## Six operating cells
 
-The staggered schedule is an operating cadence, not an authority grant or a guarantee that work has completed.
+The company coordinates ten ownership functions through six cells:
+
+| Operating cell | Ownership functions |
+|---|---|
+| Stewardship & Governance | Executive & Strategy; Human Relations & AI Workforce Operations; Legal, Risk & Compliance |
+| Research & Understanding | Research & Development |
+| Product & Engineering | Product & Engineering |
+| Operations & Assurance | Security & Operations; Infrastructure & Automation |
+| Value & Market | Growth & Partnerships; Revenue & Finance |
+| Learning & Success | Education & Customer Success |
+
+The cells reduce coordination overhead. The underlying functions retain distinct responsibility and authority boundaries.
 
 ## Human approval boundary
 
-AI departments can research, analyze, draft, coordinate, test authorized environments, and perform low-risk reversible internal work when permitted by the owning system and standing policy.
+AI-assisted systems may research, analyze, draft, organize, test authorized environments, and perform reversible internal work when the relevant policy permits it.
 
-The human principal retains approval for consequential actions including:
-
-- legal filings, contracts, waivers, and company-binding representations
-- fund transfers, purchases, debt, and material financial commitments
-- hiring, firing, and compensation commitments
-- material public claims or launches unless a content class has been pre-authorized
-- expansion of security-testing scope or action against third-party systems
-- material authentication, identity, credential, or human-root authority changes
-- destructive or irreversible production/data changes
-- regulatory, audit, certification, or compliance representations
-
-Tool access, credentials, a recurring schedule, or receipt of a message never create permission by themselves.
+The human Founder/Owner remains the approval boundary for consequential actions including binding legal commitments, movement of funds, material public claims or launches, security-scope expansion, human-root identity/credential changes, destructive or irreversible production actions, and regulatory/certification representations.
 
 ## Separation of duties
 
-GlassCastle uses explicit separation between creation, review, approval, and financial authority where consequences justify it.
+- Create != review != approve.
+- Capability != permission.
+- Financial analysis != authority to move money.
+- Product implementation != sole security approval.
+- Draft public copy != authority to publish material claims.
+- Infrastructure access != authority to change the human root of trust.
+- Stored historical state != live runtime truth.
 
-Examples:
+## Company loop
 
-- a prototype author is not the sole production approver
-- a product builder is not the sole security reviewer
-- a finance recommendation is not permission to move funds
-- marketing drafts do not self-approve material public claims
-- a sales proposal is not a signed agreement
+`Evidence -> Understanding -> Design -> Operation -> Value -> Learning -> Better Next Action`
 
-## Company flow
-
-`Research → Productize → Security / Legal Gate → Market / Sell → Support → Evidence → Strategy → New Research`
-
-Cross-cutting functions such as Finance, Human Relations, Education, and Infrastructure support that flow without replacing product or risk owners. Education is also a first-class company output: validated security knowledge should be translated into curriculum, labs, quests, and instruction when doing so creates durable understanding.
+GlassCastle's operating structure exists to make this loop easier to inspect, validate, and improve.
 
 ## Organizational domains
 
-- **GlassCastle(S)** — parent and operating company
-- **GlassCastle(M)** — GlassCastle Mining Co.
-- **GlassCastle(F)** — field nodes and field capabilities
-- **GlassCastle(L)** — laboratory and operational control plane
-- **GlassCastle(X)** — internal cyber teams, functions, and authorized operations
-- **ShatteredCastle(S)** — public-facing security SaaS/product surface
+- **GlassCastle(S)** — parent and operating company.
+- **GlassCastle(M)** — Mining Co. and measured economic experimentation.
+- **GlassCastle(F)** — field nodes and field capabilities.
+- **GlassCastle(L)** — laboratory and operational control plane.
+- **GlassCastle(X)** — internal cyber functions and authorized security operations.
+- **ShatteredCastle(S)** — public-facing security product and SaaS surface.
 
-These organizational/product domains coexist with platform capability layers such as Fabric, Edge, Intelligence, Economy, and Control Plane.
+These domains are not separate sources of human authority.
 
-## Transparency rule
+## Transparency
 
-GlassCastle does not present AI activity as human headcount or AI autonomy as independent corporate authority. Public descriptions should distinguish what was automated, what was verified, what remains experimental, and where human approval is required.
+GlassCastle publishes its operating principles because useful autonomy should be inspectable.
 
-**Evidence before assertion. Security Through Visibility, Knowledge Through Understanding.**
+Internal schedules, implementation details, and runtime topology may change as systems improve. Durable public commitments are the authority boundary, evidence discipline, provenance, security posture, and accountability model, not a particular timer configuration.
+
+**Evidence before assertion. Visibility before assumption.**
