@@ -4,93 +4,161 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="GlassCastle(Q) Query Disector identifies query languages, selects the correct language-specific dissector, and explains query anatomy, syntax, and semantics.">
-  <meta name="theme-color" content="#080b10">
+  <meta name="theme-color" content="#070b10">
   <title>GlassCastle(Q) · Query Disector</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<div class="shell">
-  <header class="topbar">
-    <div class="brand">
-      <div class="logo" aria-hidden="true"><span>Q</span></div>
-      <div>
-        <div class="product-line"><span class="suite">GlassCastle(Q)</span><span class="product-tag">Query Disector</span></div>
-        <h1>See the query before you run it.</h1>
-        <p>Input → Language Analyzer → Disector Selection → Dissection</p>
-      </div>
-    </div>
-    <div class="privacy"><span class="privacy-dot"></span>Local-first analysis</div>
-  </header>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="identity" href="#" aria-label="GlassCastle Q home">
+        <span class="mark">Q</span>
+        <span class="identity-copy">
+          <span class="suite">GlassCastle(Q)</span>
+          <strong>Query Disector</strong>
+        </span>
+      </a>
 
-  <div class="pipeline" aria-label="GlassCastle Q analysis pipeline">
-    <div class="pipeline-step" data-flow="input"><span>01</span><strong>Input</strong></div>
-    <div class="pipeline-arrow">→</div>
-    <div class="pipeline-step" data-flow="analyzer"><span>02</span><strong>Language Analyzer</strong></div>
-    <div class="pipeline-arrow">→</div>
-    <div class="pipeline-step" data-flow="selection"><span>03</span><strong>Disector Selection</strong></div>
-    <div class="pipeline-arrow">→</div>
-    <div class="pipeline-step" data-flow="dissection"><span>04</span><strong>Dissection</strong></div>
-  </div>
+      <div class="masthead-center" aria-label="Analysis pipeline">
+        <span class="flow-node active" data-flow="input"><b>01</b> Input</span>
+        <i></i>
+        <span class="flow-node" data-flow="analyzer"><b>02</b> Analyze</span>
+        <i></i>
+        <span class="flow-node" data-flow="selection"><b>03</b> Select</span>
+        <i></i>
+        <span class="flow-node" data-flow="dissection"><b>04</b> Disect</span>
+      </div>
 
-  <main class="workspace">
-    <section class="card input-card">
-      <div class="section-title">
-        <div><span class="eyebrow">GlassCastle(Q)</span><h2>Query Input</h2></div>
-        <span class="specimen">SPECIMEN</span>
+      <div class="masthead-meta">
+        <span class="live-dot"></span>
+        <span>Local analysis</span>
+        <span class="version">v0.3</span>
       </div>
-      <div class="controls">
-        <label><span>Language</span><select id="language"><option value="auto">Auto detect language</option></select></label>
-        <label><span>Example</span><select id="sample"><option value="">Load example…</option><option value="spl">Splunk SPL</option><option value="esql">Elastic ES|QL</option><option value="kusto">Microsoft KQL / Kusto</option><option value="cql">CrowdStrike CQL / LogScale</option><option value="sql">SQL</option></select></label>
-      </div>
-      <textarea id="query" spellcheck="false" aria-label="Query input">index=zeek service=ssl
+    </header>
+
+    <main class="workbench">
+      <section class="query-pane" aria-label="Query input">
+        <div class="pane-heading">
+          <div>
+            <span class="kicker">SPECIMEN</span>
+            <h1>Query</h1>
+          </div>
+          <div class="query-actions-secondary">
+            <button class="ghost" id="copy-query" type="button">Copy</button>
+            <button class="ghost" id="clear-query" type="button">Clear</button>
+          </div>
+        </div>
+
+        <div class="selector-grid">
+          <label>
+            <span>Input language</span>
+            <select id="language"><option value="auto">Auto detect</option></select>
+          </label>
+          <label>
+            <span>Example query</span>
+            <select id="sample">
+              <option value="">Choose an example</option>
+              <option value="spl">Splunk SPL</option>
+              <option value="esql">Elastic ES|QL</option>
+              <option value="kusto">Microsoft KQL / Kusto</option>
+              <option value="cql">CrowdStrike CQL / LogScale</option>
+              <option value="sql">SQL</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="editor-shell">
+          <div class="editor-topline">
+            <span>query.q</span>
+            <span id="query-metrics">0 lines · 0 chars</span>
+          </div>
+          <div class="editor-body">
+            <pre id="line-numbers" class="line-numbers" aria-hidden="true">1</pre>
+            <textarea id="query" spellcheck="false" aria-label="Query input">index=zeek service=ssl
 | stats count by id.orig_h
 | sort -count</textarea>
-      <div class="actions">
-        <button class="primary" id="analyze">Disect Query</button>
-        <span class="hint">Ctrl/⌘ + Enter</span>
-      </div>
-      <div id="status" aria-live="polite"></div>
-      <div id="selection-prompt" class="selection-prompt" hidden></div>
-    </section>
+          </div>
+          <div class="editor-footer">
+            <span id="cursor-position">Ln 1, Col 1</span>
+            <span>UTF-8</span>
+          </div>
+        </div>
 
-    <section class="results" id="output">
-      <div class="card language-strip">
-        <div class="metric"><span class="eyebrow">Language</span><strong id="detected-language">—</strong></div>
-        <div class="metric"><span class="eyebrow">Confidence</span><strong id="confidence">—</strong></div>
-        <div class="metric"><span class="eyebrow">Family</span><strong id="family">—</strong></div>
-        <div class="metric"><span class="eyebrow">Disector</span><strong id="selected-dissector">—</strong></div>
-      </div>
+        <div class="run-row">
+          <button class="run-button" id="analyze" type="button">
+            <span class="run-icon">⌁</span>
+            <span>Disect Query</span>
+          </button>
+          <span class="shortcut">⌘/Ctrl + Enter</span>
+        </div>
 
-      <div class="card analysis-card">
-        <nav class="tabs" aria-label="Dissection views">
-          <button class="active" data-tab="review">Initial Review</button>
-          <button data-tab="anatomy">Anatomy</button>
-          <button data-tab="syntax">Syntax</button>
-          <button data-tab="semantics">Semantics</button>
-        </nav>
-        <div class="panel" id="review"></div>
-        <div class="panel" id="anatomy" hidden></div>
-        <div class="panel" id="syntax" hidden></div>
-        <div class="panel" id="semantics" hidden></div>
-      </div>
+        <div id="status" class="status-line" aria-live="polite"></div>
+        <div id="selection-prompt" class="selection-prompt" hidden></div>
+      </section>
 
-      <div class="card meta-card">
-        <div class="meta-grid">
+      <section class="inspection-pane" id="output" aria-label="Query dissection">
+        <div class="inspection-head">
+          <div>
+            <span class="kicker">ANALYSIS</span>
+            <h2>Dissection</h2>
+          </div>
+          <div class="confidence-block">
+            <span class="confidence-label">Language confidence</span>
+            <div class="confidence-row">
+              <div class="confidence-track"><span id="confidence-bar"></span></div>
+              <strong id="confidence">—</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="identity-strip">
+          <div class="identity-stat primary-stat">
+            <span>Detected language</span>
+            <strong id="detected-language">—</strong>
+          </div>
+          <div class="identity-stat">
+            <span>Family</span>
+            <strong id="family">—</strong>
+          </div>
+          <div class="identity-stat">
+            <span>Disector</span>
+            <strong id="selected-dissector">—</strong>
+          </div>
+        </div>
+
+        <div class="analysis-surface">
+          <nav class="tabs" aria-label="Dissection views">
+            <button class="active" data-tab="review" type="button">Initial Review</button>
+            <button data-tab="anatomy" type="button">Anatomy</button>
+            <button data-tab="syntax" type="button">Syntax</button>
+            <button data-tab="semantics" type="button">Semantics</button>
+          </nav>
+          <div class="panel active-panel" id="review"></div>
+          <div class="panel" id="anatomy" hidden></div>
+          <div class="panel" id="syntax" hidden></div>
+          <div class="panel" id="semantics" hidden></div>
+        </div>
+
+        <div class="analyzer-drawer">
           <section>
-            <h3>Language analyzer evidence</h3>
-            <ul id="evidence"></ul>
+            <div class="drawer-heading">
+              <span class="kicker">SIGNATURE</span>
+              <h3>Language evidence</h3>
+            </div>
+            <ul id="evidence" class="evidence-list"></ul>
           </section>
           <section>
-            <h3>Alternative signatures</h3>
-            <div class="chips" id="alternatives"></div>
+            <div class="drawer-heading">
+              <span class="kicker">ALTERNATIVES</span>
+              <h3>Other matches</h3>
+            </div>
+            <div class="alternatives" id="alternatives"></div>
           </section>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+  </div>
 
-  <div class="footer">GlassCastle(Q) v0.2 · Query text stays in-browser in this build.</div>
-</div>
-<script type="module" src="./app.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
