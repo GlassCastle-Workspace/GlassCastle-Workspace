@@ -1,6 +1,6 @@
 # GlassCastle(S)
 
-## Security Through Visibility, Knowledge Through Understanding
+## Security Through Visibility, Learning Through Understanding
 
 **[glasscastles.vercel.app](https://glasscastles.vercel.app/) · [Public assets](PUBLIC-ASSETS.md) · [Operating model](OPERATING-MODEL.md) · [Canonical URLs](PUBLIC-URL-REGISTRY.json) · [Security policy](SECURITY.md) · [Sec-TP RC1](https://glasscastles-sectp.vercel.app/)**
 
@@ -16,7 +16,7 @@ GlassCastle(S) is a **one-human, multiple-AI Security and Education Company**. O
 
 We do **not** present AI activity as human headcount or tool access as corporate authority. Consequential legal, financial, security-scope, identity, destructive-production, regulatory, and material public decisions remain behind human approval gates.
 
-**10 departments · 10 recurring tasks · every 2 hours · starts staggered 12 minutes apart.** Cycles begin on even hours in America/New_York (Eastern time). Growth & Partnerships brings together sales and marketing; Education & Customer Success brings together learning and customer support.
+**10 ownership functions · 6 operating cells · one human authority line.** Organization, orchestration, and runtime are deliberately separate. AI-assisted work is scheduled or triggered when the work actually requires recurrence; a timer is not part of the company's identity and never grants authority.
 
 [Read the public operating model →](OPERATING-MODEL.md)
 
@@ -180,4 +180,4 @@ We say when something is experimental. We distinguish hypotheses from measuremen
 `Evidence before assertion.`
 `Latest != canonical.`
 `Unknown != False.`
-`Security Through Visibility, Knowledge Through Understanding.`
+`Security Through Visibility, Learning Through Understanding.`

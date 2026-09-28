@@ -1,6 +1,6 @@
 # GlassCastle(S) Public Assets
 
-**Security Through Visibility, Knowledge Through Understanding.**
+**Security Through Visibility, Learning Through Understanding.**
 
 This is the curated map of stable, intentionally public GlassCastle(S) surfaces. Preview deployments, internal infrastructure, and ephemeral lab endpoints are deliberately excluded.
 
@@ -9,8 +9,8 @@ _Last reviewed: 2026-09-08._
 ## Company operating model
 
 - **One Human / Multiple AI operating model** — [OPERATING-MODEL.md](OPERATING-MODEL.md)
-- Defines the public structure of **10 departments and 10 recurring tasks**, each repeating every 2 hours with starts staggered 12 minutes apart, alongside separation of duties and the human approval boundary.
-- Cycles begin on even hours in America/New_York (Eastern time); the operating model is the public department and cadence reference.
+- Defines the public structure of **10 ownership functions coordinated through 6 operating cells**, alongside separation of duties and the human approval boundary.
+- Internal scheduling is implementation-specific and intentionally separate from public organizational identity; the operating model is the public structure and authority reference.
 
 ## Start here
 
@@ -88,7 +88,7 @@ Model integrations preserve source boundaries and do not silently turn taxonomy,
 
 - Public display name: **GlassCastle(S)**
 - Company type: **Security and Education Company**
-- Core promise: **Security Through Visibility, Knowledge Through Understanding.**
+- Core promise: **Security Through Visibility, Learning Through Understanding.**
 - Principle: **Evidence before assertion. Visibility before assumption.**
 - Type: **Roboto Mono**
 - Foundation: void black / near-black
